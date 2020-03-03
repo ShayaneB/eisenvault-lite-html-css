@@ -133,6 +133,10 @@ body {
     font-size: 1.2rem; }
     .files td .fa-file-pdf {
       font-size: 2rem; }
+    .files td .fa-sitemap {
+      font-size: 2rem; }
+    .files td.details_depts {
+      padding: 0 0 2rem 35rem; }
     .files td i {
       padding: 1rem 1.5rem 2rem 2rem; }
     .files td.file_name {
