@@ -1,5 +1,5 @@
 .sidebars{
-    height: 750px;
+    height: 110%;
 }
 
 .icons-new{
@@ -13,41 +13,40 @@
     align-items: center;
 
     #item-name{
-        margin-left: 10rem;
+        margin-left: 8rem;
     }
 
     #upload{
-        margin-left: 10rem;
+        margin-left: 8rem;
+    }
+
+    #shared{
+        margin-left: 8rem;
     }
 
     #action{
-        margin-left: 18rem;
+        margin-left: 10rem;
     }
 }
 
 .files{
     border: none;
 
-    & #doc_list{
-        border-collapse:separate; 
-        border-spacing: 0 2.5rem; 
-    }
-
-    & tr{ 
-        background-color: #f2ebd9;
-    }
-
     & td.file_icon {
         border-bottom-left-radius: 150rem;
     }
 
    & .file_name-u{
-    padding-left: 4rem;
+    padding-left: 3rem;
     
    }
 
+   & .name-s{
+    padding-left: 5.5rem;  
+   }
+
    & .details-u{
-    padding-left: 10rem;
+    padding-left: 6rem;
    }
 
    & td.delete-u{
@@ -55,7 +54,7 @@
    }
 
    & .delete-u{
-    padding: 0 10rem 0 12rem;
+    padding: 0.5rem 7rem 0 3rem;
    }
 
    & .fa-folder{

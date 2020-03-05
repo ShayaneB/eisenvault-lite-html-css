@@ -1,5 +1,5 @@
 .sidebars {
-  height: 750px; }
+  height: 110%; }
 
 .icons-new {
   display: flex;
@@ -11,29 +11,28 @@
   border-radius: 1rem;
   align-items: center; }
   .icons-new #item-name {
-    margin-left: 10rem; }
+    margin-left: 8rem; }
   .icons-new #upload {
-    margin-left: 10rem; }
+    margin-left: 8rem; }
+  .icons-new #shared {
+    margin-left: 8rem; }
   .icons-new #action {
-    margin-left: 18rem; }
+    margin-left: 10rem; }
 
 .files {
   border: none; }
-  .files #doc_list {
-    border-collapse: separate;
-    border-spacing: 0 2.5rem; }
-  .files tr {
-    background-color: #f2ebd9; }
   .files td.file_icon {
     border-bottom-left-radius: 150rem; }
   .files .file_name-u {
-    padding-left: 4rem; }
+    padding-left: 3rem; }
+  .files .name-s {
+    padding-left: 5.5rem; }
   .files .details-u {
-    padding-left: 10rem; }
+    padding-left: 6rem; }
   .files td.delete-u {
     border-top-right-radius: 150rem; }
   .files .delete-u {
-    padding: 0 10rem 0 12rem; }
+    padding: 0.5rem 7rem 0 3rem; }
   .files .fa-folder {
     font-size: 2rem; }
 
