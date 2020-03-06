@@ -1,16 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
-@font-face {
-  font-family: 'ownCreation';
-  src: url("fonts/ChiquitaNormal.ttf"); }
 html,
 body {
   height: 100%;
   width: 100%;
-  font-family: 'ownCreation'; }
+  font-family: 'Open Sans', sans-serif; }
 
 .main_body {
   display: grid;
@@ -33,11 +31,12 @@ body {
     color: #ee5a57; }
   #sidebar a {
     text-decoration: none;
-    color: black; }
+    color: #073453; }
   #sidebar p {
-    font-size: 0.8rem;
+    font-size: 14px;
     display: inline;
-    margin-left: 1.2rem; }
+    margin-left: 1rem;
+    color: #073453; }
   #sidebar #dashboard {
     margin-bottom: 7rem; }
   #sidebar #middle_bar {
@@ -66,7 +65,8 @@ body {
   display: inline-block;
   margin: 1.5rem; }
   #second_section p {
-    font-size: 1.5rem; }
+    font-size: 22px;
+    color: #073453; }
   #second_section #first {
     float: left; }
   #second_section .profile_pic {
@@ -134,30 +134,31 @@ body {
   color: #073453; }
   .files .flaticon-team {
     color: #ee9796;
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   .files #doc_list {
     border-collapse: separate;
     border-spacing: 0 2rem;
     margin-left: 2rem; }
   .files tr {
-    background-color: #f2ebd9; }
+    background: #F2EBD9 0% 0% no-repeat padding-box; }
   .files td.file-icon {
-    border-bottom-left-radius: 10rem;
-    border-top-left-radius: 10rem; }
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem; }
   .files .fas {
     color: #6bdeff; }
   .files h2 {
     margin: 2rem 0 0 2rem;
-    font-weight: 100; }
+    font-weight: 100;
+    font-size: 20px; }
   .files td {
     text-align: center;
-    font-size: 1rem; }
+    font-size: 16px; }
     .files td .fa-file-pdf {
       font-size: 2rem; }
     .files td.details_depts {
       padding: 1.5rem 1.5rem 2rem 35rem;
-      border-bottom-right-radius: 10rem;
-      border-top-right-radius: 10rem; }
+      border-bottom-right-radius: 1rem;
+      border-top-right-radius: 1rem; }
     .files td i {
       padding: 1rem 1.5rem 2rem 2rem; }
     .files td.file_name {
@@ -172,8 +173,8 @@ body {
       padding: 1rem 0 0 15rem; }
     .files td.delete {
       color: #6bdeff;
-      border-bottom-right-radius: 10rem;
-      border-top-right-radius: 10rem;
+      border-bottom-right-radius: 1rem;
+      border-top-right-radius: 1rem;
       padding-top: 1rem; }
 
 /*# sourceMappingURL=stylesheet.css.map */

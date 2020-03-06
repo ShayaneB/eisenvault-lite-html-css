@@ -9,15 +9,18 @@
   height: 3rem;
   border: 1px solid #073453;
   border-radius: 1rem;
-  align-items: center; }
+  align-items: center;
+  color: #073453; }
   .icons-new #item-name {
     margin-left: 10rem; }
   .icons-new #upload {
     margin-left: 9rem; }
+  .icons-new #upload-u {
+    margin-left: 10rem; }
   .icons-new #shared {
     margin-left: 8rem; }
   .icons-new #action {
-    margin-left: 10rem; }
+    margin-left: 11rem; }
 
 .files {
   border: none; }
@@ -28,11 +31,11 @@
   .files .name-s {
     padding-left: 7.4rem; }
   .files .details-u {
-    padding-left: 7.5rem; }
+    padding-left: 7.8rem; }
   .files td.delete-u {
     border-top-right-radius: 150rem; }
   .files .delete-u {
-    padding: 0.5rem 7rem 0 5rem; }
+    padding: 0.5rem 3rem 0 5rem; }
   .files .fa-folder {
     font-size: 2rem; }
 
