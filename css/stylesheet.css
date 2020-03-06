@@ -1,14 +1,16 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: kazimir, sans-serif;
-  font-weight: 400; }
+  box-sizing: border-box; }
 
+@font-face {
+  font-family: 'ownCreation';
+  src: url("fonts/ChiquitaNormal.ttf"); }
 html,
 body {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-family: 'ownCreation'; }
 
 .main_body {
   display: grid;
@@ -33,6 +35,7 @@ body {
     text-decoration: none;
     color: black; }
   #sidebar p {
+    font-size: 0.8rem;
     display: inline;
     margin-left: 1.2rem; }
   #sidebar #dashboard {
@@ -63,7 +66,7 @@ body {
   display: inline-block;
   margin: 1.5rem; }
   #second_section p {
-    font-size: 1.7rem; }
+    font-size: 1.5rem; }
   #second_section #first {
     float: left; }
   #second_section .profile_pic {
@@ -134,7 +137,8 @@ body {
     font-size: 3rem; }
   .files #doc_list {
     border-collapse: separate;
-    border-spacing: 0 2rem; }
+    border-spacing: 0 2rem;
+    margin-left: 2rem; }
   .files tr {
     background-color: #f2ebd9; }
   .files td.file-icon {
@@ -143,11 +147,11 @@ body {
   .files .fas {
     color: #6bdeff; }
   .files h2 {
-    margin: 2rem;
+    margin: 2rem 0 0 2rem;
     font-weight: 100; }
   .files td {
     text-align: center;
-    font-size: 1.2rem; }
+    font-size: 1rem; }
     .files td .fa-file-pdf {
       font-size: 2rem; }
     .files td.details_depts {
@@ -162,13 +166,14 @@ body {
         text-decoration: none;
         color: #073453; }
     .files td.details {
-      padding: 1rem 1.5rem 2rem 2rem; }
+      padding: 2rem 1.5rem 2rem 3.5rem; }
     .files td.view {
       color: #6bdeff;
-      padding-left: 15rem; }
+      padding: 1rem 0 0 15rem; }
     .files td.delete {
       color: #6bdeff;
       border-bottom-right-radius: 10rem;
-      border-top-right-radius: 10rem; }
+      border-top-right-radius: 10rem;
+      padding-top: 1rem; }
 
 /*# sourceMappingURL=stylesheet.css.map */

@@ -11,9 +11,9 @@
   border-radius: 1rem;
   align-items: center; }
   .icons-new #item-name {
-    margin-left: 8rem; }
+    margin-left: 10rem; }
   .icons-new #upload {
-    margin-left: 8rem; }
+    margin-left: 9rem; }
   .icons-new #shared {
     margin-left: 8rem; }
   .icons-new #action {
@@ -26,13 +26,13 @@
   .files .file_name-u {
     padding-left: 3rem; }
   .files .name-s {
-    padding-left: 5.5rem; }
+    padding-left: 7.4rem; }
   .files .details-u {
-    padding-left: 6rem; }
+    padding-left: 7.5rem; }
   .files td.delete-u {
     border-top-right-radius: 150rem; }
   .files .delete-u {
-    padding: 0.5rem 7rem 0 3rem; }
+    padding: 0.5rem 7rem 0 5rem; }
   .files .fa-folder {
     font-size: 2rem; }
 

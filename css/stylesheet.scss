@@ -2,14 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: kazimir, sans-serif;
-    font-weight: 400;
+    // font-family: Chiquita, sans-serif;
+    // font-weight: 400;
 }
 
+@font-face{
+    font-family: 'ownCreation';
+    src: url('fonts/ChiquitaNormal.ttf');
+}
 html,
 body {
     height: 100%;
     width: 100%;
+    font-family: 'ownCreation';
 }
 
 .main_body{
@@ -44,6 +49,7 @@ body {
     }
 
     & p { 
+        font-size: 0.8rem;
         display: inline;
         margin-left: 1.2rem;
     }
@@ -93,7 +99,7 @@ body {
     margin: 1.5rem;
 
     & p{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     & #first{
@@ -184,6 +190,7 @@ body {
     & #doc_list{
         border-collapse:separate; 
         border-spacing: 0 2rem; 
+        margin-left: 2rem;
     }
 
     & tr{ 
@@ -200,13 +207,13 @@ body {
     }
     
     & h2{
-        margin: 2rem;
+        margin: 2rem 0 0 2rem;
         font-weight: 100;
     }
 
     & td{
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
 
         & .fa-file-pdf{
             font-size: 2rem;
@@ -232,18 +239,19 @@ body {
         }
 
         &.details{
-            padding:1rem 1.5rem 2rem 2rem; 
+            padding:2rem 1.5rem 2rem 3.5rem; 
         }
 
         &.view{
             color:#6bdeff;
-            padding-left: 15rem;
+            padding: 1rem 0 0 15rem;
         }
 
         &.delete{
             color:#6bdeff;
             border-bottom-right-radius: 10rem;
             border-top-right-radius: 10rem; 
+            padding-top: 1rem;
         }
     }
 }
