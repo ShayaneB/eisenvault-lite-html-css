@@ -15,7 +15,7 @@ body {
 
 .main_body{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 13% 80%;
 }
 
 .sidebars{
@@ -23,12 +23,12 @@ body {
     padding: 1.5rem 0 0 1.5rem;
     background: url("/images/ev-sitelogo.png") #f2ebd9 no-repeat;
     background-blend-mode: multiply;    
-    background-size: 8rem 3rem;
-    background-position: 1rem 0.2rem;
+    background-size: 10rem 6rem;
+    background-position: 1rem 0.8rem;
     border-radius: 1.5rem;
     
     & h5{
-        padding: 1rem 0 0 2rem;
+        padding: 3.6rem 0 0 2.7rem;
     }
 }
 
@@ -72,8 +72,7 @@ body {
     }
 
     & .progress_bar{
-        margin-top: 1rem;
-        width: 60%;
+        margin: 1rem 1rem 0 0;
         height: 1.5rem; 
 	    position: relative;
 	    background:#b4b4b4;
@@ -102,6 +101,7 @@ body {
 
     & #first{
         float: left;
+        margin: 0.6rem 0 0 1rem;
     }
 
     & .profile_pic{
@@ -125,7 +125,7 @@ body {
     border: 3px solid #073453;
     border-right: none;
     padding: 5px;
-    height: 32px;
+    height: 50px;
     border-radius: 1rem 0 0 1rem;
     outline: none;
   }
@@ -135,8 +135,8 @@ body {
   }
   
 .searchButton {
-    width: 40px;
-    height: 32px;
+    width: 45px;
+    height: 50px;
     border: 1px solid #073453;
     background: #073453;
     color: #fff;
@@ -146,9 +146,9 @@ body {
   }
   
 .wrap{
-    width: 30%;
+    width: 45%;
     position: absolute;
-    left: 45%;
+    left: 32%;
   }
 
 .icons{
@@ -173,7 +173,7 @@ body {
 }
 
 .files{
-    margin-top: 2rem;
+    margin-top: 1rem;
     border: 1px solid #073453;
     border-radius: 1.5rem;
     height: 100%;
@@ -187,7 +187,7 @@ body {
 
     & #doc_list{
         border-collapse:separate; 
-        border-spacing: 0 2rem; 
+        border-spacing: 0 1rem; 
         margin-left: 2rem;
     }
 
@@ -211,7 +211,6 @@ body {
     }
 
     & td{
-        text-align: center;
         font-size: 16px;
 
         & .fa-file-pdf{
@@ -219,17 +218,17 @@ body {
         }
 
         &.details_depts{
-            padding:1.5rem 1.5rem 2rem 35rem;
+            padding:1rem 1.5rem 1rem 35rem;
             border-bottom-right-radius: 1rem;
             border-top-right-radius: 1rem;
         }
 
         & i{
-            padding:1rem 1.5rem 2rem 2rem;
+            padding:0.5rem 1.5rem 0.5rem 1.5rem;
         }
 
         &.file_name{
-            padding:1rem 0 1rem 0;
+            padding:0.5rem 0 0.5rem 0;
 
             & a{
             text-decoration: none;
@@ -238,19 +237,19 @@ body {
         }
 
         &.details{
-            padding:2rem 1.5rem 2rem 3.5rem; 
+            padding:0.2rem 1.5rem 0.2rem 3.5rem; 
         }
 
         &.view{
             color:#6bdeff;
-            padding: 1rem 0 0 15rem;
+            padding: 0.5rem 0 0.5rem 15rem;
         }
 
         &.delete{
             color:#6bdeff;
             border-bottom-right-radius: 1rem;
             border-top-right-radius: 1rem; 
-            padding-top: 1rem;
+            padding-top: 0.2rem;
         }
     }
 }

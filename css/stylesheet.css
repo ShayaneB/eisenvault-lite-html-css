@@ -12,18 +12,18 @@ body {
 
 .main_body {
   display: grid;
-  grid-template-columns: 20% 80%; }
+  grid-template-columns: 13% 80%; }
 
 .sidebars {
   height: 100%;
   padding: 1.5rem 0 0 1.5rem;
   background: url("/images/ev-sitelogo.png") #f2ebd9 no-repeat;
   background-blend-mode: multiply;
-  background-size: 8rem 3rem;
-  background-position: 1rem 0.2rem;
+  background-size: 10rem 6rem;
+  background-position: 1rem 0.8rem;
   border-radius: 1.5rem; }
   .sidebars h5 {
-    padding: 1rem 0 0 2rem; }
+    padding: 3.6rem 0 0 2.7rem; }
 
 #sidebar {
   margin-top: 4rem; }
@@ -48,8 +48,7 @@ body {
     #sidebar #lower_bar .fas {
       margin-bottom: 0.5rem; }
   #sidebar .progress_bar {
-    margin-top: 1rem;
-    width: 60%;
+    margin: 1rem 1rem 0 0;
     height: 1.5rem;
     position: relative;
     background: #b4b4b4; }
@@ -68,7 +67,8 @@ body {
     font-size: 22px;
     color: #073453; }
   #second_section #first {
-    float: left; }
+    float: left;
+    margin: 0.6rem 0 0 1rem; }
   #second_section .profile_pic {
     border: 2px solid #073453;
     border-radius: 50%;
@@ -87,7 +87,7 @@ body {
   border: 3px solid #073453;
   border-right: none;
   padding: 5px;
-  height: 32px;
+  height: 50px;
   border-radius: 1rem 0 0 1rem;
   outline: none; }
 
@@ -95,8 +95,8 @@ body {
   color: #073453; }
 
 .searchButton {
-  width: 40px;
-  height: 32px;
+  width: 45px;
+  height: 50px;
   border: 1px solid #073453;
   background: #073453;
   color: #fff;
@@ -105,9 +105,9 @@ body {
   font-size: 20px; }
 
 .wrap {
-  width: 30%;
+  width: 45%;
   position: absolute;
-  left: 45%; }
+  left: 32%; }
 
 .icons {
   display: flex;
@@ -126,7 +126,7 @@ body {
       color: #073453; }
 
 .files {
-  margin-top: 2rem;
+  margin-top: 1rem;
   border: 1px solid #073453;
   border-radius: 1.5rem;
   height: 100%;
@@ -137,7 +137,7 @@ body {
     font-size: 2.5rem; }
   .files #doc_list {
     border-collapse: separate;
-    border-spacing: 0 2rem;
+    border-spacing: 0 1rem;
     margin-left: 2rem; }
   .files tr {
     background: #F2EBD9 0% 0% no-repeat padding-box; }
@@ -151,30 +151,29 @@ body {
     font-weight: 100;
     font-size: 20px; }
   .files td {
-    text-align: center;
     font-size: 16px; }
     .files td .fa-file-pdf {
       font-size: 2rem; }
     .files td.details_depts {
-      padding: 1.5rem 1.5rem 2rem 35rem;
+      padding: 1rem 1.5rem 1rem 35rem;
       border-bottom-right-radius: 1rem;
       border-top-right-radius: 1rem; }
     .files td i {
-      padding: 1rem 1.5rem 2rem 2rem; }
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem; }
     .files td.file_name {
-      padding: 1rem 0 1rem 0; }
+      padding: 0.5rem 0 0.5rem 0; }
       .files td.file_name a {
         text-decoration: none;
         color: #073453; }
     .files td.details {
-      padding: 2rem 1.5rem 2rem 3.5rem; }
+      padding: 0.2rem 1.5rem 0.2rem 3.5rem; }
     .files td.view {
       color: #6bdeff;
-      padding: 1rem 0 0 15rem; }
+      padding: 0.5rem 0 0.5rem 15rem; }
     .files td.delete {
       color: #6bdeff;
       border-bottom-right-radius: 1rem;
       border-top-right-radius: 1rem;
-      padding-top: 1rem; }
+      padding-top: 0.2rem; }
 
 /*# sourceMappingURL=stylesheet.css.map */
