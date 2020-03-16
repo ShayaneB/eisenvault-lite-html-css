@@ -19,7 +19,7 @@ body {
 }
 
 .sidebars{
-    height: 100%;
+    height: 120%;
     padding: 1.5rem 0 0 1.5rem;
     background: url("/images/ev-sitelogo.png") #f2ebd9 no-repeat;
     background-blend-mode: multiply;    
@@ -252,4 +252,39 @@ body {
             padding-top: 0.2rem;
         }
     }
+}
+
+@media (min-width:1024px) and (max-width:1365px){
+    .main_body{
+        display: grid;
+        grid-template-columns: 20% 82%;
+    }
+
+    .wrap{
+        width: 40%;
+        left: 50%;
+    }
+
+    .files{
+        & td.details{
+            padding:0.2rem 1rem 0.2rem 1rem; 
+        }
+
+        & td.view{
+            padding: 0.5rem 0;
+        }
+
+        & td.delete{
+            padding: 0;
+        }
+
+        & td.details_depts{
+            padding:1rem 1.5rem 1rem 15rem;
+        }
+    }
+
+    #second_section .profile_pic{
+        margin-right: 1rem;
+    }
+    
 }

@@ -50,4 +50,18 @@
   .files .fa-folder {
     font-size: 2rem; }
 
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .icons-new {
+    margin-left: 2rem; }
+    .icons-new #item-name {
+      margin-left: 8rem; }
+    .icons-new #upload {
+      margin-left: 6rem; }
+    .icons-new #upload-u {
+      margin-left: 10rem; }
+    .icons-new #shared {
+      margin-left: 8rem; }
+    .icons-new #action {
+      margin-left: 6rem; } }
+
 /*# sourceMappingURL=stylesheetuploads.css.map */
