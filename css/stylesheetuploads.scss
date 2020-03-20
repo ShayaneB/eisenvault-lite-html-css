@@ -2,7 +2,36 @@
     height: 110%;
 }
 
-.icons-new{
+.icons-new1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8%;
+    background-color: #f2ebd9;
+    width: 90%;
+    height: 3rem;
+    border: 1px solid #073453;
+    border-radius: 1rem;
+    align-items: center;
+    color: #073453;
+
+    #item-name{
+        margin-left: 10rem;
+    }
+
+    #upload{
+        margin-left: 9rem;
+    }
+
+    & #upload-u{
+        margin-left: 10rem;
+    }
+
+    #shared{
+        margin-left: 8rem;
+    }
+}
+
+.icons-new2{
     display: flex;
     margin-top: 8%;
     background-color: #f2ebd9;
@@ -28,14 +57,11 @@
     #shared{
         margin-left: 8rem;
     }
-
-    #action{
-        margin-left: 11rem;
-    }
 }
 
 .files{
     border: none;
+    width: 93%;
 
     & td.file_icon {
         border-bottom-left-radius: 1rem;
@@ -56,12 +82,16 @@
 
    & td.delete-u{
     border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;   
+    border-top-right-radius: 1rem; 
+    
+    & p{
+        display: inline;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: hsl(1, 73%, 64%)!important;
+        font-size: 14px!important;
+        }
 }
-
-   & .delete-u{
-    padding: 0.5rem 15rem 0 6rem;
-   }
 
    & .details-s{
     padding-left: 8rem;
@@ -69,7 +99,15 @@
 
    & td.delete-s{
     border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;   
+    border-top-right-radius: 1rem; 
+    
+    & p{
+        display: inline;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: hsl(1, 73%, 64%)!important;
+        font-size: 14px!important;
+        }
 }
 
    & .delete-s{
@@ -78,7 +116,6 @@
 
    & .file_name-s{
     padding-left: 3rem;
-    
    }
 
    & .fa-folder{
@@ -86,28 +123,617 @@
    }
 }
 
-@media (min-width:1024px) and (max-width:1365px){
-    .icons-new{
-        margin-left: 2rem;
+@media (min-width:533px) and (max-width:1023px){
+    .icons-new2{
+        margin: 9rem 0 0 1rem;
+        font-size:12px;
 
-        #item-name{
-            margin-left: 8rem;
+        & #item-name-t{
+            margin-left: 3rem;
+        }  
+
+        & #shared-t{
+            margin-left: 0.7rem;
+        }
+
+        & #upload-t{
+            margin-left: 0.8rem;
+        }
+
+        & #action-t{
+            margin-left: 0.8rem;
+        }
+    }
+
+    .files{
+        
+        & #doc_list{
+            margin-left: 1rem;
+        }
+
+        & td{
+            font-size:12px;
+            
+            &.file_icon .fas{
+                font-size:1.3rem;
+                padding-right: 0.5rem; 
+            }
+
+            &.file_name-t{
+                padding-left: 0.2rem;
+            }
+
+            &.name-t{
+                padding-left: 0.8rem; 
+            }
+
+            &.details-t{
+                padding-left: 1.6rem; 
+            }
+
+            &.delete-icon{
+                display: block;
+            }
+
+            & .flaticon-delete{
+                padding: 0 1.5rem 0 0;
+                border-top-right-radius: 1rem;
+
+            }
+
+            & .restore-icon{
+                padding: 0 0 0 1.2rem;
+            }
+        }
+    }
+ 
+}
+
+@media (min-width:1024px){
+    .icons-new1{
+        margin-left: 2rem;
+        width: 94%;
+
+        & #item-name{
+            margin-left: 4rem;
         }
     
-        #upload{
-            margin-left: 6rem;
+        & #upload{
+            margin-left: 2.5rem;
+        }
+
+        & #upload-s{
+            margin-left: 3rem;
         }
     
         & #upload-u{
             margin-left: 10rem;
         }
     
-        #shared{
-            margin-left: 8rem;
+        & #shared{
+            margin-left: 3rem;
         }
-    
-        #action{
-            margin-left: 6rem;
+
+       & #action{
+            padding-left: 4.8rem;
         }
     }
+
+    .icons-new2{
+        margin-left: 2rem;
+        width: 93%;
+
+        #item-name{
+            margin-left: 5rem;
+        }
+
+        #upload-s{
+            margin-left: 3.8rem;
+        }
+    
+        & #shared{
+            margin-left: 3rem;
+        }
+
+        & #action-s{
+            padding-left: 7rem;
+        }
+
+        & #action-sw{
+            padding-left: 7rem;
+        }
+
+        & #upload-sw{
+            padding-left: 4.5rem;
+        }
+    }
+
+    .files{
+    & .details-u{
+        padding-left: 6.2rem;
+    }
+
+    & .file_name-s{
+        padding-left: 0.3rem;
+    }
+
+    & .name-s{
+        padding-left: 3rem;  
+    }
+
+    & .details-s{
+        padding-left: 3rem;  
+    }
+
+    & .delete-u{
+        padding: 0 1rem 0 3rem;
+    }
+
+    & .delete-s{
+        padding: 0 1rem 0 2rem;
+    }
+
+    & #doc_list{
+        width: 100%;
+    }
+}
+}
+
+@media (min-width:1280px){
+
+    .icons-new1{
+        margin-left: 2rem;
+        width: 94%;
+
+        & #item-name{
+            margin-left: 6.8rem;
+        }
+    
+        & #upload{
+            margin-left: 6rem;
+        }
+
+       & #action{
+            padding-left: 6rem;
+        }
+    }
+    
+    .icons-new2{
+        margin-left: 2rem;
+        width: 93%;
+
+        & #item-name{
+            margin-left: 6rem;
+        }
+
+        & #upload-s{
+            margin-left: 7rem;
+        }
+    
+        & #shared{
+            margin-left: 3.8rem;
+        }
+
+        & #action-s{
+            padding-left: 10rem;
+        }
+
+        & #action-sw{
+            padding-left: 10rem;
+        }
+
+        & #upload-sw{
+            padding-left: 7.8rem;
+        }
+    }
+
+    .files{
+    & .details-u{
+        padding-left: 10rem;
+    }
+
+    & .name-s{
+        padding-left: 3rem;  
+    }
+
+    & .details-s{
+        padding-left: 4rem;  
+    }
+
+    & .delete-u{
+        padding: 0 1rem 0 5rem;
+    }
+
+    & .delete-s{
+        padding: 0 4rem 0 2rem;
+    }
+
+    & .file_name-u{
+        padding-left: 7.5rem;
+    }
+}
+}
+
+@media (min-width:1920px){
+
+.icons-new2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.files{
+
+    & .file_icon{
+        padding: 0 4rem;
+    }
+
+    & .file_name-u{
+        padding: 0 7rem;
+    }
+
+    & .details-u{
+        padding: 0 8rem 0 11rem;
+    }
+
+    & .delete-u{
+        padding: 0 10rem 0 5rem;
+    }
+
+    & .delete-s{
+        padding: 0 11rem 0 1rem;
+       }
+    
+    & .file_name-s{
+        padding: 0 8rem 0 1rem;
+       }
+
+    & .name-s{
+        padding: 0 9rem 0 1rem;
+    }
+
+    & .details-s{
+        padding: 0 8rem 0 1rem;
+    }
+}
+}
+
+@media (min-width:1680px){
+    .icons-new2{
+
+        & #item-name{
+            margin-left: 6rem;
+        }
+
+        & #upload-s{
+            padding-left: 1rem;
+        }
+    
+        & #shared{
+            padding-left: 1rem;
+        }
+
+        & #action-s{
+            margin-left: 1rem;
+        }
+
+        & #action-sw{
+            margin-left: 1rem;
+        }
+
+        & #upload-sw{
+            margin-left: 1rem;
+        }
+}
+}
+
+
+@media (min-width:1366px){
+
+    .icons-new1{
+        margin-left: 2rem;
+    
+        & #upload{
+            margin-left: 6rem;
+        }
+
+       & #action{
+            padding-left: 7.5rem;
+        }
+    }
+    
+    .icons-new2{
+        margin-left: 2rem;
+        width: 93%;
+
+        & #item-name{
+            margin-left: 6rem;
+        }
+
+        & #upload-s{
+            margin-left: 7.5rem;
+        }
+    
+        & #shared{
+            margin-left: 4.6rem;
+        }
+
+        & #action-s{
+            padding-left: 12rem;
+        }
+
+        & #action-sw{
+            padding-left: 12rem;
+        }
+
+        & #upload-sw{
+            padding-left: 8rem;
+        }
+    }
+
+    .files{
+    & .details-u{
+        padding-left: 10rem;
+    }
+
+    & .name-s{
+        padding-left: 3rem;  
+    }
+
+    & .details-s{
+        padding-left: 4rem;  
+    }
+
+    & .delete-u{
+        padding: 0 1rem 0 5rem;
+    }
+
+    & .delete-s{
+        padding: 0 4rem 0 2rem;
+    }
+
+    & .file_name-u{
+        padding-left: 7.5rem;
+    }
+}
+}
+
+@media (min-width:1440px){
+
+    .icons-new1{
+        margin-left: 2rem;
+    
+        & #item-name{
+            margin-left: 6rem;
+        }
+
+        & #upload{
+            margin-left: 6rem;
+        }
+
+       & #action{
+            padding-left: 9rem;
+        }
+    }
+    
+    .icons-new2{
+        margin-left: 2rem;
+        width: 93%;
+
+        & #item-name{
+            margin-left: 9rem;
+        }
+
+        & #upload-s{
+            margin-left: 6.8rem;
+        }
+    
+        & #shared{
+            margin-left: 4.2rem;
+        }
+
+        & #details-s{
+            padding-left: 4rem;
+        }
+
+        & #action-s{
+            padding-left: 14rem;
+        }
+
+        & #action-sw{
+            padding-left: 15rem;
+        }
+
+        & #upload-sw{
+            padding-left: 7.8rem;
+        }
+    }
+
+    .files{
+    & .details-u{
+        padding-left: 10rem;
+    }
+
+    & .file_name-s{
+        padding-left: 1rem;  
+    }
+
+    & .name-s{
+        padding-left: 1rem;  
+    }
+
+    & .details-s{
+        padding-left: 1rem;  
+    }
+
+    & .delete-u{
+        padding: 0 1rem 0 5rem;
+    }
+
+    & .delete-s{
+        padding: 0 4rem 0 2rem;
+    }
+
+    & .file_name-u{
+        padding-left: 7.5rem;
+    }
+}
+}
+
+@media (min-width:1600px){
+    .icons-new1{
+
+        & #item-name{
+            margin-left: 5rem;
+        }
+
+        & #upload{
+            margin-left: 6rem;
+        }
+
+        & #action{
+            padding-left: 10rem;
+        }
+    }
+
+    .icons-new2{
+
+        & #item-name{
+            margin-left: 9rem;
+        }
+
+        & #upload-s{
+            margin-left: 7.5rem;
+        }
+    
+        & #shared{
+            margin-left: 5rem;
+        }
+
+        & #details-s{
+            padding-left: 4rem;
+        }
+
+        & #action-s{
+            padding-left: 15rem;
+        }
+
+        & #action-sw{
+            padding-left: 15.5rem;
+        }
+
+        & #upload-sw{
+            padding-left: 8rem;
+        }
+    }
+
+    .files{
+    & .details-u{
+        padding-left: 10rem;
+    }
+
+    & .file_name-s{
+        padding-left: 1rem;  
+    }
+
+    & .name-s{
+        padding-left: 1rem;  
+    }
+
+    & .details-s{
+        padding-left: 1rem;  
+    }
+
+    & .delete-u{
+        padding: 0 1rem 0 5rem;
+    }
+
+    & .delete-s{
+        padding: 0 4rem 0 2rem;
+    }
+
+    & .file_name-u{
+        padding-left: 7.5rem;
+    }
+}
+
+}
+
+@media (min-width:1920px){
+
+.icons-new1{
+
+        & #item-name{
+            margin-left: 6rem;
+        }
+
+        & #upload{
+            margin-left: 5rem;
+        }
+
+        & #action{
+            padding-left: 6rem;
+        }
+}
+
+.icons-new2{
+ 
+    & #item-name{
+        margin-left: 12rem;
+    }
+
+    & #upload-s{
+        padding-left: 1rem;
+    }
+
+    & #shared{
+        padding-left: 7.5rem;
+    }
+
+    & #action-s{
+        padding-right: 8rem;
+    }
+
+    & #action-sw{
+        padding-right: 9rem;
+    }
+
+    & #upload-sw{
+        padding-left: 14rem;
+    }
+}
+
+.files{
+
+    & .file_icon{
+        padding-left: 4rem;
+    }
+
+    & .file_name-u{
+        padding: 0 7rem;
+    }
+
+    & .details-u{
+        padding: 0 8rem 0 11rem;
+    }
+
+    & .delete-u{
+        padding: 0 10rem 0 5rem;
+    }
+
+    & .delete-s{
+        padding: 0 7rem 0 1rem;
+       }
+    
+    & .file_name-s{
+        padding: 0 12.8rem 0 1rem;
+       }
+
+    & .name-s{
+        padding-left: 2.5rem;
+    }
+
+    & .details-s{
+        padding: 0 11rem 0 1rem;
+    }
+}
 }

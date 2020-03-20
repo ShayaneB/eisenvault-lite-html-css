@@ -12,18 +12,18 @@ body {
 
 .main_body {
   display: grid;
-  grid-template-columns: 13% 80%; }
+  grid-template-columns: 14% 80%; }
 
 .sidebars {
   height: 120%;
   padding: 1.5rem 0 0 1.5rem;
   background: url("/images/ev-sitelogo.png") #f2ebd9 no-repeat;
   background-blend-mode: multiply;
-  background-size: 10rem 6rem;
-  background-position: 1rem 0.8rem;
+  background-size: 10rem 5rem;
+  background-position: 1rem 1rem;
   border-radius: 1.5rem; }
   .sidebars h5 {
-    padding: 3.6rem 0 0 2.7rem; }
+    padding: 3.2rem 0 0 2.5rem; }
 
 #sidebar {
   margin-top: 4rem; }
@@ -107,13 +107,13 @@ body {
 .wrap {
   width: 45%;
   position: absolute;
-  left: 32%; }
+  left: 42%; }
 
 .icons {
   display: flex;
   margin-top: 8%;
   background-color: #f2ebd9;
-  width: 100%;
+  width: 95%;
   height: 4rem;
   border: 1px solid #073453;
   border-radius: 1rem;
@@ -130,7 +130,7 @@ body {
   border: 1px solid #073453;
   border-radius: 1.5rem;
   height: 100%;
-  width: 100%;
+  width: 95%;
   color: #073453; }
   .files .flaticon-team {
     color: #ee9796;
@@ -138,14 +138,15 @@ body {
   .files #doc_list {
     border-collapse: separate;
     border-spacing: 0 1rem;
-    margin-left: 2rem; }
+    margin: 0 2rem;
+    width: 95%; }
   .files tr {
     background: #F2EBD9 0% 0% no-repeat padding-box; }
   .files td.file-icon {
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem; }
   .files .fas {
-    color: #6bdeff; }
+    color: #ee9796; }
   .files h2 {
     margin: 2rem 0 0 2rem;
     font-weight: 100;
@@ -165,18 +166,201 @@ body {
       .files td.file_name a {
         text-decoration: none;
         color: #073453; }
-    .files td.details {
-      padding: 0.2rem 1.5rem 0.2rem 3.5rem; }
+    .files td.file_name_i {
+      padding: 0.5rem 0 0.5rem 0; }
+      .files td.file_name_i a {
+        text-decoration: none;
+        color: #073453; }
+    .files td.details_01 {
+      padding: 0.2rem 1rem 0.2rem 1rem; }
     .files td.view {
-      color: #6bdeff;
-      padding: 0.5rem 0 0.5rem 15rem; }
+      padding: 0.5rem 0 0.5rem 8rem; }
+      .files td.view p {
+        display: inline;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: #e66260 !important;
+        font-size: 14px !important; }
     .files td.delete {
-      color: #6bdeff;
       border-bottom-right-radius: 1rem;
       border-top-right-radius: 1rem;
-      padding-top: 0.2rem; }
+      padding: 0.2rem 2.5rem 0 0; }
+      .files td.delete p {
+        display: inline;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: #e66260 !important;
+        font-size: 14px !important; }
 
-@media (min-width: 1024px) and (max-width: 1365px) {
+.pagination {
+  display: inline-block; }
+
+.pagination a {
+  color: #073453;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ee8c8c; }
+
+.pagination a:hover {
+  background-color: #ddd; }
+
+nav {
+  display: none; }
+
+#menuToggle {
+  display: none; }
+
+@media (min-width: 533px) and (max-width: 1023px) {
+  .main_body {
+    display: grid;
+    grid-template-columns: 25% 84%; }
+
+  .wrap {
+    margin-top: 4.5rem;
+    left: 11rem;
+    width: 67%; }
+
+  .pagination {
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem; }
+
+  .pagination a {
+    padding: 2px 12px; }
+
+  .sidebars {
+    display: none; }
+
+  .headings {
+    padding-top: 4rem; }
+
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none; }
+
+  #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease; }
+
+  #menuToggle a:hover {
+    color: tomato; }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none; }
+
+  /*
+   * Just a quick hamburger
+   */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%; }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; }
+
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323; }
+
+  /*
+   * But let's hide the middle one.
+   */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2); }
+
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px); }
+
+  #menu {
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 12px;
+    color: #073453; }
+
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul {
+    transform: none; }
+
+  ul .fas {
+    color: #e66260 !important; } }
+@media (min-width: 1280px) {
+  .main_body {
+    display: grid;
+    grid-template-columns: 18% 84%; }
+
+  .files td.file_name {
+    padding-right: 14rem; }
+  .files td.file_name_i {
+    padding-right: 5rem; }
+    .files td.file_name_i a {
+      color: #073453;
+      text-decoration: none; }
+  .files td.details_depts {
+    padding: 1rem 10rem 1rem 8rem; }
+
+  .pagination {
+    margin: 2rem 0 0 15rem; } }
+@media (min-width: 1600px) {
+  .pagination {
+    margin: 2rem 0 0 28rem; } }
+@media (min-width: 1680px) {
+  .pagination {
+    margin: 2rem 0 0 32rem !important; } }
+@media (min-height: 950px) {
+  .pagination {
+    margin: 1.5rem 0 2rem 15rem; } }
+@media (min-width: 1024px) and (max-width: 1279px) {
   .main_body {
     display: grid;
     grid-template-columns: 20% 82%; }
@@ -185,16 +369,35 @@ body {
     width: 40%;
     left: 50%; }
 
-  .files td.details {
-    padding: 0.2rem 1rem 0.2rem 1rem; }
+  .files td.details_01 {
+    padding: 0.2rem 2rem 0.2rem 2.4rem; }
   .files td.view {
     padding: 0.5rem 0; }
   .files td.delete {
     padding: 0; }
   .files td.details_depts {
-    padding: 1rem 1.5rem 1rem 15rem; }
+    padding: 1rem 1.5rem 1rem 10rem; }
+  .files #doc_list {
+    width: 94%; }
 
   #second_section .profile_pic {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+
+  .pagination {
+    margin: 3rem 0 0 12rem; } }
+@media (min-width: 1920px) {
+  .main_body {
+    display: grid;
+    grid-template-columns: 14% 84%; }
+
+  .wrap {
+    width: 45%;
+    left: 38%; }
+
+  #second_section .profile_pic {
+    margin-right: 9rem; }
+
+  .pagination {
+    margin: 2rem 0 0 35rem; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
