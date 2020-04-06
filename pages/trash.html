@@ -15,8 +15,7 @@
 </head>
 <body>
 
-    <div class="main_body">
-        <nav class="header">
+        <nav role="navigation">
             <div id="menuToggle">
                
                 <input type="checkbox" />
@@ -26,18 +25,42 @@
                 <span></span>
 
                 <ul id="menu">
-                    <a href="../index.html"><i class="fas fa-home"></i> <li> DASHBOARD</li></a>
-                    <a href="doc_lib.html"><i class="fas fa-file-alt"></i> <li> DOCUMENTS</li></a>
-                    <a href="uploads.html"><i class="fas fa-folder-open"></i><li>MY UPLOADS</li></a>
-                    <a href="manage_shares.html"><i class="fas fa-share-alt"></i> <li> MANAGE SHARES</li></a>
-                    <a href="shared_with_me.html"><i class="fas fa-share-square"></i><li>SHARED WITH ME</li></a>
-                    <a href="/"><i class="fas fa-cogs"></i><li>SETTINGS</li></a>
-                    <a href="/"><i class="fas fa-headset"></i> <li> SUPPORT</li></a>
-                    <a href="/"><i class="fas fa-file-alt"></i> <li> &nbsp;FULL VERSION</li></a>
-                    <a href="trash.html"><i class="fas fa-trash"></i> <li> TRASH</li></a>
+                    <li><a href="../index.html">
+                        <i class="fas fa-home"></i> 
+                        <p> DASHBOARD</p></a></li>
+
+                    <li><a href="doc_lib.html">
+                        <i class="fas fa-file-alt"></i> 
+                        <p> DOCUMENTS</p></a></li>
+
+                    <li><a href="uploads.html">
+                        <i class="fas fa-folder-open"></i>
+                        <p>MY UPLOADS</p></a></li>
+
+                    <li><a href="manage_shares.html">
+                        <i class="fas fa-share-alt"></i> 
+                        <p> MANAGE SHARES</p></a></li>
+
+                    <li> <a href="shared_with_me.html">
+                        <i class="fas fa-share-square"></i>
+                        <p>SHARED WITH ME</p></a></li>
+
+                    <li><a href="/">
+                        <i class="fas fa-headset"></i> 
+                        <p> SUPPORT</p></a></li>
+
+                    <li><a href="/">
+                        <i class="fas fa-file-alt"></i> 
+                        <p> &nbsp;FULL VERSION</p></a></li>
+
+                    <li><a href="trash.html">
+                        <i class="fas fa-trash"></i> 
+                        <p> TRASH</p></a></li>
                 </ul>
             </div>
           </nav>
+
+<div class="main_body">
 
         <section class="sidebars">
 
@@ -47,29 +70,34 @@
         
             <div id="sidebar">
                 <div id="dashboard">
-                    <a href="../index.html"><i class="fas fa-home"></i> <p> DASHBOARD</p></a>
+                    <a href="../index.html"><i class="fas fa-home"></i> 
+                        <p> DASHBOARD</p></a>
                 </div> 
         
                 <div id="middle_bar">
-                    <a href="doc_lib.html"><i class="fas fa-file-alt"></i> <p> DOCUMENTS</p></a>
+                    <a href="doc_lib.html"><i class="fas fa-file-alt"></i> 
+                        <p> DOCUMENTS</p></a>
                     <br>
-                    <a href="uploads.html"><i class="fas fa-folder-open"></i><p>MY UPLOADS</p></a>
+                    <a href="uploads.html"><i class="fas fa-folder-open"></i>
+                        <p>MY UPLOADS</p></a>
                     <br>
-                    <a href="manage_shares.html"><i class="fas fa-share-alt"></i> <p> MANAGE SHARES</p></a>
+                    <a href="manage_shares.html"><i class="fas fa-share-alt"></i> 
+                        <p> MANAGE SHARES</p></a>
                     <br>
-                    <a href="shared_with_me.html"><i class="fas fa-share-square"></i><p>SHARED WITH ME</p></a>
+                    <a href="shared_with_me.html"><i class="fas fa-share-square"></i>
+                        <p>SHARED WITH ME</p></a>
                 </div>
                
                 <div id="lower_bar">
-                    <a href="/"><i class="fas fa-cogs"></i><p>SETTINGS</p></a>
-                    <br>
                     <a href="/"><i class="fas fa-headset"></i> <p> SUPPORT</p></a>
                     <br>
-                    <a href="/"><i class="fas fa-file-alt"></i> <p> &nbsp;FULL VERSION</p></a>
+                    <a href="/"><i class="fas fa-file-alt"></i> 
+                        <p> &nbsp;FULL VERSION</p></a>
                 </div>
         
                 <div id="trash">
-                    <a href="trash.html"><i class="fas fa-trash"></i> <p> TRASH</p></a>
+                    <a href="trash.html"><i class="fas fa-trash"></i> 
+                        <p> TRASH</p></a>
                 </div>
         
                 <div class="progress_bar">
@@ -82,7 +110,7 @@
 <section id="second_section">
 
     <div id="search_tab">
-        <p id="first">TRASH</p>
+        <h2 id="first">TRASH</h2>
 
         <div class="wrap">
             <div class="search">
@@ -99,53 +127,53 @@
     </div>
 
     <div class="icons-new2">
+        <input type="checkbox">
         <h3 id="item-name-t">Item Name</h3>
-        <h3 id="shared-t">Created On</h3>
-        <h3 id="upload-t">Deleted On</h3>
-        <h3 id="action-t">Actions</h3>
+        <h3 id="shared-t">Created</h3>
+        <h3 id="upload-t">Deleted</h3>
+        <label>Action </label>
+            <select id="action-t">
+            <option value="delete-a">Delete All</option>
+            <option value="restore-a">Restore All</option>
+            <option value="delete-s">Delete Selected</option>
+            <option value="restore-s">Restore Selected</option>
+        </select>
     </div>
     
     <div class="files">
         <table id="doc_list">
             <tr id="first_details">
-                <td class="file_icon"><i class="fas fa-file-pdf"></i></td> 
+                <td class="file_icon"><input type="checkbox"></td> 
                 <td class="file_name-t">Sample1.pdf</td>
-                <td class="name-t">7:22 PM 1 March 2020</td>                     
-                <td class="details-t">1:10 PM 10 March 2020</td> 
+                <td class="name-t">1 Month Ago</td>                     
+                <td class="details-t">1 Day Ago</td> 
                 <td class="delete-icon">
                 <i class="flaticon-delete"></i>
-                <i class="restore-icon fas fa-trash-restore"></i></td>
+                <i class=" restore-icon fas fa-undo"></i></td>           
             </tr>
 
             <tr id="second_details">
-                <td class="file_icon"><i class="fas fa-file-pdf"></i></td> 
+                <td class="file_icon"><input type="checkbox"></td> 
                 <td class="file_name-t">Sample2.pdf</td>
-                <td class="name-t">7:22 PM 1 March 2020</td>                     
-                <td class="details-t">1:10 PM 10 March 2020</td>  
+                <td class="name-t">7 Days Ago</td>                     
+                <td class="details-t">1 Hour Ago</td>  
                 <td class="delete-icon">
                 <i class="flaticon-delete"></i>
-                <i class="restore-icon fas fa-trash-restore"></i></td>
+                <i class=" restore-icon fas fa-undo"></i></td>
             </tr>
 
             <tr id="third_details">
-                <td class="file_icon"><i class="fas fa-folder"></i></td> 
-                <td class="file_name-t">Sample pdf</td>
-                <td class="name-t">7:22 PM 1 March 2020</td>                     
-                <td class="details-t">1:10 PM 10 March 2020</td> 
+                <td class="file_icon"><input type="checkbox"></td>  
+                <td class="file_name-t">Samples</td>
+                <td class="name-t">7 Weeks Ago</td>                     
+                <td class="details-t">2 Days Ago</td> 
                 <td class="delete-icon">
                 <i class="flaticon-delete"></i>
-                <i class="restore-icon fas fa-trash-restore"></i></td> 
+                <i class=" restore-icon fas fa-undo"></i></td>           
             </tr>
         
         </table>
-
-        <div class="btn">
-        <button class="restore-btn" type="button"><i class="fas fa-undo"></i>
-            <p>Restore All</p></button>
-        <button class="delete-btn" type="button"><i class="flaticon-delete"></i>
-            <p>Delete All</p></button>
-        </div>
-
+        
         <div class="pagination">
             <a href="#">&laquo;</a>
             <a href="#">1</a>
@@ -153,12 +181,15 @@
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">5</a>
+            <a href="#">6</a>
             <a href="#">&raquo;</a>
         </div>
-
     </div>
-
-</section>
+</section>       
 </div>
+<footer id="base-footer">
+    <p>Copyright © 2020 
+    <a href="https://www.argali.in/">Argali Knowledge Services Pvt. Ltd., New Delhi, India</a></p>
+    </footer>
 </body>
 </html>

@@ -12,6 +12,50 @@
         <title>EV Lite</title>
 </head>
 <body>
+    <nav role="navigation">
+        <div id="menuToggle">
+           
+            <input type="checkbox" />
+            
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <li><a href="../index.html">
+                    <i class="fas fa-home"></i> 
+                    <p> DASHBOARD</p></a></li>
+
+                <li><a href="doc_lib.html">
+                    <i class="fas fa-file-alt"></i> 
+                    <p> DOCUMENTS</p></a></li>
+
+                <li><a href="uploads.html">
+                    <i class="fas fa-folder-open"></i>
+                    <p>MY UPLOADS</p></a></li>
+
+                <li><a href="manage_shares.html">
+                    <i class="fas fa-share-alt"></i> 
+                    <p> MANAGE SHARES</p></a></li>
+
+                <li> <a href="shared_with_me.html">
+                    <i class="fas fa-share-square"></i>
+                    <p>SHARED WITH ME</p></a></li>
+
+                <li><a href="/">
+                    <i class="fas fa-headset"></i> 
+                    <p> SUPPORT</p></a></li>
+
+                <li><a href="/">
+                    <i class="fas fa-file-alt"></i> 
+                    <p> &nbsp;FULL VERSION</p></a></li>
+
+                <li><a href="trash.html">
+                    <i class="fas fa-trash"></i> 
+                    <p> TRASH</p></a></li>
+            </ul>
+        </div>
+      </nav>
     <div class="main_body">
 
         <section class="sidebars">
@@ -35,8 +79,6 @@
                 </div>
                
                 <div id="lower_bar">
-                    <a href="/"><i class="fas fa-cogs"></i><p>SETTINGS</p></a>
-                    <br>
                     <a href="/"><i class="fas fa-headset"></i> <p> SUPPORT</p></a>
                     <br>
                     <a href="/"><i class="fas fa-file-alt"></i> <p> &nbsp;FULL VERSION</p></a>
@@ -56,7 +98,7 @@
             <section id="second_section">
 
                 <div id="search_tab">
-                    <p id="first">MANAGE SHARES</p>
+                    <h2 id="first">MANAGE SHARES</h2>
             
                     <div class="wrap">
                         <div class="search">
@@ -82,28 +124,40 @@
                 <div class="files">
                     <table id="doc_list">
                         <tr id="first_details">
-                            <td class="file_icon"><i class="fas fa-file-pdf"></i></td> 
+                            <td class="file_icon1"><i class="fas fa-file-pdf"></i></td> 
                             <td class="file_name-s">Sample1.pdf</td>
                             <td class="name-s">Daniel Ross</td>                     
-                            <td class="details-s">10 March 2020 at 1PM</td> 
-                            <td class="delete-s"><i class="fas fa-times-circle"><p>&nbsp Renounce</p> </i></td>                               
+                            <td class="details-s">1 Day Ago</td> 
+                            <td class="delete-s">
+                            <div class="tooltip"><i class="fas fa-times-circle"></i>
+                                <span class="tooltiptext">Renounce</span>
+                            </div>
+                            </td>                               
                         </tr>
             
                         <tr id="second_details">
-                            <td class="file_icon"><i class="fas fa-file-pdf"></i></td> 
+                            <td class="file_icon1"><i class="fas fa-file-pdf"></i></td> 
                             <td class="file_name-s">Sample2.pdf</td>
-                            <td class="name-s">Gabriel Santiago</td>                     
-                            <td class="details-s">30 March 2020 at 2PM</td> 
-                            <td class="delete-s"><i class="fas fa-times-circle"><p>&nbsp Renounce</p> </i></td>                               
-                        </tr>
+                            <td class="name-s">Gabriel</td>                     
+                            <td class="details-s">1 Month Ago</td> 
+                            <td class="delete-s">
+                                <div class="tooltip"><i class="fas fa-times-circle"></i>
+                                    <span class="tooltiptext">Renounce</span>
+                                </div>
+                            </td>                        
+                            </tr>
             
                         <tr id="third_details">
-                            <td class="file_icon"><i class="fas fa-folder"></i></td> 
+                            <td class="file_icon1"><i class="fas fa-folder-open"></i></td> 
                             <td class="file_name-s">Sample pdf</td>
                             <td class="name-s">Arun Sharma</td>                     
-                            <td class="details-s">30 March 2020 at 3PM</td> 
-                            <td class="delete-s"><i class="fas fa-times-circle"><p>&nbsp Renounce</p> </i></td>                               
-                        </tr>
+                            <td class="details-s">3 Days Ago</td> 
+                            <td class="delete-s">
+                                <div class="tooltip"><i class="fas fa-times-circle"></i>
+                                    <span class="tooltiptext">Renounce</span>
+                                </div>
+                            </td>                        
+                            </tr>
                     
                     </table>
                     <div class="pagination">
@@ -120,5 +174,9 @@
             
             </section>
 </div>
+<footer id="base-footer">
+    <p>Copyright © 2020 
+    <a href="https://www.argali.in/">Argali Knowledge Services Pvt. Ltd., New Delhi, India</a></p>
+    </footer>
 </body>
 </html>

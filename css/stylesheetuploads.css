@@ -42,8 +42,9 @@
 
 .files {
   border: none;
-  width: 93%; }
-  .files td.file_icon {
+  width: 98%;
+  margin-top: 1rem; }
+  .files td.file_icon1 {
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem; }
   .files .file_name-u {
@@ -66,87 +67,355 @@
   .files td.delete-s {
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem; }
-    .files td.delete-s p {
-      display: inline;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
-      color: #e66260 !important;
-      font-size: 14px !important; }
   .files .delete-s {
     padding: 0.5rem 1.5rem 0 5rem; }
+    .files .delete-s .tooltip {
+      position: relative;
+      display: inline-block; }
+    .files .delete-s .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -60px; }
+    .files .delete-s .tooltip:hover .tooltiptext {
+      visibility: visible; }
   .files .file_name-s {
     padding-left: 3rem; }
+    .files .file_name-s a {
+      text-decoration: none;
+      color: #073453; }
   .files .fa-folder {
     font-size: 2rem; }
 
-@media (min-width: 533px) and (max-width: 1023px) {
-  .icons-new2 {
-    margin: 9rem 0 0 1rem;
-    font-size: 12px; }
-    .icons-new2 #item-name-t {
-      margin-left: 3rem; }
-    .icons-new2 #shared-t {
-      margin-left: 0.7rem; }
-    .icons-new2 #upload-t {
-      margin-left: 0.8rem; }
-    .icons-new2 #action-t {
-      margin-left: 0.8rem; }
-
-  .files #doc_list {
-    margin-left: 1rem; }
-  .files td {
-    font-size: 12px; }
-    .files td.file_icon .fas {
-      font-size: 1.3rem;
-      padding-right: 0.5rem; }
-    .files td.file_name-t {
-      padding-left: 0.2rem; }
-    .files td.name-t {
+@media (min-width: 533px) and (max-width: 1022px) {
+  .files {
+    width: 105%; }
+    .files td i {
+      padding: 0.5rem; }
+    .files td {
+      font-size: 15px; }
+      .files td.file_icon1 {
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem; }
+        .files td.file_icon1 input[type=checkbox] {
+          margin: 0.8rem 0 0.8rem 1.7rem; }
+      .files td.file_name-t {
+        padding-left: 0rem; }
+      .files td.name-t {
+        padding-left: 1rem; }
+      .files td.details-t {
+        padding-left: 1rem; }
+      .files td.delete-icon {
+        display: inline-block; }
+      .files td .flaticon-delete {
+        padding: 0; }
+      .files td .restore-icon {
+        padding-left: 0.4rem; }
+    .files .file_name-s {
       padding-left: 0.8rem; }
+    .files .name-s {
+      padding-left: 1rem; }
+    .files .details-s {
+      padding-left: 0.2rem; }
+    .files .delete-s {
+      padding: 0 0.5rem; }
+      .files .delete-s .tooltip .tooltiptext {
+        width: 75px;
+        padding: 0;
+        bottom: 100%;
+        left: 140%;
+        margin-left: -80px; }
+    .files .file_name-u {
+      padding: 0; }
+    .files .details-u {
+      padding: 0 1rem 0 0; }
+    .files .delete-u {
+      padding: 0 1.5rem 0 0; }
+
+  .icons-new1 {
+    margin-top: 8.8rem;
+    width: 102%; }
+    .icons-new1 #item-name {
+      margin-left: 1.4rem; }
+    .icons-new1 #upload {
+      margin-left: 1.6rem; }
+    .icons-new1 #action-t {
+      width: 1rem; }
+    .icons-new1 label {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 2rem;
+      margin-right: 0; }
+
+  .icons-new2 {
+    margin-top: 9rem;
+    font-size: 14px;
+    width: 102%; }
+    .icons-new2 #item-name {
+      margin-left: 3.5rem; }
+    .icons-new2 #upload-s {
+      margin-left: 3.2rem; }
+    .icons-new2 #shared {
+      margin-left: 2.2rem; }
+    .icons-new2 #action-s {
+      padding-left: 1rem;
+      padding-right: 0.8rem; }
+    .icons-new2 #action-sw {
+      padding-left: 1.2rem;
+      padding-right: 0.8rem; }
+    .icons-new2 #upload-sw {
+      padding-left: 3rem; }
+    .icons-new2 #item-name-t {
+      margin-left: 0.6rem; }
+    .icons-new2 #shared-t {
+      margin-left: 1.8rem; }
+    .icons-new2 #upload-t {
+      margin-left: 3.6rem; }
+    .icons-new2 #action-t {
+      width: 1rem;
+      margin-right: 0.5rem; }
+    .icons-new2 label {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-left: 3.4rem;
+      margin-right: 0.2rem; }
+    .icons-new2 input[type=checkbox] {
+      height: 1.4rem;
+      width: 1.4rem;
+      margin: 0.8rem 0 0.8rem 1.5rem; } }
+@media (min-width: 600px) and (max-width: 767px) {
+  .icons-new2 {
+    margin-top: 9rem;
+    font-size: 15px;
+    width: 100%; }
+    .icons-new2 #item-name-t {
+      margin-left: 1rem; }
+    .icons-new2 #shared-t {
+      margin-left: 2.6rem; }
+    .icons-new2 #upload-t {
+      margin-left: 4.4rem; }
+    .icons-new2 #action-t {
+      margin-right: 1rem; }
+    .icons-new2 label {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 4rem;
+      margin-right: 0.2rem; }
+    .icons-new2 #item-name {
+      margin-left: 4rem; }
+    .icons-new2 #upload-s {
+      margin-left: 6rem; }
+    .icons-new2 #shared {
+      margin-left: 4.4rem; }
+    .icons-new2 #action-s {
+      padding-left: 3rem; }
+    .icons-new2 #action-sw {
+      padding-left: 2rem; }
+    .icons-new2 #upload-sw {
+      padding-left: 5rem;
+      padding-right: 1.4rem; }
+
+  .icons-new1 {
+    margin-top: 8.8rem;
+    width: 100%; }
+    .icons-new1 #item-name {
+      margin-left: 0.6rem;
+      margin-right: 1.5rem; }
+    .icons-new1 #upload {
+      margin-left: 1rem; }
+    .icons-new1 #action-t {
+      width: 1.2rem;
+      margin-right: 4rem; }
+    .icons-new1 label {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 2rem;
+      margin-right: 0; }
+    .icons-new1 input[type=checkbox] {
+      height: 1.4rem;
+      width: 1.4rem;
+      margin: 0.8rem 1rem 0.8rem 1.4rem; }
+
+  .files .delete-u {
+    padding: 0 3rem 0 0; } }
+@media (min-width: 768px) and (max-width: 1022px) {
+  .icons-new2 #item-name-t {
+    margin-left: 1rem; }
+  .icons-new2 #shared-t {
+    margin-left: 5rem; }
+  .icons-new2 #upload-t {
+    margin-left: 8.6rem; }
+  .icons-new2 #action-t {
+    margin-right: 1.8rem; }
+  .icons-new2 label {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: 8rem;
+    margin-right: 0.2rem; }
+  .icons-new2 #item-name {
+    margin-left: 7.5rem; }
+  .icons-new2 #upload-s {
+    margin-left: 9rem; }
+  .icons-new2 #shared {
+    margin-left: 6rem; }
+  .icons-new2 #action-s {
+    padding-left: 6rem; }
+  .icons-new2 #action-sw {
+    padding-left: 5rem; }
+  .icons-new2 #upload-sw {
+    padding-left: 6.4rem; }
+
+  .files td {
+    font-size: 16px; }
+    .files td.file_name-t {
+      padding-left: 0rem; }
+    .files td.name-t {
+      padding-left: 2rem; }
     .files td.details-t {
-      padding-left: 1.6rem; }
+      padding-left: 3.2rem; }
     .files td.delete-icon {
       display: block; }
     .files td .flaticon-delete {
-      padding: 0 1.5rem 0 0;
-      border-top-right-radius: 1rem; }
+      padding: 0 0 0 1rem; }
     .files td .restore-icon {
-      padding: 0 0 0 1.2rem; } }
+      padding-left: 1rem; }
+  .files .file_name-s {
+    padding-left: 0; }
+  .files .name-s {
+    padding-left: 0; }
+  .files .details-s {
+    padding-left: 0; }
+  .files .delete-s {
+    padding: 0; }
+  .files .details-u {
+    padding-left: 4rem; }
+  .files .delete-u {
+    padding: 0 2.5rem 0 0; }
+
+  .icons-new1 #item-name {
+    margin-left: 0rem; }
+  .icons-new1 #upload {
+    margin-left: 7rem; }
+  .icons-new1 #action-t {
+    width: 1.2rem; }
+  .icons-new1 label {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 8rem;
+    margin-right: 0.5rem; }
+  .icons-new1 input[type=checkbox] {
+    height: 1.4rem;
+    width: 1.4rem;
+    margin: 0.8rem 1rem 0.8rem 0.6rem; } }
+@media (min-width: 800px) {
+  .icons-new2 {
+    width: 103%; }
+    .icons-new2 #item-name-t {
+      margin-left: 1.4rem; }
+    .icons-new2 #shared-t {
+      margin-left: 5.4rem; }
+    .icons-new2 #upload-t {
+      margin-left: 8.8rem; }
+    .icons-new2 #action-t {
+      margin-right: 1rem; }
+    .icons-new2 label {
+      margin-left: 8rem;
+      margin-right: 0.2rem; }
+    .icons-new2 #item-name {
+      margin-left: 7.6rem; }
+    .icons-new2 #upload-s {
+      margin-left: 9.4rem; }
+    .icons-new2 #shared {
+      margin-left: 6.4rem; }
+    .icons-new2 #action-s {
+      padding-left: 6.6rem; }
+    .icons-new2 #action-sw {
+      padding-left: 6rem; }
+    .icons-new2 #upload-sw {
+      padding-left: 7.5rem; }
+
+  .icons-new1 #item-name {
+    margin-left: 0rem; }
+  .icons-new1 #upload {
+    margin-left: 8rem; }
+  .icons-new1 label {
+    font-size: 1.2em;
+    margin-left: 8rem;
+    margin-right: 0rem; }
+  .icons-new1 input[type=checkbox] {
+    margin: 0.8rem 1rem 0.8rem 0rem; } }
 @media (min-width: 1024px) {
   .icons-new1 {
     margin-left: 2rem;
-    width: 94%; }
+    width: 94%;
+    margin-top: 9%; }
+    .icons-new1 input[type=checkbox] {
+      margin: 0.8rem 1rem 0.8rem 1rem; }
     .icons-new1 #item-name {
-      margin-left: 4rem; }
+      margin-left: 9rem; }
     .icons-new1 #upload {
-      margin-left: 2.5rem; }
-    .icons-new1 #upload-s {
-      margin-left: 3rem; }
-    .icons-new1 #upload-u {
-      margin-left: 10rem; }
-    .icons-new1 #shared {
-      margin-left: 3rem; }
-    .icons-new1 #action {
-      padding-left: 4.8rem; }
+      margin-left: 8rem; }
+    .icons-new1 #action-t {
+      width: 1.2rem;
+      margin-left: 0;
+      margin-right: 1rem; }
+    .icons-new1 label {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 5rem;
+      margin-right: 0rem; }
 
   .icons-new2 {
     margin-left: 2rem;
-    width: 93%; }
+    width: 94%;
+    margin-top: 9%; }
     .icons-new2 #item-name {
       margin-left: 5rem; }
     .icons-new2 #upload-s {
-      margin-left: 3.8rem; }
+      margin-left: 6.6rem; }
     .icons-new2 #shared {
-      margin-left: 3rem; }
+      margin-left: 4.6rem; }
     .icons-new2 #action-s {
-      padding-left: 7rem; }
+      padding-left: 5.8rem; }
     .icons-new2 #action-sw {
-      padding-left: 7rem; }
+      padding-left: 6rem; }
     .icons-new2 #upload-sw {
-      padding-left: 4.5rem; }
+      padding-left: 7rem; }
+    .icons-new2 #item-name-t {
+      margin-left: 0.2rem; }
+    .icons-new2 #shared-t {
+      margin-left: 4.5rem; }
+    .icons-new2 #upload-t {
+      margin-left: 7rem; }
+    .icons-new2 #action-t {
+      width: 1.2rem; }
+    .icons-new2 label {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 10rem;
+      margin-right: 0.5rem; }
+
+  .files-d td.file_name-d {
+    padding-left: 3rem; }
+    .files-d td.file_name-d a {
+      text-decoration: none;
+      color: #073453; }
+  .files-d td.details-d {
+    padding-left: 14rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem; }
 
   .files .details-u {
-    padding-left: 6.2rem; }
+    padding-left: 6rem; }
   .files .file_name-s {
     padding-left: 0.3rem; }
   .files .name-s {
@@ -157,107 +426,143 @@
     padding: 0 1rem 0 3rem; }
   .files .delete-s {
     padding: 0 1rem 0 2rem; }
-  .files #doc_list {
-    width: 100%; } }
+  .files td.file_icon {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem; }
+  .files td.name-t {
+    padding-left: 4rem; }
+  .files td.details-t {
+    padding-left: 3.5rem; }
+  .files td.delete-icon {
+    display: block;
+    padding-top: 0.7rem; }
+  .files td .flaticon-delete {
+    padding: 0 0 0 6rem; }
+  .files td .restore-icon {
+    padding-left: 2rem; } }
 @media (min-width: 1280px) {
   .icons-new1 {
     margin-left: 2rem;
-    width: 94%; }
+    width: 90%; }
     .icons-new1 #item-name {
-      margin-left: 6.8rem; }
+      margin-left: 10rem; }
     .icons-new1 #upload {
-      margin-left: 6rem; }
-    .icons-new1 #action {
-      padding-left: 6rem; }
+      margin-left: 5.8rem; }
+    .icons-new1 #action-t {
+      width: 1.2rem; }
+    .icons-new1 label {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 11rem;
+      margin-right: 0.5rem; }
+    .icons-new1 input[type=checkbox] {
+      margin: 0.8rem 1rem 0.8rem 2.6rem; }
 
   .icons-new2 {
     margin-left: 2rem;
-    width: 93%; }
+    width: 90%; }
     .icons-new2 #item-name {
-      margin-left: 6rem; }
+      margin-left: 6.6rem; }
     .icons-new2 #upload-s {
-      margin-left: 7rem; }
+      margin-left: 9.2rem; }
     .icons-new2 #shared {
-      margin-left: 3.8rem; }
+      margin-left: 4.8rem; }
     .icons-new2 #action-s {
-      padding-left: 10rem; }
+      padding-left: 8rem; }
     .icons-new2 #action-sw {
-      padding-left: 10rem; }
+      padding-left: 8.8rem; }
     .icons-new2 #upload-sw {
-      padding-left: 7.8rem; }
+      padding-left: 9.4rem; }
+    .icons-new2 #item-name-t {
+      margin-left: 2.6rem; }
+    .icons-new2 #shared-t {
+      margin-left: 5rem; }
+    .icons-new2 #upload-t {
+      margin-left: 9.5rem; }
+    .icons-new2 #action-t {
+      width: 1.2rem; }
+    .icons-new2 label {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 10rem;
+      margin-right: 0.5rem; }
+    .icons-new2 input[type=checkbox] {
+      margin: 0.8rem 1rem 0.8rem 3.5rem; }
 
-  .files .details-u {
-    padding-left: 10rem; }
-  .files .name-s {
-    padding-left: 3rem; }
-  .files .details-s {
-    padding-left: 4rem; }
-  .files .delete-u {
-    padding: 0 1rem 0 5rem; }
-  .files .delete-s {
-    padding: 0 4rem 0 2rem; }
-  .files .file_name-u {
-    padding-left: 7.5rem; } }
-@media (min-width: 1920px) {
-  .icons-new2 {
-    display: flex;
-    justify-content: space-evenly; }
-
-  .files .file_icon {
-    padding: 0 4rem; }
-  .files .file_name-u {
-    padding: 0 7rem; }
-  .files .details-u {
-    padding: 0 8rem 0 11rem; }
-  .files .delete-u {
-    padding: 0 10rem 0 5rem; }
-  .files .delete-s {
-    padding: 0 11rem 0 1rem; }
-  .files .file_name-s {
-    padding: 0 8rem 0 1rem; }
-  .files .name-s {
-    padding: 0 9rem 0 1rem; }
-  .files .details-s {
-    padding: 0 8rem 0 1rem; } }
-@media (min-width: 1680px) {
-  .icons-new2 #item-name {
-    margin-left: 6rem; }
-  .icons-new2 #upload-s {
-    padding-left: 1rem; }
-  .icons-new2 #shared {
-    padding-left: 1rem; }
-  .icons-new2 #action-s {
-    margin-left: 1rem; }
-  .icons-new2 #action-sw {
-    margin-left: 1rem; }
-  .icons-new2 #upload-sw {
-    margin-left: 1rem; } }
+  .files {
+    width: 95%; }
+    .files .details-u {
+      padding-left: 4rem; }
+    .files .name-s {
+      padding-left: 3rem; }
+    .files .details-s {
+      padding-left: 4rem; }
+    .files .delete-u {
+      padding: 0 1rem 0 5rem; }
+    .files .delete-s {
+      padding: 0 4rem 0 2rem; }
+    .files .file_name-u {
+      padding-left: 0; }
+    .files td.name-t {
+      padding-left: 3rem; }
+    .files td.delete-icon {
+      display: block; }
+    .files td .flaticon-delete {
+      padding-left: 4rem; }
+    .files td .restore-icon {
+      padding-left: 2rem; }
+    .files input[type=checkbox] {
+      margin: 0.8rem 1rem 0.8rem 3.5rem; } }
 @media (min-width: 1366px) {
   .icons-new1 {
-    margin-left: 2rem; }
+    margin-left: 2rem;
+    margin-top: 7%; }
+    .icons-new1 #item-name {
+      margin-left: 9rem; }
     .icons-new1 #upload {
-      margin-left: 6rem; }
-    .icons-new1 #action {
-      padding-left: 7.5rem; }
+      margin-left: 9rem; }
+    .icons-new1 #action-t {
+      width: 1.2rem; }
+    .icons-new1 label {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 11rem;
+      margin-right: 0.5rem; }
+    .icons-new1 input[type=checkbox] {
+      margin: 0.8rem 1rem 0.8rem 3rem; }
 
   .icons-new2 {
+    margin-top: 4.5rem;
     margin-left: 2rem;
-    width: 93%; }
+    width: 90%; }
     .icons-new2 #item-name {
-      margin-left: 6rem; }
+      margin-left: 6.8rem; }
     .icons-new2 #upload-s {
-      margin-left: 7.5rem; }
+      margin-left: 9rem; }
     .icons-new2 #shared {
-      margin-left: 4.6rem; }
+      margin-left: 5.8rem; }
     .icons-new2 #action-s {
-      padding-left: 12rem; }
-    .icons-new2 #action-sw {
-      padding-left: 12rem; }
-    .icons-new2 #upload-sw {
       padding-left: 8rem; }
+    .icons-new2 #action-sw {
+      padding-left: 7.8rem; }
+    .icons-new2 #upload-sw {
+      padding-left: 8.8rem; }
+    .icons-new2 #item-name-t {
+      margin-left: 3rem; }
+    .icons-new2 #shared-t {
+      margin-left: 5rem; }
+    .icons-new2 #upload-t {
+      margin-left: 9rem; }
+    .icons-new2 #action-t {
+      width: 1.2rem; }
+    .icons-new2 label {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 11rem;
+      margin-right: 0.5rem; }
 
   .files .details-u {
-    padding-left: 10rem; }
+    padding-left: 8rem; }
   .files .name-s {
     padding-left: 3rem; }
   .files .details-s {
@@ -267,37 +572,48 @@
   .files .delete-s {
     padding: 0 4rem 0 2rem; }
   .files .file_name-u {
-    padding-left: 7.5rem; } }
+    padding-left: 0; } }
 @media (min-width: 1440px) {
   .icons-new1 {
     margin-left: 2rem; }
     .icons-new1 #item-name {
-      margin-left: 6rem; }
+      margin-left: 10rem; }
     .icons-new1 #upload {
-      margin-left: 6rem; }
-    .icons-new1 #action {
-      padding-left: 9rem; }
+      margin-left: 10rem; }
+    .icons-new1 #action-t {
+      width: 1.2rem; }
+    .icons-new1 label {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 11rem;
+      margin-right: 0.5rem; }
 
   .icons-new2 {
     margin-left: 2rem;
-    width: 93%; }
+    width: 90%; }
     .icons-new2 #item-name {
-      margin-left: 9rem; }
+      margin-left: 8rem; }
     .icons-new2 #upload-s {
-      margin-left: 6.8rem; }
+      margin-left: 7.4rem; }
     .icons-new2 #shared {
-      margin-left: 4.2rem; }
-    .icons-new2 #details-s {
-      padding-left: 4rem; }
+      margin-left: 4.8rem; }
     .icons-new2 #action-s {
-      padding-left: 14rem; }
+      padding-left: 8rem; }
     .icons-new2 #action-sw {
-      padding-left: 15rem; }
+      padding-left: 8rem; }
     .icons-new2 #upload-sw {
-      padding-left: 7.8rem; }
+      padding-left: 7rem; }
+    .icons-new2 #item-name-t {
+      margin-left: 2.5rem; }
+    .icons-new2 #shared-t {
+      margin-left: 5.5rem; }
+    .icons-new2 #upload-t {
+      margin-left: 9rem; }
+    .icons-new2 label {
+      margin-left: 10.5rem; }
 
   .files .details-u {
-    padding-left: 10rem; }
+    padding-left: 8rem; }
   .files .file_name-s {
     padding-left: 1rem; }
   .files .name-s {
@@ -309,32 +625,52 @@
   .files .delete-s {
     padding: 0 4rem 0 2rem; }
   .files .file_name-u {
-    padding-left: 7.5rem; } }
+    padding-left: 1rem; } }
 @media (min-width: 1600px) {
   .icons-new1 #item-name {
-    margin-left: 5rem; }
+    margin-left: 10rem; }
   .icons-new1 #upload {
-    margin-left: 6rem; }
+    margin-left: 8rem; }
   .icons-new1 #action {
-    padding-left: 10rem; }
+    padding-left: 8rem; }
+  .icons-new1 #action-t {
+    width: 1.2rem; }
+  .icons-new1 label {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 11rem;
+    margin-right: 0.5rem; }
 
   .icons-new2 #item-name {
-    margin-left: 9rem; }
+    margin-left: 8rem; }
   .icons-new2 #upload-s {
-    margin-left: 7.5rem; }
+    margin-left: 6rem; }
   .icons-new2 #shared {
     margin-left: 5rem; }
   .icons-new2 #details-s {
-    padding-left: 4rem; }
+    padding-left: 5rem; }
   .icons-new2 #action-s {
-    padding-left: 15rem; }
-  .icons-new2 #action-sw {
-    padding-left: 15.5rem; }
-  .icons-new2 #upload-sw {
     padding-left: 8rem; }
+  .icons-new2 #action-sw {
+    padding-left: 8rem; }
+  .icons-new2 #upload-sw {
+    padding-left: 6.8rem; }
+  .icons-new2 #item-name-t {
+    margin-left: 2.6rem; }
+  .icons-new2 #shared-t {
+    margin-left: 5rem; }
+  .icons-new2 #upload-t {
+    margin-left: 9.2rem; }
+  .icons-new2 #action-t {
+    width: 1.2rem; }
+  .icons-new2 label {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 11rem;
+    margin-right: 0.5rem; }
 
   .files .details-u {
-    padding-left: 10rem; }
+    padding-left: 6rem; }
   .files .file_name-s {
     padding-left: 1rem; }
   .files .name-s {
@@ -346,43 +682,95 @@
   .files .delete-s {
     padding: 0 4rem 0 2rem; }
   .files .file_name-u {
-    padding-left: 7.5rem; } }
-@media (min-width: 1920px) {
+    padding-left: 1rem; } }
+@media (min-width: 1680px) {
   .icons-new1 #item-name {
-    margin-left: 6rem; }
+    margin-left: 9rem; }
   .icons-new1 #upload {
-    margin-left: 5rem; }
-  .icons-new1 #action {
-    padding-left: 6rem; }
+    margin-left: 8rem; }
+  .icons-new1 label {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 10rem;
+    margin-right: 0; }
 
   .icons-new2 #item-name {
-    margin-left: 12rem; }
+    margin-left: 8rem; }
   .icons-new2 #upload-s {
-    padding-left: 1rem; }
+    padding-left: 1.2rem; }
   .icons-new2 #shared {
-    padding-left: 7.5rem; }
+    padding-left: 0; }
   .icons-new2 #action-s {
-    padding-right: 8rem; }
+    margin-left: 0rem; }
   .icons-new2 #action-sw {
-    padding-right: 9rem; }
+    margin-left: 0.1rem; }
   .icons-new2 #upload-sw {
-    padding-left: 14rem; }
-
+    margin-left: 0; }
+  .icons-new2 #item-name-t {
+    margin-left: 2.4rem; }
+  .icons-new2 #shared-t {
+    margin-left: 5.4rem; }
+  .icons-new2 #upload-t {
+    margin-left: 9rem; }
+  .icons-new2 label {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 10.6rem;
+    margin-right: 0.5rem; } }
+@media (min-width: 1920px) {
   .files .file_icon {
-    padding-left: 4rem; }
+    padding: 0 4rem; }
   .files .file_name-u {
-    padding: 0 7rem; }
+    padding: 0 4rem; }
   .files .details-u {
-    padding: 0 8rem 0 11rem; }
+    padding: 0 6rem 0 2rem; }
   .files .delete-u {
-    padding: 0 10rem 0 5rem; }
+    padding: 0 6rem; }
   .files .delete-s {
-    padding: 0 7rem 0 1rem; }
+    padding: 0 4rem 0 1rem; }
   .files .file_name-s {
-    padding: 0 12.8rem 0 1rem; }
+    padding: 0 4rem 0 1rem; }
   .files .name-s {
-    padding-left: 2.5rem; }
+    padding: 0 2rem 0 1rem; }
   .files .details-s {
-    padding: 0 11rem 0 1rem; } }
+    padding: 0 2rem 0 1rem; }
+
+  .icons-new1 {
+    margin-top: 7%; }
+    .icons-new1 #item-name {
+      margin-left: 8.8rem; }
+    .icons-new1 #upload {
+      margin-left: 5.8rem; }
+    .icons-new1 input[type=checkbox] {
+      margin: 0.8rem 0 0.8rem 2rem; }
+    .icons-new1 label {
+      margin-left: 12rem;
+      margin-right: 0rem; }
+
+  .icons-new2 {
+    margin-top: 7%; }
+    .icons-new2 #item-name {
+      margin-left: 6.5rem; }
+    .icons-new2 #upload-s {
+      padding-left: 1.5rem; }
+    .icons-new2 #shared {
+      padding-left: 3.6rem; }
+    .icons-new2 #action-s {
+      padding-right: 4rem;
+      padding-left: 6rem; }
+    .icons-new2 #action-sw {
+      padding-left: 6rem; }
+    .icons-new2 #upload-sw {
+      padding-left: 9.7rem; }
+    .icons-new2 #item-name-t {
+      margin-left: 7.4rem; }
+    .icons-new2 #shared-t {
+      margin-left: 4.2rem; }
+    .icons-new2 #upload-t {
+      margin-left: 6.8rem; }
+    .icons-new2 label {
+      margin-left: 9rem; }
+    .icons-new2 input[type=checkbox] {
+      margin: 0.8rem 0 0.8rem 7.5rem; } }
 
 /*# sourceMappingURL=stylesheetuploads.css.map */

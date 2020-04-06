@@ -12,6 +12,51 @@
 </head>
 
 <body>
+    <nav role="navigation">
+        <div id="menuToggle">
+           
+            <input type="checkbox" />
+            
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <li><a href="index.html">
+                    <i class="fas fa-home"></i> 
+                    <p> DASHBOARD</p></a></li>
+
+                <li><a href="/pages/doc_lib.html">
+                    <i class="fas fa-file-alt"></i> 
+                    <p> DOCUMENTS</p></a></li>
+
+                <li><a href="/pages/uploads.html">
+                    <i class="fas fa-folder-open"></i>
+                    <p>MY UPLOADS</p></a></li>
+
+                <li><a href="/pages/manage_shares.html">
+                    <i class="fas fa-share-alt"></i> 
+                    <p> MANAGE SHARES</p></a></li>
+
+                <li> <a href="/pages/shared_with_me.html">
+                    <i class="fas fa-share-square"></i>
+                    <p>SHARED WITH ME</p></a></li>
+
+                <li><a href="/">
+                    <i class="fas fa-headset"></i> 
+                    <p> SUPPORT</p></a></li> 
+
+                <li><a href="/">
+                    <i class="fas fa-file-alt"></i> 
+                    <p> &nbsp;FULL VERSION</p></a></li>
+
+                <li><a href="/pages/trash.html">
+                    <i class="fas fa-trash"></i> 
+                    <p> TRASH</p></a></li>
+            </ul>
+        </div>
+      </nav>
+
     <div class="main_body">
 
         <section class="sidebars">
@@ -35,8 +80,6 @@
                 </div>
                
                 <div id="lower_bar">
-                    <a href="/"><i class="fas fa-cogs"></i><p>SETTINGS</p></a>
-                    <br>
                     <a href="/"><i class="fas fa-headset"></i> <p> SUPPORT</p></a>
                     <br>
                     <a href="/"><i class="fas fa-file-alt"></i> <p> &nbsp;FULL VERSION</p></a>
@@ -57,7 +100,7 @@
             <section id="second_section">
 
                 <div id="search_tab">
-                    <p id="first">DASHBOARD</p>
+                    <h2>DASHBOARD</h2>
             
                     <div class="wrap">
                         <div class="search">
@@ -72,73 +115,107 @@
                          <img class="profile_pic" src="https://i.pravatar.cc/150?img=3">
                      </div>
                 </div>
-            
-                <div class="icons">
-                    <a href="/"><i class="fas fa-cloud-upload-alt"></i></a>
-                    <a href="/"><i class="fas fa-folder-plus"></i></a>
-                    <a href="/"><i class="fas fa-copy"></i></a>
-                    <a href="/"><i class="fas fa-cloud-download-alt"></i></a>
-                    <a href="/"><i class="fas fa-external-link-alt"></i></a>
-                    <a href="/"> <i class="fas fa-trash"></i></a>
-                </div>
                 
-                <div class="files">
+                <div class="files-i">
                     <h2>My Recent Activities</h2>
                     <table id="doc_list">
                         <tr id="first_details">
                             <td class="file-icon"><i class="fas fa-file-pdf"></i></td> 
                             <td class="file_name_i"><a href="/sample_files/sample2.pdf">Sample1.pdf</a></td>
-                            <td class="details_01">Downloaded on 10 March 2020 at 10PM</td>           
-                            <td class="view"><i class="fas fa-eye"><p> &nbsp View</p></i></td>                               
-                            <td class="delete"><i class="fas fa-times-circle"><p>&nbsp Dismiss</p></i></td>
+                            <td class="details_01">Downloaded 2 days ago</td>           
+                            <td class="view">
+                                <div class="tooltip"><i class="fas fa-eye"></i>
+                                    <span class="tooltiptext">View</span>
+                                </div>
+                            </td>                               
+                            <td class="delete">
+                                <div class="tooltip"><i class="fas fa-times-circle"></i>
+                                    <span class="tooltiptext">Dismiss</span>
+                                    </div>
+                                </td>
                         </tr>
             
                          <tr id="second_details">
                             <td class="file-icon"><i class="fas fa-file-pdf"></i></td> 
                             <td class="file_name_i">Sample2.pdf</td>
-                            <td class="details_01">Downloaded on 15 March 2020 at 10PM</td>           
-                            <td class="view"><i class="fas fa-eye"><p> &nbsp View</p></i></td>                               
-                            <td class="delete"><i class="fas fa-times-circle"><p>&nbsp Dismiss</p></i></td>
+                            <td class="details_01">Downloaded 2 days ago</td>           
+                            <td class="view">
+                                <div class="tooltip"><i class="fas fa-eye"></i>
+                                    <span class="tooltiptext">View</span>
+                                </div>
+                            </td>                               
+                            <td class="delete">
+                                <div class="tooltip"><i class="fas fa-times-circle"></i>
+                                    <span class="tooltiptext">Dismiss</span>
+                                    </div>
+                                </td>
                         </tr>
             
                         <tr id="third_details">
                             <td class="file-icon"><i class="fas fa-file-pdf"></i></td> 
                             <td class="file_name_i">Sample3.pdf</td>
-                            <td class="details_01">Downloaded on 20 March 2020 at 10PM</td>           
-                            <td class="view"><i class="fas fa-eye"><p> &nbsp View</p></i></td>                               
-                            <td class="delete"><i class="fas fa-times-circle"><p>&nbsp Dismiss</p></i></td>
+                            <td class="details_01">Downloaded 2 days ago</td>           
+                            <td class="view">
+                                <div class="tooltip"><i class="fas fa-eye"></i>
+                                    <span class="tooltiptext">View</span>
+                                </div>
+                            </td>                               
+                            <td class="delete">
+                                <div class="tooltip"><i class="fas fa-times-circle"></i>
+                                    <span class="tooltiptext">Dismiss</span>
+                                    </div>
+                                </td>
                         </tr>
             
                         <tr id="forth_details">
                             <td class="file-icon"><i class="fas fa-file-pdf"></i></td> 
                             <td class="file_name_i">Sample4.pdf</td>
-                            <td class="details_01">Downloaded on 25 March 2020 at 10PM</td>           
-                            <td class="view"><i class="fas fa-eye"><p> &nbsp View</p></i></td>                               
-                            <td class="delete"><i class="fas fa-times-circle"><p>&nbsp Dismiss</p></i></td>
+                            <td class="details_01">Downloaded 2 days ago</td>           
+                            <td class="view">
+                                <div class="tooltip"><i class="fas fa-eye"></i>
+                                    <span class="tooltiptext">View</span>
+                                </div>
+                            </td>                               
+                            <td class="delete">
+                                <div class="tooltip"><i class="fas fa-times-circle"></i>
+                                    <span class="tooltiptext">Dismiss</span>
+                                    </div>
+                                </td>
                         </tr>
             
                         <tr id="fifth_details">
                             <td class="file-icon"><i class="fas fa-file-pdf"></i></td> 
                             <td class="file_name_i">Sample5.pdf</td>
-                            <td class="details_01">Downloaded on 30 March 2020 at 2PM</td>           
-                            <td class="view"><i class="fas fa-eye"><p> &nbsp View</p></i></td>                               
-                            <td class="delete"><i class="fas fa-times-circle"><p>&nbsp Dismiss</p></i></td>
+                            <td class="details_01">Downloaded 2 days ago</td>           
+                            <td class="view">
+                                <div class="tooltip"><i class="fas fa-eye"></i>
+                                    <span class="tooltiptext">View</span>
+                                </div>
+                            </td>                               
+                            <td class="delete">
+                                <div class="tooltip"><i class="fas fa-times-circle"></i>
+                                    <span class="tooltiptext">Dismiss</span>
+                                    </div>
+                                </td>
                         </tr>
             
                     </table>
-
-        <div class="pagination">
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">&raquo;</a>
-        </div>
-    </div>
-    </section>
-    </div>
+                    <div class="pagination01">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+            </section>
+</div>
+<footer id="base-footer">
+    <p>Copyright © 2020 
+    <a href="https://www.argali.in/">Argali Knowledge Services Pvt. Ltd., New Delhi, India</a></p>
+    </footer>
 </body> 
 </html>

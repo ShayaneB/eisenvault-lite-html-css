@@ -11,6 +11,52 @@
     <title>EV Lite</title>
 </head>
 <body>
+
+    <nav role="navigation">
+        <div id="menuToggle">
+           
+            <input type="checkbox" />
+            
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <li><a href="../index.html">
+                    <i class="fas fa-home"></i> 
+                    <p> DASHBOARD</p></a></li>
+
+                <li><a href="doc_lib.html">
+                    <i class="fas fa-file-alt"></i> 
+                    <p> DOCUMENTS</p></a></li>
+
+                <li><a href="uploads.html">
+                    <i class="fas fa-folder-open"></i>
+                    <p>MY UPLOADS</p></a></li>
+
+                <li><a href="manage_shares.html">
+                    <i class="fas fa-share-alt"></i> 
+                    <p> MANAGE SHARES</p></a></li>
+
+                <li> <a href="shared_with_me.html">
+                    <i class="fas fa-share-square"></i>
+                    <p>SHARED WITH ME</p></a></li>
+
+                <li><a href="/">
+                    <i class="fas fa-headset"></i> 
+                    <p> SUPPORT</p></a></li>
+
+                <li><a href="/">
+                    <i class="fas fa-file-alt"></i> 
+                    <p> &nbsp;FULL VERSION</p></a></li>
+
+                <li><a href="trash.html">
+                    <i class="fas fa-trash"></i> 
+                    <p> TRASH</p></a></li>
+            </ul>
+        </div>
+      </nav>
+      
     <div class="main_body">
 
     <section class="sidebars">
@@ -34,8 +80,6 @@
             </div>
            
             <div id="lower_bar">
-                <a href="/"><i class="fas fa-cogs"></i><p>SETTINGS</p></a>
-                <br>
                 <a href="/"><i class="fas fa-headset"></i> <p> SUPPORT</p></a>
                 <br>
                 <a href="/"><i class="fas fa-file-alt"></i> <p> &nbsp;FULL VERSION</p></a>
@@ -56,7 +100,7 @@
 <section id="second_section">
 
     <div id="search_tab">
-        <p id="first">MY UPLOADS</p>
+        <h2 id="first">MY UPLOADS</h2>
 
         <div class="wrap">
             <div class="search">
@@ -73,32 +117,40 @@
     </div>
 
     <div class="icons-new1">
+        <input type="checkbox">
         <h3 id="item-name">Item Name</h3>
         <h3 id="upload">Uploaded On</h3>
-        <h3 id="action">Actions</h3>
-    </div>
-    
+        <label>Action </label>
+            <select id="action-t">
+            <option value="delete-a">Delete All</option>
+            <option value="delete-s">Delete Selected</option>
+            </select>
+        </div>
+
     <div class="files">
         <table id="doc_list">
             <tr id="first_details">
-                <td class="file_icon"><i class="fas fa-file-pdf"></i></td> 
+                <td class="file_icon1"><input type="checkbox">
+                    <i class="pdf-file fas fa-file-pdf"></i></td> 
                 <td class="file_name-u">Sample1.pdf</td>
-                <td class="details-u">10 March 2020 at 1PM</td>           
-                <td class="delete-u"><i class="fas fa-times-circle"><p> &nbsp Delete</p> </i></td>
+                <td class="details-u">2 Days Ago</td>           
+                <td class="delete-u"><i class="fas fa-times-circle"> </i></td>
             </tr>
 
             <tr id="second_details">
-                <td class="file_icon"><i class="fas fa-file-pdf"></i></td> 
+                <td class="file_icon1"><input type="checkbox">
+                    <i class="pdf-file fas fa-file-pdf"></i></td> 
                 <td class="file_name-u">Sample1.pdf</td>
-                <td class="details-u">20 March 2020 at 10PM</td>           
-                <td class="delete-u"><i class="fas fa-times-circle"><p> &nbsp Delete</p> </i></td>
+                <td class="details-u">20 Days Ago</td>           
+                <td class="delete-u"><i class="fas fa-times-circle"> </i></td>
             </tr>
 
             <tr id="third_details">
-                <td class="file_icon"><i class="fas fa-folder"></i></td> 
+                <td class="file_icon1"><input type="checkbox">
+                    <i class="fas fa-folder"></i></td> 
                 <td class="file_name-u">Sample pdf</td>
-                <td class="details-u">30 March 2020 at 2PM</td>           
-                <td class="delete-u"><i class="fas fa-times-circle"><p> &nbsp Delete</p> </i></td>
+                <td class="details-u">3 Days Ago</td>           
+                <td class="delete-u"><i class="fas fa-times-circle"></i></td>
             </tr>
 
         </table>
@@ -117,5 +169,9 @@
 
 </section>
 </div>
+<footer id="base-footer">
+    <p>Copyright © 2020 
+    <a href="https://www.argali.in/">Argali Knowledge Services Pvt. Ltd., New Delhi, India</a></p>
+    </footer>
 </body>
 </html>
