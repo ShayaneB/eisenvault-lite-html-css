@@ -36,7 +36,8 @@ a{
     margin: 5rem 0 0 6rem;
     padding: 1rem;
     width: 12rem;
-    background-color: #c1f1ff;
+    background-color: $sidebar-color;
+    color: white;
     font-size:16px;
     border-radius: 1rem;
 }
@@ -141,6 +142,17 @@ a{
     opacity: 1;
   }
 
+  #confirm{
+      margin-top: 0.6rem;
+      margin-left: 3rem;
+      vertical-align: middle;
+  }
+
+  #cnfrm{
+    margin-left: 0;
+    font-weight: 200;
+    }
+
   .popup-n {
     margin: 10rem auto;
     padding: 20px;
@@ -148,7 +160,7 @@ a{
     border-radius: 5px;
     width: 50%;
     position: relative;
-    transition: all 5s ease-in-out;
+    // transition: all 5s ease-in-out;
   
     & h2 {
     font-family: 'Open Sans', sans-serif;
@@ -170,7 +182,7 @@ a{
             font-size: 16px!important;
             margin-left: 6rem;
             font-size: 22px;
-            color: #1c91b1;
+            color: #073453; 
         }
   
         & input[list]{
@@ -180,7 +192,7 @@ a{
           width: 25rem;
           color: #1c91b1;
           border-radius: 0.5rem;
-          background-color: #e0f8ff;
+          background-color: $icon-color;
         }
 
         & label.describe{
@@ -206,7 +218,7 @@ a{
             margin-left: 5.5rem;
             width: 25rem;
             border-radius: 0.5rem;
-            background-color: #e0f8ff;
+            background-color: $icon-color;
         }
 
         & input.folders{
@@ -227,7 +239,7 @@ a{
             margin-left: 2rem;
             width: 25rem;
             border-radius: 0.5rem;
-            background-color: #e0f8ff;
+            background-color: $icon-color;
         }
 
         & #name-n{
@@ -254,8 +266,8 @@ a{
             text-align: center;
             padding: 0.6rem;
             margin: 5rem auto 2rem auto;
-            background-color: #e0f8ff;
-            color: #1c91b1;
+            background-color: $sidebar-color;
+            color: $white-color;
             border-radius: 1rem;
             width: 10rem;
             border: 1px solid rgb(0, 0, 0);
@@ -301,12 +313,12 @@ a{
 
             & #btn01{ 
                 float:left;
-                margin: 3rem 0 2rem 14.6rem;
+                margin: 2rem 0 1rem 14.6rem;
             }
 
             & #btn02{
                 float:left;
-                margin: 3rem 0 2rem 5rem;
+                margin: 2rem 0 1rem 5rem;
             }
 
             & #btn03{ 
@@ -348,6 +360,11 @@ a{
                 float:left;
                 margin: 3rem 0 2rem 10rem;
             }
+
+            & #btn-c{
+                float:left;
+                margin: 3rem 0 2rem 8rem;
+            }
         }
     }
   }
@@ -380,7 +397,7 @@ a{
     width: 70%;
     height: 70%;
     position: relative;
-    transition: all 5s ease-in-out;
+    // transition: all 5s ease-in-out;
   }
   
   .popup {
@@ -431,8 +448,8 @@ a{
           margin-left: 14rem;
           font-size: 22px;
           font-weight: bold;
-          color: #1c91b1;
-      }
+          color: #073453; 
+        }
 
       & input[list]{
         font-size: 18px;
@@ -441,7 +458,7 @@ a{
         width: 25rem;
         color: #1c91b1;
         border-radius: 0.5rem;
-        background-color: #e0f8ff;
+        background-color: $icon-color;
       }
 
       & button{
@@ -450,8 +467,8 @@ a{
           text-align: center;
           padding: 0.6rem;
           margin: 10rem auto 1rem auto;
-          background-color: #e0f8ff;
-          color: #1c91b1;
+          background-color: $icon-color;
+          color: white;
           border-radius: 1rem;
           width: 10rem;
           border: 1px solid rgb(0, 0, 0);
@@ -468,31 +485,27 @@ a{
       }
 
       & .detail1{
-          background-color: #073453;
+          background-color: $sidebar-color;
           color: $bg-color;
       }
 
       & .detail2{
         background-color: $bg-color;
-        color: #073453; 
         margin-top: 1rem; 
       }
 
       & .detail3{
         background-color: $bg-color;
-        color: #073453; 
         margin-top: 1rem; 
       }
 
       & .detail4{
         background-color: $bg-color;
-        color: #073453; 
         margin-top: 1rem; 
       }
 
       & .detail5{
         background-color: $bg-color;
-        color: #073453; 
         margin-top: 1rem; 
       }
 
@@ -526,7 +539,7 @@ a{
       margin-left: 2rem;
       margin-top: 2rem;
       width: 20rem;
-      border: #1c91b1 3px solid;
+      border: $sidebar-color 3px solid;
       border-radius: 1rem;
     }
 }
@@ -546,7 +559,7 @@ a{
         margin-left: 2rem;
         margin-top: 2rem;
         width: 20rem;
-        border: #1c91b1 3px solid;
+        border: $sidebar-color 3px solid;
         border-radius: 1rem;
         
         &::placeholder{
@@ -616,7 +629,7 @@ a{
     border-radius: 5px;
     width: 30%;
     position: relative;
-    transition: all 5s ease-in-out;
+    // transition: all 5s ease-in-out;
 
     & h3{
         font-family: 'Open Sans', sans-serif;
