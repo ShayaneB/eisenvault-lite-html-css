@@ -50,7 +50,7 @@ a {
     height: 100%; }
 
 .pdf_details {
-  background-color: #f2ebd9;
+  background-color: white;
   border-radius: 1rem;
   padding: 0 0 2rem 3rem;
   visibility: visible;
@@ -86,7 +86,7 @@ a.share-file {
 
 .flaticon-share {
   font-size: 2.5rem;
-  color: #ee5a57; }
+  color: #ee9796; }
 
 p.top-heaading {
   padding-top: 2rem; }
@@ -125,9 +125,9 @@ p.top-heaading {
     margin-bottom: 1rem;
     color: #073453; }
   .popup-n .content label {
-    margin-left: 4rem;
+    font-size: 16px !important;
+    margin-left: 6rem;
     font-size: 22px;
-    font-weight: bold;
     color: #1c91b1; }
   .popup-n .content input[list] {
     font-size: 18px;
@@ -137,6 +137,51 @@ p.top-heaading {
     color: #1c91b1;
     border-radius: 0.5rem;
     background-color: #e0f8ff; }
+  .popup-n .content label.describe {
+    float: left;
+    margin-top: 3rem; }
+  .popup-n .content .second_option {
+    margin-top: 2rem;
+    margin-left: 3.2rem !important; }
+  .popup-n .content #name {
+    padding: 0.3rem;
+    margin-left: 5rem;
+    width: 25rem; }
+  .popup-n .content #name01 {
+    font-size: 1rem;
+    color: #073453;
+    padding: 1rem;
+    margin-left: 5.5rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    background-color: #e0f8ff; }
+  .popup-n .content input.folders {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    margin-left: 3.3rem; }
+  .popup-n .content label.expiry {
+    margin-left: 3rem; }
+  .popup-n .content #name02 {
+    font-size: 1rem;
+    color: #073453;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    background-color: #e0f8ff; }
+  .popup-n .content #name-n {
+    padding: 0.3rem;
+    margin-left: 4.5rem;
+    width: 25rem; }
+  .popup-n .content #url {
+    padding: 0.3rem;
+    width: 25rem;
+    margin-left: 5.9rem; }
+  .popup-n .content #desc {
+    width: 25rem;
+    margin-left: 2.7rem;
+    margin-top: 1rem; }
   .popup-n .content button {
     display: block;
     font-size: 16px;
@@ -148,6 +193,61 @@ p.top-heaading {
     border-radius: 1rem;
     width: 10rem;
     border: 1px solid black; }
+  .popup-n .content h4 {
+    color: #073453;
+    margin-left: 6rem;
+    margin-bottom: 0.5rem; }
+  .popup-n .content h5 {
+    color: #1a7dbe;
+    margin-left: 6rem;
+    margin-bottom: 1rem; }
+  .popup-n .content #btn-u {
+    color: #073453;
+    border-radius: 0.6rem;
+    width: 35rem;
+    margin-top: 1rem; }
+  .popup-n .content #btns-u {
+    display: inline; }
+    .popup-n .content #btns-u #btn03 {
+      width: 15rem;
+      float: left;
+      margin: 1rem 0 1rem 5rem; }
+    .popup-n .content #btns-u #btn04 {
+      width: 15rem;
+      float: right;
+      margin: 1rem 5rem 1rem 0; }
+  .popup-n .content #btns {
+    display: inline; }
+    .popup-n .content #btns #btn01 {
+      float: left;
+      margin: 3rem 0 2rem 14.6rem; }
+    .popup-n .content #btns #btn02 {
+      float: left;
+      margin: 3rem 0 2rem 5rem; }
+    .popup-n .content #btns #btn03 {
+      float: left;
+      margin: 3rem 0 2rem 14.2rem; }
+    .popup-n .content #btns #btn04 {
+      float: left;
+      margin: 3rem 0 2rem 5rem; }
+    .popup-n .content #btns #btn05 {
+      float: left;
+      margin: 3rem 0 2rem 13.5rem; }
+    .popup-n .content #btns #btn06 {
+      float: left;
+      margin: 3rem 0 2rem 5rem; }
+    .popup-n .content #btns #btn00 {
+      float: left;
+      margin: 3rem 0 2rem 16.4rem; }
+    .popup-n .content #btns #btn07 {
+      float: left;
+      margin: 1rem 0 2rem 13rem; }
+    .popup-n .content #btns #btn08 {
+      float: left;
+      margin: 1rem 0 2rem 4rem; }
+    .popup-n .content #btns #btn-d {
+      float: left;
+      margin: 3rem 0 2rem 10rem; }
 
 .popup-n .close {
   position: absolute;
@@ -160,7 +260,7 @@ p.top-heaading {
   color: #333; }
 
 .popup-n .close:hover {
-  color: #ee5a57; }
+  color: #ee9796; }
 
 .popup-n .content {
   max-height: 30%;
@@ -198,12 +298,15 @@ p.top-heaading {
   color: #333; }
 
 .popup .close:hover {
-  color: #ee5a57; }
+  color: #ee9796; }
 
 .popup .content {
   max-height: 100%;
   overflow: auto; }
 
+.content .delete-w {
+  font-size: 18px !important;
+  text-align: center; }
 .content label {
   margin-left: 14rem;
   font-size: 22px;
@@ -237,21 +340,21 @@ p.top-heaading {
     padding: 1rem; }
   #audits .detail1 {
     background-color: #073453;
-    color: #f2ebd9; }
+    color: white; }
   #audits .detail2 {
-    background-color: #f2ebd9;
+    background-color: white;
     color: #073453;
     margin-top: 1rem; }
   #audits .detail3 {
-    background-color: #f2ebd9;
+    background-color: white;
     color: #073453;
     margin-top: 1rem; }
   #audits .detail4 {
-    background-color: #f2ebd9;
+    background-color: white;
     color: #073453;
     margin-top: 1rem; }
   #audits .detail5 {
-    background-color: #f2ebd9;
+    background-color: white;
     color: #073453;
     margin-top: 1rem; }
   #audits .new {
@@ -263,6 +366,21 @@ p.top-heaading {
 
 #file-info {
   margin: 12rem 0 0 6rem; }
+
+#share-details-n {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 12rem 0 0 6rem; }
+  #share-details-n p {
+    margin-top: 3.4rem;
+    font-size: 18px !important; }
+  #share-details-n input {
+    padding: 0.8rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 20rem;
+    border: #1c91b1 3px solid;
+    border-radius: 1rem; }
 
 #share-details {
   display: grid;
@@ -288,29 +406,121 @@ p.top-heaading {
     text-decoration: none;
     color: black; }
 
+#bg-bar {
+  height: 80%;
+  width: 100%;
+  background-color: #E07050; }
+  #bg-bar #base p, #bg-bar a {
+    font-size: 11px;
+    text-align: center;
+    color: whitesmoke; }
+
+.login-box {
+  margin: 8rem auto 1rem auto;
+  height: 85%;
+  width: 45%;
+  text-align: center;
+  padding-top: 15rem;
+  background: url("/images/EisenVault-Lite-horizontal-01.png") whitesmoke no-repeat;
+  background-position: 4rem 1rem;
+  background-size: 30rem 12rem; }
+  .login-box input {
+    margin-bottom: 2.2rem;
+    width: 70%;
+    height: 2rem;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #747272; }
+  .login-box button {
+    background-color: #E07050;
+    width: 70%;
+    padding: 1rem 0;
+    color: white; }
+  .login-box #btn01 {
+    margin-bottom: 1rem; }
+
+.popup-new {
+  margin: 10rem auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out; }
+  .popup-new h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .popup-new .content label {
+    font-size: 16px !important;
+    float: left;
+    margin-left: 1rem;
+    color: black; }
+  .popup-new .content #name {
+    padding: 0.3rem;
+    width: 24rem;
+    border: 1px solid grey;
+    margin-bottom: 1rem; }
+  .popup-new .content button {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    padding: 0.6rem;
+    background-color: #E07050;
+    border-radius: 0.5rem;
+    width: 10rem;
+    border: 1px solid black; }
+  .popup-new .content #btns {
+    display: inline; }
+    .popup-new .content #btns #btn03 {
+      float: left;
+      margin: 1rem 0 1rem 2rem; }
+    .popup-new .content #btns #btn04 {
+      float: left;
+      margin: 1rem 0 1rem 2rem; }
+
+.popup-new .close {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px !important;
+  font-weight: bold;
+  text-decoration: none;
+  color: black !important; }
+
+.popup-new .close:hover {
+  color: #ee9796; }
+
+.popup-new .content {
+  max-height: 30%;
+  overflow: auto; }
+
 .sidebars {
   padding: 1.5rem 0 0 1.5rem;
-  background: url("/images/ev-sitelogo.png") #f2ebd9 no-repeat;
+  background: url("/images/EisenVault-Lite-horizontal-01.png") #E07050 no-repeat;
   background-blend-mode: multiply;
-  background-size: 10rem 5rem;
+  background-size: 12.8rem 5rem;
   background-position: 1rem 1rem;
   border-radius: 1.5rem; }
   .sidebars h5 {
+    color: whitesmoke;
     padding: 3.2rem 0 0 2.5rem; }
 
 #sidebar {
   margin-top: 4rem; }
   #sidebar .fas {
-    color: #ee5a57; }
+    color: whitesmoke; }
   #sidebar a {
-    text-decoration: none;
-    color: #073453; }
+    text-decoration: none; }
   #sidebar p {
     font-size: 14px;
     display: inline;
     margin-left: 1rem;
-    color: #073453; }
+    color: whitesmoke; }
   #sidebar #dashboard {
+    margin-top: 6rem;
     margin-bottom: 7rem; }
   #sidebar #middle_bar {
     margin-bottom: 5rem; }
@@ -319,6 +529,10 @@ p.top-heaading {
   #sidebar #lower_bar {
     margin-bottom: 6rem; }
     #sidebar #lower_bar .fas {
+      margin-bottom: 0.5rem; }
+  #sidebar #trash {
+    margin-bottom: 1rem; }
+    #sidebar #trash .fas {
       margin-bottom: 0.5rem; }
   #sidebar .progress_bar {
     margin: 1rem 1rem 0 0;
@@ -329,7 +543,7 @@ p.top-heaading {
       display: block;
       width: 30%;
       height: 100%;
-      background-color: #ee5a57; }
+      background-color: #ee9796; }
     #sidebar .progress_bar p {
       margin: 0; }
 
@@ -389,7 +603,6 @@ p.top-heaading {
 .icons {
   display: flex;
   margin-top: 8%;
-  background-color: #f2ebd9;
   width: 95%;
   height: 4rem;
   border: 1px solid #073453;
@@ -405,7 +618,6 @@ p.top-heaading {
 .icons-s {
   display: flex;
   margin-top: 8%;
-  background-color: #f2ebd9;
   width: 95%;
   height: 4rem;
   border: 1px solid #073453;
@@ -414,7 +626,7 @@ p.top-heaading {
   .icons-s .fas {
     font-size: 30px;
     color: grey;
-    padding-left: 6.8rem; }
+    padding-left: 5.5rem; }
     .icons-s .fas:active {
       color: #073453; }
 
@@ -430,8 +642,6 @@ p.top-heaading {
     border-spacing: 0 1rem;
     margin: 0 2rem;
     width: 95%; }
-  .files-i tr {
-    background: #F2EBD9 0% 0% no-repeat padding-box; }
   .files-i td.file-icon {
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem; }
@@ -518,8 +728,6 @@ p.top-heaading {
     border-spacing: 0 1rem;
     margin: 0 0 1rem 0;
     width: 95%; }
-  .files-d tr {
-    background: #F2EBD9 0% 0% no-repeat padding-box; }
   .files-d td.file_icon {
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem; }
@@ -548,7 +756,7 @@ p.top-heaading {
     margin: 0 2rem;
     width: 95%; }
   .files tr {
-    background: #F2EBD9 0% 0% no-repeat padding-box; }
+    background: white 0% 0% no-repeat padding-box; }
   .files td.file-icon {
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem; }
@@ -849,7 +1057,7 @@ p.top-heaading {
     height: 853px;
     margin: -60px 0 0 -85px;
     padding: 5.6rem 5.6rem 11.4rem 5.6rem;
-    background-color: #f2ebd9;
+    background-color: #E07050;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -857,9 +1065,9 @@ p.top-heaading {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
     #menu li {
       padding-top: 2rem;
-      font-size: 16px;
-      color: #073453; }
+      font-size: 16px; }
       #menu li p {
+        color: whitesmoke;
         display: inline;
         font-size: 16px;
         margin-left: 2rem; }
@@ -871,7 +1079,7 @@ p.top-heaading {
     transform: none; }
 
   ul .fas {
-    color: #e66260 !important; } }
+    color: whitesmoke !important; } }
 @media (min-width: 600px) {
   .icons {
     margin-top: 26%; } }

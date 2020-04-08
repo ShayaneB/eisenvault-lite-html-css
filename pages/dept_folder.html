@@ -49,6 +49,10 @@
                     <i class="fas fa-file-alt"></i> 
                     <p> &nbsp;FULL VERSION</p></a></li>
 
+                <li><a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <p> SIGN OUT</p></a></li>    
+
                 <li><a href="trash.html">
                     <i class="fas fa-trash"></i> 
                     <p> TRASH</p></a></li>
@@ -58,9 +62,9 @@
     <div class="main_body">
 
         <section class="sidebars">
-            <div class="headings">
-                <h5>LITE Version</h5>
-            </div>
+            <!-- <div class="headings">
+                 <h5>LITE Version</h5>
+            </div> -->
         
             <div id="sidebar">
                 <div id="dashboard">
@@ -84,7 +88,11 @@
                 </div>
         
                 <div id="trash">
-                    <a href="trash.html"><i class="fas fa-trash"></i> <p> TRASH</p></a>
+                    <a href="pswd_change.html"><i class="fas fa-key"></i><p>CHANGE PASSWORD</p></a><br>
+                    <a href="login.html"><i class="fas fa-sign-out-alt"></i><p>SIGN OUT</p></a>
+                    <br>
+                    <a href="trash.html"><i class="fas fa-trash"></i> 
+                        <p> TRASH</p></a>
                 </div>
         
                 <div class="progress_bar">
@@ -115,12 +123,155 @@
 
     <div class="icons-s">
         <input type="checkbox">
-        <a href="/"><i class="fas fa-cloud-upload-alt"></i></a>
-        <a href="/"><i class="fas fa-folder-plus"></i></a>
-        <a href="/"><i class="fas fa-copy"></i></a>
-        <a href="/"><i class="fas fa-cloud-download-alt"></i></a>
-        <a href="/"><i class="fas fa-external-link-alt"></i></a>
-        <a href="/"> <i class="fas fa-trash"></i></a>
+
+        <a href="#popup01"><i class="fas fa-cloud-upload-alt"></i></a>
+        <div id="popup01" class="overlay">
+            <div class="popup-n">
+                <h2>Upload Documents</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <button id="btn-u" type="button">Select File(s) to Upload</button>
+
+                    <div id="btns-u">
+                        <button id="btn03" type="button">Upload File(s)</button>
+                        <button id="btn04" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#popup02"><i class="fas fa-folder-plus"></i></a>
+        <div id="popup02" class="overlay">
+            <div class="popup-n">
+                <h2>New Folder</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <h4>Provide New Folder Details.</h4>
+                    <h5>* Required Fields.</h5>
+                    <p>
+                        <label>Name:*</label>
+                        <input type="text" id="name-n" name="name"><br><br>
+                        <label>Title:</label>
+                        <input type="text" id="url" name="url"><br><br>
+                        <label class="describe">Description:</label>
+                        <textarea rows = "8" cols = "60" id = "desc"></textarea>                     
+                        </p>
+
+                    <div id="btns">
+                        <button id="btn03" type="button">Ok</button>
+                        <button id="btn04" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#popup03"><i class="fas fa-copy"></i></a>
+        <div id="popup03" class="overlay">
+            <div class="popup-n">
+                <h2>Copy To</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>
+                        <label>Copy From:</label>
+
+                        <input list="brow">
+                        <datalist id = "brow">
+                          <option value = "Sample1.pdf"></option>
+                          <option value = "Sample2.pdf"></option>
+                          <option value = "Sample PDF"></option>
+                        </datalist> 
+                    </p>
+
+                     <p>
+                        <label>Copy To:</label>
+
+                        <input list="brow" class="second_option">
+                        <datalist id = "brow">
+                          <option value = "Department1"></option>
+                          <option value = "Department2"></option>
+                          <option value = "Department3"></option>
+                          <option value = "Department4"></option>
+                        </datalist> 
+                     </p>
+
+                    <div id="btns">
+                        <button id="btn05" type="button">Copy</button>
+                        <button id="btn06" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#popup01"><i class="fas fa-file-export"></i></a>
+
+
+        <a href="#popup04"><i class="fas fa-cloud-download-alt"></i></a>
+        <div id="popup04" class="overlay">
+            <div class="popup-n">
+                <h2>Download File/Folder</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>
+                        <label>Select File/Folder:</label>
+
+                        <input list="brow">
+                        <datalist id = "brow">
+                          <option value = "Sample1.pdf"></option>
+                          <option value = "Sample2.pdf"></option>
+                          <option value = "Sample PDF"></option>
+                        </datalist> 
+                    </p>
+
+                    <div id="btns">
+                        <button id="btn00" type="button">Download</button>
+                        <button id="btn04" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#popup05"><i class="fas fa-globe-americas"></i></a>
+        <div id="popup05" class="overlay">
+            <div class="popup-n">
+                <h2>Eisenvault Lite Says</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>
+                        WARNING! You are about to make the selected folder 
+                        and all its contents publicly accessible.
+                        Please select the folder and enter the days for which you want
+                        to make the share link public.
+                        <label class="expiry">Link Expires On:</label>
+                        <input type="text" id="name02" name="name"><br><br>
+                                          
+                        </p>
+
+                    <div id="btns">
+                        <button id="btn07" type="button">Ok</button>
+                        <button id="btn08" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#popup06"> <i class="fas fa-trash"></i></a>
+        <div id="popup06" class="overlay">
+            <div class="popup-n">
+                <h2>Delete Documents</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p class="delete-w">
+                       Are you sure that you want to delete "Sample1.pdf"?<br><br>
+                       NOTE: The deleted document will stay in trash for 30 days. 
+                    </p>
+
+                    <div id="btns">
+                        <button id="btn-d" type="button">Delete</button>
+                        <button id="btn02" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <div class="files-d">

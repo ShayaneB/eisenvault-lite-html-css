@@ -41,13 +41,17 @@
                     <i class="fas fa-share-square"></i>
                     <p>SHARED WITH ME</p></a></li>
 
-                <li><a href="/">
+                <li><a href="#">
                     <i class="fas fa-headset"></i> 
                     <p> SUPPORT</p></a></li>
 
-                <li><a href="/">
+                <li><a href="#">
                     <i class="fas fa-file-alt"></i> 
                     <p> &nbsp;FULL VERSION</p></a></li>
+
+                <li><a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <p> SIGN OUT</p></a></li>
 
                 <li><a href="trash.html">
                     <i class="fas fa-trash"></i> 
@@ -59,9 +63,9 @@
     <div class="main_body">
 
         <section class="sidebars">
-            <div class="headings">
+            <!-- <div class="headings">
                 <h5>LITE Version</h5>
-            </div>
+            </div> -->
         
             <div id="sidebar">
                 <div id="dashboard">
@@ -79,15 +83,20 @@
                 </div>
                
                 <div id="lower_bar">
-                    <a href="/"><i class="fas fa-headset"></i> <p> SUPPORT</p></a>
+                    <a href="#"><i class="fas fa-key"></i><p>CHANGE PASSWORD</p></a><br>
+                    <a href="#"><i class="fas fa-headset"></i> <p> SUPPORT</p></a>
                     <br>
-                    <a href="/"><i class="fas fa-file-alt"></i> <p> &nbsp;FULL VERSION</p></a>
+                    <a href="#"><i class="fas fa-file-alt"></i> <p> &nbsp;FULL VERSION</p></a>
                 </div>
         
                 <div id="trash">
-                    <a href="trash.html"><i class="fas fa-trash"></i> <p> TRASH</p></a>
+                    <a href="pswd_change.html"><i class="fas fa-key"></i><p>CHANGE PASSWORD</p></a><br>
+                    <a href="login.html"><i class="fas fa-sign-out-alt"></i><p>SIGN OUT</p></a>
+                    <br>
+                    <a href="trash.html"><i class="fas fa-trash"></i> 
+                        <p> TRASH</p></a>
                 </div>
-        
+                
                 <div class="progress_bar">
                     <span class ="progress"></span>
                     <p>1.8GB out of 5GB used.</p>
@@ -116,9 +125,89 @@
     </div>
 
     <div class="icons">
-        <a href="#"><i class="fas fa-edit"></i></a>
-        <a href="#"><i class="flaticon-add"></i></a>
-        <a href="#"><i class="fas fa-trash-alt"></i></a>
+        <a href="#popup1"><i class="fas fa-pen"></i></a>
+
+        <div id="popup1" class="overlay">
+            <div class="popup-n">
+                <h2>Rename Department</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+
+                    <p>
+                        <label>Select Department:</label>
+
+                        <input list="brow">
+                        <datalist id = "brow">
+                          <option value = "Department1"></option>
+                          <option value = "Department2"></option>
+                          <option value = "Department3"></option>
+                          <option value = "Department4"></option>
+                        </datalist> 
+                        <br><br>
+                    
+                        <label>New Name:</label>
+                        <input type="text" id="name01">                   
+                        </p>
+
+                    <div id="btns">
+                        <button id="btn03" type="button">Rename</button>
+                        <button id="btn04" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#popup2"><i class="fas fa-plus"></i></a>
+
+        <div id="popup2" class="overlay">
+            <div class="popup-n">
+                <h2>Create Department</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>
+                        <label>Name:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        <label>URL:</label>
+                        <input type="text" id="url" name="url"><br><br>
+                        <label class="describe">Description:</label>
+                        <textarea rows = "8" cols = "60" id = "desc"></textarea>                     
+                        </p>
+
+                    <div id="btns">
+                        <button id="btn03" type="button">Ok</button>
+                        <button id="btn04" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#popup3"><i class="fas fa-trash-alt"></i></a>
+
+        <div id="popup3" class="overlay">
+            <div class="popup-n">
+                <h2>Delete Department</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <h3>Please select the Department you want to delete.</h3>
+                    <p>
+                        <label>Departments:</label>
+
+                        <input list="brow">
+                        <datalist id = "brow">
+                          <option value = "Department1"></option>
+                          <option value = "Department2"></option>
+                          <option value = "Department3"></option>
+                          <option value = "Department4"></option>
+                        </datalist> 
+                     </p>
+
+                    <div id="btns">
+                        <button id="btn01" type="button">Delete</button>
+                        <button id="btn02" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <div class="files">

@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 8%;
-  background-color: #f2ebd9;
   width: 90%;
   height: 3rem;
   border: 1px solid #073453;
@@ -24,7 +23,6 @@
 .icons-new2 {
   display: flex;
   margin-top: 8%;
-  background-color: #f2ebd9;
   width: 90%;
   height: 3rem;
   border: 1px solid #073453;
@@ -410,7 +408,7 @@
       text-decoration: none;
       color: #073453; }
   .files-d td.details-d {
-    padding-left: 14rem;
+    padding-left: 28rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem; }
 
