@@ -133,6 +133,53 @@ p.top-heaading {
     text-align: center;
     margin-bottom: 1rem;
     color: #073453; }
+  .popup-n .content-new {
+    max-height: 30%;
+    overflow: auto; }
+    .popup-n .content-new #sections {
+      display: grid;
+      grid-template-columns: 30% 35% 35%; }
+      .popup-n .content-new #sections .docs {
+        max-height: 15rem;
+        overflow: auto;
+        border: 1px solid #afafaf;
+        margin-left: 0.2rem; }
+      .popup-n .content-new #sections .dept {
+        max-height: 15rem;
+        overflow: auto;
+        border: 1px solid #afafaf; }
+      .popup-n .content-new #sections .fas {
+        padding-left: 0;
+        font-size: 15px; }
+      .popup-n .content-new #sections .top-h {
+        font-size: 18px !important;
+        font-weight: bold;
+        background-color: #ee9796;
+        color: white; }
+      .popup-n .content-new #sections p {
+        padding: 0.6rem; }
+      .popup-n .content-new #sections .sub-folder {
+        text-align: right;
+        margin-right: 3rem; }
+    .popup-n .content-new button {
+      display: block;
+      font-size: 16px;
+      text-align: center;
+      padding: 0.6rem;
+      margin: 5rem auto 2rem auto;
+      background-color: #E07050;
+      color: whitesmoke;
+      border-radius: 1rem;
+      width: 10rem;
+      border: 1px solid black; }
+    .popup-n .content-new #btns {
+      display: inline; }
+      .popup-n .content-new #btns #btn05 {
+        float: left;
+        margin: 3rem 0 2rem 10rem; }
+      .popup-n .content-new #btns #btn06 {
+        float: left;
+        margin: 3rem 0 2rem 3rem; }
   .popup-n .content label {
     font-size: 16px !important;
     margin-left: 6rem;
@@ -143,7 +190,7 @@ p.top-heaading {
     padding: 0.8rem;
     margin-left: 2rem;
     width: 25rem;
-    color: #1c91b1;
+    color: black;
     border-radius: 0.5rem;
     background-color: #ee9796; }
   .popup-n .content label.describe {
@@ -151,7 +198,7 @@ p.top-heaading {
     margin-top: 3rem; }
   .popup-n .content .second_option {
     margin-top: 2rem;
-    margin-left: 3.2rem !important; }
+    margin-left: 4.5rem !important; }
   .popup-n .content #name {
     padding: 0.3rem;
     margin-left: 5rem;
@@ -211,7 +258,7 @@ p.top-heaading {
     margin-left: 6rem;
     margin-bottom: 1rem; }
   .popup-n .content #btn-u {
-    color: #073453;
+    color: white;
     border-radius: 0.6rem;
     width: 35rem;
     margin-top: 1rem; }
@@ -315,6 +362,10 @@ p.top-heaading {
   max-height: 100%;
   overflow: auto; }
 
+.popup .content-n {
+  max-height: 90%;
+  overflow: auto; }
+
 .content .delete-w {
   font-size: 18px !important;
   text-align: center; }
@@ -362,6 +413,18 @@ p.top-heaading {
     background-color: white;
     margin-top: 1rem; }
   #audits .detail5 {
+    background-color: white;
+    margin-top: 1rem; }
+  #audits .detail6 {
+    background-color: white;
+    margin-top: 1rem; }
+  #audits .detail7 {
+    background-color: white;
+    margin-top: 1rem; }
+  #audits .detail8 {
+    background-color: white;
+    margin-top: 1rem; }
+  #audits .detail9 {
     background-color: white;
     margin-top: 1rem; }
   #audits .new {

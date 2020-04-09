@@ -49,9 +49,13 @@
                     <i class="fas fa-file-alt"></i> 
                     <p> &nbsp;FULL VERSION</p></a></li>
 
-                <li><a href="#">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <p> SIGN OUT</p></a></li>    
+                    <li><a href="pswd_change.html">
+                        <i class="fas fa-key"></i>
+                        <p> CHANGE PASSWORD</p></a></li>
+    
+                    <li><a href="login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <p> SIGN OUT</p></a></li>   
 
                 <li><a href="trash.html">
                     <i class="fas fa-trash"></i> 
@@ -109,7 +113,8 @@
 
         <div class="wrap">
             <div class="search">
-               <input type="text" class="searchTerm" placeholder="Start typing to search your documents">
+               <input type="search" class="searchTerm" name="doc_list" 
+               placeholder="Start typing to search your documents">
                <button type="submit" class="searchButton">
                  <i class="fas fa-search"></i>
               </button>
@@ -117,7 +122,7 @@
          </div>
 
          <div>
-            <img class="profile_pic" src="https://i.pravatar.cc/150?img=3">
+            <img class="profile_pic" src="/images/MyPost.png">
         </div>
     </div>
 
@@ -168,32 +173,53 @@
         <a href="#popup03"><i class="fas fa-copy"></i></a>
         <div id="popup03" class="overlay">
             <div class="popup-n">
-                <h2>Copy To</h2>
+                <h2>Copy Sample1.pdf To</h2>
                 <a class="close" href="#">&times;</a>
-                <div class="content">
-                    <p>
-                        <label>Copy From:</label>
+                <div class="content-new">
 
-                        <input list="brow">
-                        <datalist id = "brow">
-                          <option value = "Sample1.pdf"></option>
-                          <option value = "Sample2.pdf"></option>
-                          <option value = "Sample PDF"></option>
-                        </datalist> 
-                    </p>
+                <div id="sections">
+                    <div id="section1">   
+                    <p class="top-h">Destination</p>
+                    <p>Recent</p>
+                    <p>Departments</p>
+                    </div>
 
-                     <p>
-                        <label>Copy To:</label>
+                    <div id="section2">
+                        <p class="top-h">Department</p>
 
-                        <input list="brow" class="second_option">
-                        <datalist id = "brow">
-                          <option value = "Department1"></option>
-                          <option value = "Department2"></option>
-                          <option value = "Department3"></option>
-                          <option value = "Department4"></option>
-                        </datalist> 
-                     </p>
+                        <div class="dept">
+                            <p>Department1</p>
+                            <p>Department2</p>
+                            <p>Department3</p>
+                            <p>Department4</p>
+                            <p>Department5</p>
+                            <p>Department6</p>
+                            <p>Department7</p>
+                            <p>Department8</p>
+                            <p>Department9</p>
+                            <p>Department10</p>
+                            <p>Department11</p>
+                            <p>Department12</p>
+                            <p>Department13</p>
+                        </div>
+                    </div>
 
+                    <div id="section3">
+                    <p class="top-h">Path</p>
+
+                        <div class="docs">
+                        <p><i class="fas fa-folder"></i> &nbsp; Sample pdf</p>
+                        <p class="sub-folder"><i class="fas fa-file"></i> &nbsp; Sample1.pdf</p>
+                        <p class="sub-folder"><i class="fas fa-file"></i> &nbsp; Sample2.pdf</p>
+                        <p><i class="fas fa-file"></i> &nbsp; Sample1.pdf</p>
+                        <p><i class="fas fa-file"></i> &nbsp; Sample2.pdf</p>
+                        <p><i class="fas fa-folder"></i> &nbsp; Sample pdf</p>
+                        <p class="sub-folder"><i class="fas fa-file"></i> &nbsp; Sample1.pdf</p>
+                        <p class="sub-folder"><i class="fas fa-file"></i> &nbsp; Sample2.pdf</p>
+                        </div>
+                </div>
+                </div>
+                
                     <div id="btns">
                         <button id="btn05" type="button">Copy</button>
                         <button id="btn06" type="button">Cancel</button>
@@ -202,12 +228,49 @@
             </div>
         </div>
 
-        <a href="#popup01"><i class="fas fa-file-export"></i></a>
+        <a href="#popup04"><i class="fas fa-file-export"></i></a>
+        <div id="popup04" class="overlay">
+            <div class="popup-n">
+                <h2>Move Sample1.pdf To</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content-new">
+
+                <div id="sections">
+                    <div id="section1">   
+                    <p class="top-h">Destination</p>
+                    <p>Recent</p>
+                    <p>Departments</p>
+                    </div>
+
+                    <div id="section2">
+                    <p class="top-h">Department</p>
+                    <p>Department1</p>
+                    <p>Department2</p>
+                    <p>Department3</p>
+                    </div>
+
+                    <div id="section3">
+                    <p class="top-h">Path</p>
+                    <p><i class="fas fa-file"></i> &nbsp; Sample1.pdf</p>
+                    <p><i class="fas fa-file"></i> &nbsp; Sample2.pdf</p>
+                    <p><i class="fas fa-folder"></i> &nbsp; Sample pdf</p>
+                    <p class="sub-folder"><i class="fas fa-file"></i> &nbsp; Sample1.pdf</p>
+                    <p class="sub-folder"><i class="fas fa-file"></i> &nbsp; Sample2.pdf</p>
+                    </div>
+                </div>
+                
+                    <div id="btns">
+                        <button id="btn05" type="button">Move</button>
+                        <button id="btn06" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <i class="fas fa-cloud-download-alt"></i>
 
-        <a href="#popup05"><i class="fas fa-globe-americas"></i></a>
+        <a href="#popup05"><i class="fas fa-share-alt"></i></a>
         <div id="popup05" class="overlay">
             <div class="popup-n">
                 <h2>Eisenvault Lite Says</h2>

@@ -160,7 +160,6 @@ a{
     border-radius: 5px;
     width: 50%;
     position: relative;
-    // transition: all 5s ease-in-out;
   
     & h2 {
     font-family: 'Open Sans', sans-serif;
@@ -176,6 +175,78 @@ a{
         color: #073453; 
     }
 
+    & .content-new{
+        max-height: 30%;
+        overflow: auto;
+
+        & #sections{
+            display: grid;
+            grid-template-columns: 30% 35% 35%;
+
+            & .docs{
+                max-height: 15rem;
+                overflow: auto;                
+                border: 1px solid rgb(175, 175, 175);
+                margin-left: 0.2rem;
+            }
+
+            & .dept{
+                max-height: 15rem;
+                overflow: auto;
+                border: 1px solid rgb(175, 175, 175);
+            }
+
+            & .fas{
+                padding-left: 0;
+                font-size: 15px;
+            }
+
+            & .top-h{
+                font-size: 18px!important;
+                font-weight: bold;
+                background-color: $icon-color;
+                color: $bg-color;
+            }
+
+            & p{
+                padding: 0.6rem;
+            }
+
+            & .sub-folder{
+                text-align: right;
+                margin-right: 3rem;
+            }
+    }
+
+        & button{
+            display: block;
+            font-size: 16px;
+            text-align: center;
+            padding: 0.6rem;
+            margin: 5rem auto 2rem auto;
+            background-color: $sidebar-color;
+            color: $white-color;
+            border-radius: 1rem;
+            width: 10rem;
+            border: 1px solid rgb(0, 0, 0);
+        }
+    
+          & #btns{
+            display: inline;
+    
+            & #btn05{
+                float:left;
+                margin: 3rem 0 2rem 10rem;
+            }
+    
+            & #btn06{
+                float:left;
+                margin: 3rem 0 2rem 3rem;
+            }
+          }
+    
+      }
+
     & .content{
       
         & label{
@@ -190,7 +261,7 @@ a{
           padding: 0.8rem;
           margin-left: 2rem;
           width: 25rem;
-          color: #1c91b1;
+          color: black;
           border-radius: 0.5rem;
           background-color: $icon-color;
         }
@@ -202,7 +273,7 @@ a{
 
         & .second_option{
             margin-top: 2rem;
-            margin-left: 3.2rem!important;
+            margin-left: 4.5rem!important;
         }
 
         & #name{
@@ -286,7 +357,7 @@ a{
         }
 
         & #btn-u{
-            color: #073453;
+            color: $bg-color;
             border-radius: 0.6rem;
             width: 35rem;
             margin-top: 1rem;
@@ -367,7 +438,7 @@ a{
             }
         }
     }
-  }
+  } 
 
   .popup-n .close {
     position: absolute;
@@ -434,6 +505,11 @@ a{
 
   .popup .content {
     max-height: 100%;
+    overflow: auto;
+  }
+
+  .popup .content-n{
+    max-height: 90%;
     overflow: auto;
   }
 
@@ -505,6 +581,26 @@ a{
       }
 
       & .detail5{
+        background-color: $bg-color;
+        margin-top: 1rem; 
+      }
+
+      & .detail6{
+        background-color: $bg-color;
+        margin-top: 1rem; 
+      }
+
+      & .detail7{
+        background-color: $bg-color;
+        margin-top: 1rem; 
+      }
+
+      & .detail8{
+        background-color: $bg-color;
+        margin-top: 1rem; 
+      }
+
+      & .detail9{
         background-color: $bg-color;
         margin-top: 1rem; 
       }
