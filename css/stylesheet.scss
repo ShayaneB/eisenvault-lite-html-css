@@ -5,6 +5,7 @@ $bg-color: white;
 $grey-color: grey;
 $sidebar-color: #E07050;
 $white-color: whitesmoke;
+$font-color:#073453;
 
 *{
     padding: 0;
@@ -30,10 +31,22 @@ a{
     text-decoration: none;
 }
 
-.btn{
+.btn01{
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
-    margin: 5rem 0 0 6rem;
+    margin: 5rem 0 0 1rem;
+    padding: 1rem;
+    width: 12rem;
+    background-color: $sidebar-color;
+    color: white;
+    font-size:16px;
+    border-radius: 1rem;
+}
+
+.btn02{
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5rem 0 0 8rem;
     padding: 1rem;
     width: 12rem;
     background-color: $sidebar-color;
@@ -60,7 +73,7 @@ a{
 
     & a{
     text-decoration: none;
-    color: #073453; 
+    color: $font-color; 
     }
 
     & iframe{
@@ -113,7 +126,7 @@ a{
 
       a.share-file{       
         text-decoration: none;
-        color: #073453; 
+        color: $font-color; 
     }
     
     .flaticon-share{
@@ -165,14 +178,14 @@ a{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-bottom: 1rem;
-    color: #073453; 
+    color: $font-color; 
     }
 
     & h3{
         font-family: 'Open Sans', sans-serif;
         text-align: center; 
         margin-bottom: 1rem;
-        color: #073453; 
+        color: $font-color; 
     }
 
     & .content-new{
@@ -253,7 +266,7 @@ a{
             font-size: 16px!important;
             margin-left: 6rem;
             font-size: 22px;
-            color: #073453; 
+            color: $font-color; 
         }
   
         & input[list]{
@@ -284,7 +297,7 @@ a{
 
         & #name01{
             font-size: 1rem;
-            color: #073453;
+            color: $font-color;
             padding:1rem;
             margin-left: 5.5rem;
             width: 25rem;
@@ -304,7 +317,7 @@ a{
 
         & #name02{
             font-size: 1rem;
-            color: #073453;
+            color: $font-color;
             padding:0.5rem;
             margin-top: 1rem;
             margin-left: 2rem;
@@ -345,7 +358,7 @@ a{
         }
 
         & h4{
-            color: #073453;
+            color: $font-color;
             margin-left: 6rem;
             margin-bottom: 0.5rem;
         }
@@ -477,14 +490,14 @@ a{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-bottom: 1rem;
-    color: #073453; 
+    color: $font-color; 
     }
 
     & h3{
         font-family: 'Open Sans', sans-serif;
         text-align: center; 
         margin-bottom: 1rem;
-        color: #073453; 
+        color: $font-color; 
     }
   }
 
@@ -524,7 +537,7 @@ a{
           margin-left: 14rem;
           font-size: 22px;
           font-weight: bold;
-          color: #073453; 
+          color: $font-color; 
         }
 
       & input[list]{
@@ -819,7 +832,7 @@ a{
 
     & a{        
         text-decoration: none;
-        // color: #073453;
+        // color: $font-color;
     }
     
     & p { 
@@ -883,7 +896,7 @@ a{
 
     & p{
         font-size: 22px;
-        color: #073453;
+        color: $font-color;
         font-family: 'Open Sans', sans-serif;
     }
 
@@ -898,7 +911,7 @@ a{
     }
 
     & .profile_pic{
-        border: 2px solid #073453;
+        border: 2px solid $font-color;
         border-radius: 50%;
         height: 3rem;
         width: 3rem;
@@ -915,7 +928,7 @@ a{
   
 .searchTerm {
     width: 100%;
-    border: 3px solid #073453;
+    border: 3px solid $font-color;
     border-right: none;
     padding: 5px;
     height: 50px;
@@ -924,14 +937,14 @@ a{
   }
   
 .searchTerm:focus{
-    color: #073453;
+    color: $font-color;
   }
   
 .searchButton {
     width: 45px;
     height: 50px;
-    border: 1px solid #073453;
-    background: #073453;
+    border: 1px solid $font-color;
+    background: $font-color;
     color: #fff;
     border-radius: 0 1rem 1rem 0;
     cursor: pointer;
@@ -949,7 +962,7 @@ a{
     margin-top: 8%;
     width: 95%;
     height: 4rem;
-    border: 1px solid #073453;
+    border: 1px solid $font-color;
     border-radius: 1rem;
     justify-content: space-evenly;
     align-items: center;
@@ -959,7 +972,7 @@ a{
         color: $grey-color;
 
         &:active{
-            color: #073453;
+            color: $font-color;
         }
     }
 }
@@ -969,7 +982,7 @@ a{
     margin-top: 8%;
     width: 95%;
     height: 4rem;
-    border: 1px solid #073453;
+    border: 1px solid $font-color;
     border-radius: 1rem;
     align-items: center;
 
@@ -979,18 +992,18 @@ a{
         padding-left: 5.5rem;
 
         &:active{
-            color: #073453;
+            color: $font-color;
         }
     }
 }
 
 .files-i{
     margin-top: 5rem;
-    border: 1px solid #073453;
+    border: 1px solid $font-color;
     border-radius: 1.5rem;
     height: 100%;
     width: 95%;
-    color: #073453;
+    color: $font-color;
 
     & #doc_list{
         border-collapse:separate; 
@@ -1036,7 +1049,7 @@ a{
 
             & a{
             text-decoration: none;
-            color: #073453;
+            color: $font-color;
             }
         }
 
@@ -1045,7 +1058,7 @@ a{
 
             & a{
             text-decoration: none;
-            color: #073453;
+            color: $font-color;
             }
         }
 
@@ -1122,7 +1135,7 @@ a{
     margin-top: 2rem;
     height: 100%;
     width: 100%;
-    color: #073453;
+    color: $font-color;
 
     & #doc_list{
         border-collapse:separate; 
@@ -1155,11 +1168,11 @@ a{
 
 .files{
     margin-top: 5rem;
-    border: 1px solid #073453;
+    border: 1px solid $font-color;
     border-radius: 1.5rem;
     height: 100%;
     width: 95%;
-    color: #073453;
+    color: $font-color;
 
     & .flaticon-team{
         color: hsl(1, 72%, 76%);
@@ -1219,7 +1232,7 @@ a{
 
             & a{
             text-decoration: none;
-            color: #073453;
+            color: $font-color;
             }
         }
 
@@ -1228,7 +1241,7 @@ a{
 
             & a{
             text-decoration: none;
-            color: #073453;
+            color: $font-color;
             }
         }
 
@@ -1305,7 +1318,7 @@ a{
 }
   
   .pagination a {
-    color: #073453;
+    color: $font-color;
     padding: 8px 16px;
     text-decoration: none;
     border: 1px solid rgb(238, 140, 140);
@@ -1320,7 +1333,7 @@ a{
     }
       
       .pagination01 a {
-        color: #073453;
+        color: $font-color;
         padding: 8px 16px;
         text-decoration: none;
         border: 1px solid rgb(238, 140, 140);
@@ -1341,6 +1354,21 @@ a{
 }
 
 @media (min-width:533px) and (max-width:1023px){
+    .login-box {
+        margin: 10rem auto 1rem auto;
+        height: 74%;
+        width: 85%;
+        padding-top: 13rem;
+        background-size: 22rem 10rem;
+    }
+
+    .btn01{
+        margin: 5rem 0 0 1rem;
+    }
+    
+    .btn02{
+        margin: 5rem 0 0 8rem;
+    }
 
     .main_body{
         display: grid;
@@ -1349,7 +1377,7 @@ a{
 
     #search_tab{
         & h2{
-            color: #073453;
+            color: $font-color;
             margin-left: 4rem;
             float: left;
     
@@ -1370,6 +1398,172 @@ a{
     margin-top: 30%;
     width: 102%;
     height: 3rem;
+}
+
+#confirm{
+    float: left;
+    margin-left: 1rem;
+    margin-top: auto;
+}
+
+.files-d{
+
+    & td.file_icon-n{
+    display: none;    
+    }
+
+    & .details-d{
+        padding-left: 2rem;
+    }
+
+    & .file_name-d{
+        padding-left: 2rem;
+    }
+
+    & a{
+        color: $font-color;
+    }
+
+    & #doc_list{
+        width: 100%;
+    }
+}
+
+.popup-n {
+    width:90%;
+
+    & .content {
+
+        & p{
+            font-size: 16px!important;
+            margin-left: 1rem;
+        }
+
+        & h4,h5{
+            margin-left: 1rem;
+        }
+
+        input[list] {
+            margin-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        & #btn-u{
+            width: 25rem;
+        }
+
+        & #name01,#name-n,
+        #name, #url, #desc{
+            margin-left: 0;
+        }
+
+        & label{
+        margin-left: 0;
+
+        &.describe{
+            margin-top: 1rem;
+        }
+
+        &.expiry {
+            margin-top: 1rem;
+            margin-left: 0;
+        }
+        }
+
+        & #name02{
+            margin-left: 0;
+        }
+
+    & #btns{
+            & #btn01{
+                margin: 2.6rem 0 2rem 1rem;
+            }
+
+            & #btn02{
+                margin: 2.6rem 0 2rem 4rem;
+            }
+
+            & #btn03{
+                margin: 3rem 0 2rem 1rem;
+            }
+
+            & #btn04{
+                margin: 3rem 0 2rem 4.4rem;
+            }
+
+            & #btn07{
+                margin: 3rem 0 2rem 1.4rem;
+            }
+
+            & #btn08{
+                margin: 3rem 0 2rem 3.5rem;
+            }
+
+            & #btn-c{
+                margin: 3rem 0 2rem 2.8rem; 
+            }
+
+            & #btn-d{
+                margin: 3rem 0 2rem 2rem; 
+            }
+        }
+
+        & #btns-u{
+            & #btn03{
+                width: 8rem;
+                margin: 1rem;
+            }
+
+            & #btn04{
+                width: 8rem;
+                margin-left: 4rem;
+                margin-right: 1.6rem;
+            }
+        }
+    }
+
+    & .content-new{
+
+        & #sections{
+
+            & p{
+                font-size: 14px;
+            }
+
+            & .sub-folder{
+                margin-right: 0;
+            }
+        }
+
+        & #btns{
+            & #btn05{
+                margin: 3rem 0 2rem 2rem;
+            }
+        }
+    }
+}
+
+#share-details-n {
+    grid-template-columns: 25% 60%;
+    margin: 8rem 0 0 1rem;
+
+    & input{
+        margin-left: 1.5rem;
+    }
+
+    & p {
+        margin-top: 2rem;
+    }
+}
+
+.icons-s {
+    margin-top: 30%;
+    width: 101%;
+
+    & .fas {
+        font-size: 30px;
+        padding-left: 1.6rem;
+    }
 }
 
 .files-i{
@@ -1425,11 +1619,10 @@ a{
             font-size: 15px!important;
             font-weight: 600;
         }
-
     }
     
     & td i {
-        padding: 0.5rem;
+        padding: 0.2rem;
 
         &.pdf-file.fa-file-pdf{
             display: none;        
@@ -1502,7 +1695,7 @@ padding: 2px 12px;
 
 #action-t{
     font-family: 'Open Sans', sans-serif;
-    color: #073453;
+    color: $font-color;
     font-size: 1rem;
 }
 
@@ -1526,7 +1719,7 @@ input[type=checkbox]{
 #menuToggle a
 {
     text-decoration: none;
-    color: #073453;
+    color: $font-color;
     transition: color 0.3s ease;
 }
 
@@ -1648,8 +1841,72 @@ ul .fas{
 }
 
 @media(min-width:600px){
+
+    .popup-n {
+        width:90%;
+    
+        & .content {
+    
+            & p{
+                font-size: 16px!important;
+                margin-left: 1rem;
+            }
+    
+            & h4,h5{
+                margin-left: 1rem;
+            }
+
+            & #name-n{
+                width: 28rem;            
+            }
+    
+            & input[list] {
+                margin: 0;
+                margin-bottom: 1rem;
+            }
+
+            & #btns{
+
+                & #btn01{
+                    margin: 3.8rem 0 0 1rem;
+                }
+
+                & #btn02{
+                    margin: 2.4rem 0 0 3rem;
+                }
+
+                & #btn03 {
+                    margin: 3rem 0 2rem 1.5rem;
+                }
+            }
+
+            & #btns-u{
+
+                & #btn03{
+                    margin-left: 3rem;
+                }
+
+                & #btn04{
+                    margin-right: 3.2rem;
+                }
+            }
+    
+            & #btn-u{
+                width: 25rem;
+            }
+    
+            & #name,#url,#desc{
+                width: 28rem;
+                }
+        }
+    }
+
     .icons{
         margin-top: 26%;
+    }
+
+    .icons-s .fas {
+        padding-left: 2.2rem;
     }
 }
 
@@ -1700,7 +1957,7 @@ ul .fas{
     & li {
         padding: 2.5rem 0 0 4rem;
         font-size: 18px;
-        color: #073453;
+        color: $font-color;
     }
 
     & p{
@@ -1780,7 +2037,7 @@ ul .fas{
 
 #search_tab{
     & h2{
-        color: #073453;
+        color: $font-color;
         margin-left: 0.6rem;
         margin-top: 0.4rem;
         float: left;
@@ -1842,7 +2099,7 @@ ul .fas{
 
     #action-t{
         font-family: 'Open Sans', sans-serif;
-        color: #073453;
+        color: $font-color;
         font-size: 1rem;
     }
 }
@@ -1859,7 +2116,7 @@ ul .fas{
 @media (min-width:1440px) {
     #search_tab{
         & h2{
-            color: #073453;
+            color: $font-color;
             margin-left: 0.2rem;
             margin-top: 0.4rem;
             float: left;
@@ -1889,7 +2146,7 @@ ul .fas{
 @media(min-width:1680px){
     #search_tab{
         & h2{
-            color: #073453;
+            color: $font-color;
             margin-left: 0.4rem;
             margin-top: 0.4rem;
             float: left;
@@ -1923,7 +2180,7 @@ ul .fas{
 
     #search_tab{
         & h2{
-            color: #073453;
+            color: $font-color;
             margin-left: 1rem;
             margin-top: 0.4rem;
             float: left;
@@ -2008,7 +2265,7 @@ ul .fas{
       }
 
     #action-t{
-        color: #073453;
+        color: $font-color;
         font-size: 1rem;
     }
 
@@ -2034,7 +2291,7 @@ ul .fas{
 
   #search_tab{
     & h2{
-        color: #073453;
+        color: $font-color;
         margin-left: 1rem;
         margin-top: 0.4rem;
         float: left;
