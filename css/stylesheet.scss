@@ -540,16 +540,6 @@ a{
           color: $font-color; 
         }
 
-      & input[list]{
-        font-size: 18px;
-        padding: 0.8rem;
-        margin-left: 2rem;
-        width: 25rem;
-        color: #1c91b1;
-        border-radius: 0.5rem;
-        background-color: $icon-color;
-      }
-
       & button{
           display: block;
           font-size: 16px;
@@ -1186,10 +1176,6 @@ a{
         width: 95%;
     }
 
-    & tr{ 
-        background: $bg-color 0% 0% no-repeat padding-box;
-    }
-
     & td.file-icon {
         border-bottom-left-radius: 1rem;
         border-top-left-radius: 1rem;
@@ -1354,6 +1340,11 @@ a{
 }
 
 @media (min-width:533px) and (max-width:1023px){
+    .popup-new {
+        margin: 16rem auto;
+        width: 85%;
+    }
+
     .login-box {
         margin: 10rem auto 1rem auto;
         height: 74%;
@@ -1841,6 +1832,23 @@ ul .fas{
 }
 
 @media(min-width:600px){
+    .popup-new {
+        margin: 16rem auto;
+        width: 75%;
+    }
+
+    .files td i {
+        padding: 0.8rem;
+    }
+
+    #menu{
+        padding: 5.6rem 5.6rem 11.4rem 5rem;
+    }
+
+    #share-details-n input {
+        margin-left: 2rem;
+        width: 22rem;
+    }
 
     .popup-n {
         width:90%;
@@ -1856,14 +1864,10 @@ ul .fas{
                 margin-left: 1rem;
             }
 
-            & #name-n{
+            & #name-n,#name02,#name01,input[list]{
                 width: 28rem;            
             }
-    
-            & input[list] {
-                margin: 0;
-                margin-bottom: 1rem;
-            }
+        
 
             & #btns{
 
@@ -1877,6 +1881,14 @@ ul .fas{
 
                 & #btn03 {
                     margin: 3rem 0 2rem 1.5rem;
+                }
+
+                & #btn07 {
+                    margin: 3rem 0 2rem 3rem;
+                }
+
+                #btn-d {
+                    margin: 3rem 0 2rem 4rem;
                 }
             }
 
@@ -1918,10 +1930,10 @@ ul .fas{
 
 @media (min-width:768px) and (max-width:1022px){
     .files{
-        height:32rem;
+        height:40rem;
 
         & td.details_depts{
-            padding:0 0 0 10rem;
+            padding:0 0 0 6rem;
     
             & p{
                 font-size: 16px!important;
@@ -1948,6 +1960,66 @@ ul .fas{
 
         & #doc_list{
             width: 97%;
+        }
+    }
+
+    .popup-n {
+        & .content {
+            & #name01 {
+                margin-left: 3.4rem;
+        }
+
+        & #name{
+            margin-left: 3rem;
+        }
+
+        & #url{
+            margin-left: 4rem;
+            }
+
+        & #desc{
+            margin-left: 1rem;
+            }
+
+        & #btns{
+
+            & #btn01{
+                margin: 2.3rem 0 2rem 6rem  
+            }
+
+            & #btn03{
+                margin: 3rem 0 2rem 10rem
+            }
+        }
+    }
+}
+
+#share-details-n {
+    grid-template-columns: 40% 60%;
+
+    & p {
+        margin-top: 4rem;
+    }
+
+    & input {
+        margin-top: 3rem;
+        width: 25rem;
+    }
+}
+
+.popup-new {
+    margin: 20rem auto;
+    width: 60%;
+}
+
+    .login-box{
+        height: 70%;
+        background-size: 30rem 10rem;
+        background-position: 5rem 1rem;
+
+        & #btn01 {
+            margin-top: 1rem;
+            margin-bottom: 1.2rem;
         }
     }
 

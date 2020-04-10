@@ -385,14 +385,6 @@ p.top-heaading {
   font-size: 22px;
   font-weight: bold;
   color: #073453; }
-.content input[list] {
-  font-size: 18px;
-  padding: 0.8rem;
-  margin-left: 2rem;
-  width: 25rem;
-  color: #1c91b1;
-  border-radius: 0.5rem;
-  background-color: #ee9796; }
 .content button {
   display: block;
   font-size: 16px;
@@ -835,8 +827,6 @@ p.top-heaading {
     border-spacing: 0 1rem;
     margin: 0 2rem;
     width: 95%; }
-  .files tr {
-    background: white 0% 0% no-repeat padding-box; }
   .files td.file-icon {
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem; }
@@ -947,6 +937,10 @@ p.top-heaading {
   .sidebars {
     height: 110%; } }
 @media (min-width: 533px) and (max-width: 1023px) {
+  .popup-new {
+    margin: 16rem auto;
+    width: 85%; }
+
   .login-box {
     margin: 10rem auto 1rem auto;
     height: 74%;
@@ -1259,6 +1253,20 @@ p.top-heaading {
   ul .fas {
     color: whitesmoke !important; } }
 @media (min-width: 600px) {
+  .popup-new {
+    margin: 16rem auto;
+    width: 75%; }
+
+  .files td i {
+    padding: 0.8rem; }
+
+  #menu {
+    padding: 5.6rem 5.6rem 11.4rem 5rem; }
+
+  #share-details-n input {
+    margin-left: 2rem;
+    width: 22rem; }
+
   .popup-n {
     width: 90%; }
     .popup-n .content p {
@@ -1266,17 +1274,18 @@ p.top-heaading {
       margin-left: 1rem; }
     .popup-n .content h4, .popup-n .content h5 {
       margin-left: 1rem; }
-    .popup-n .content #name-n {
+    .popup-n .content #name-n, .popup-n .content #name02, .popup-n .content #name01, .popup-n .content input[list] {
       width: 28rem; }
-    .popup-n .content input[list] {
-      margin: 0;
-      margin-bottom: 1rem; }
     .popup-n .content #btns #btn01 {
       margin: 3.8rem 0 0 1rem; }
     .popup-n .content #btns #btn02 {
       margin: 2.4rem 0 0 3rem; }
     .popup-n .content #btns #btn03 {
       margin: 3rem 0 2rem 1.5rem; }
+    .popup-n .content #btns #btn07 {
+      margin: 3rem 0 2rem 3rem; }
+    .popup-n .content #btns #btn-d {
+      margin: 3rem 0 2rem 4rem; }
     .popup-n .content #btns-u #btn03 {
       margin-left: 3rem; }
     .popup-n .content #btns-u #btn04 {
@@ -1296,9 +1305,9 @@ p.top-heaading {
     height: 1280px !important; } }
 @media (min-width: 768px) and (max-width: 1022px) {
   .files {
-    height: 32rem; }
+    height: 40rem; }
     .files td.details_depts {
-      padding: 0 0 0 10rem; }
+      padding: 0 0 0 6rem; }
       .files td.details_depts p {
         font-size: 16px !important; }
     .files td i {
@@ -1313,6 +1322,39 @@ p.top-heaading {
         padding-left: 1.5rem; }
     .files #doc_list {
       width: 97%; }
+
+  .popup-n .content #name01 {
+    margin-left: 3.4rem; }
+  .popup-n .content #name {
+    margin-left: 3rem; }
+  .popup-n .content #url {
+    margin-left: 4rem; }
+  .popup-n .content #desc {
+    margin-left: 1rem; }
+  .popup-n .content #btns #btn01 {
+    margin: 2.3rem 0 2rem 6rem; }
+  .popup-n .content #btns #btn03 {
+    margin: 3rem 0 2rem 10rem; }
+
+  #share-details-n {
+    grid-template-columns: 40% 60%; }
+    #share-details-n p {
+      margin-top: 4rem; }
+    #share-details-n input {
+      margin-top: 3rem;
+      width: 25rem; }
+
+  .popup-new {
+    margin: 20rem auto;
+    width: 60%; }
+
+  .login-box {
+    height: 70%;
+    background-size: 30rem 10rem;
+    background-position: 5rem 1rem; }
+    .login-box #btn01 {
+      margin-top: 1rem;
+      margin-bottom: 1.2rem; }
 
   #menu {
     width: 60%; }
