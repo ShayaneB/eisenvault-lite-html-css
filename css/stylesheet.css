@@ -1252,7 +1252,7 @@ p.top-heaading {
 
   ul .fas {
     color: whitesmoke !important; } }
-@media (min-height: 966px) {
+@media (min-height: 960px) {
   #menu {
     height: 952px; } }
 @media (min-width: 600px) {
