@@ -1963,35 +1963,27 @@ ul .fas{
         }
     }
 
-    .popup-n {
-        & .content {
-            & #name01 {
-                margin-left: 3.4rem;
-        }
+    .icons-s {
+        margin-top: 20%;
+        width: 102%;
 
-        & #name{
-            margin-left: 3rem;
-        }
-
-        & #url{
-            margin-left: 4rem;
-            }
-
-        & #desc{
-            margin-left: 1rem;
-            }
-
-        & #btns{
-
-            & #btn01{
-                margin: 2.3rem 0 2rem 6rem  
-            }
-
-            & #btn03{
-                margin: 3rem 0 2rem 10rem
-            }
-        }
+        & .fas {
+        padding-left: 4rem;
     }
+}
+
+.files-d{
+    & .file_name-d{
+        padding-left: 5rem;
+    }
+
+    & .details-d{
+        padding-left: 14rem;
+    }
+}
+
+    .popup-n {
+        width: 70%;
 }
 
 #share-details-n {
@@ -2055,6 +2047,63 @@ ul .fas{
 }
 
 @media (min-width:800px){
+    .popup-new {
+        width: 57%;
+    }
+
+    #bg-bar {
+        height: 77%;
+    }
+
+    .popup-n {
+
+        & .content-new{
+            & #btns {
+                & #btn05{
+                    margin-left: 5rem;
+                }
+            }
+        }
+
+        & .content { 
+            & #name,#url,#desc,#name-n,#name02 {
+                width: 30rem;
+        }
+
+        & #btns {
+            & #btn03 {
+            margin-left: 3.6rem;
+            }
+        }
+
+        & #btns-u{
+
+            & #btn03 {
+                margin-left: 3.6rem;
+            }
+
+            & #btn04 {
+                margin-right: 3.8rem;
+            }
+        }
+
+        input[list] {
+            width: 30rem;
+        }
+
+        & #name01 {
+            width: 30rem;
+        }
+    }
+}
+
+    .login-box{
+        height: 55%;
+        margin-top: 18rem;
+        background-size: 30rem 11rem;
+        background-position: 6rem 1rem;
+    }
+
 .wrap{
     width: 96%;
 }

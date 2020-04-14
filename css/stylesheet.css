@@ -1323,18 +1323,19 @@ p.top-heaading {
     .files #doc_list {
       width: 97%; }
 
-  .popup-n .content #name01 {
-    margin-left: 3.4rem; }
-  .popup-n .content #name {
-    margin-left: 3rem; }
-  .popup-n .content #url {
-    margin-left: 4rem; }
-  .popup-n .content #desc {
-    margin-left: 1rem; }
-  .popup-n .content #btns #btn01 {
-    margin: 2.3rem 0 2rem 6rem; }
-  .popup-n .content #btns #btn03 {
-    margin: 3rem 0 2rem 10rem; }
+  .icons-s {
+    margin-top: 20%;
+    width: 102%; }
+    .icons-s .fas {
+      padding-left: 4rem; }
+
+  .files-d .file_name-d {
+    padding-left: 5rem; }
+  .files-d .details-d {
+    padding-left: 14rem; }
+
+  .popup-n {
+    width: 70%; }
 
   #share-details-n {
     grid-template-columns: 40% 60%; }
@@ -1377,6 +1378,33 @@ p.top-heaading {
   .pagination01 a {
     padding: 2px 12px; } }
 @media (min-width: 800px) {
+  .popup-new {
+    width: 57%; }
+
+  #bg-bar {
+    height: 77%; }
+
+  .popup-n .content-new #btns #btn05 {
+    margin-left: 5rem; }
+  .popup-n .content #name, .popup-n .content #url, .popup-n .content #desc, .popup-n .content #name-n, .popup-n .content #name02 {
+    width: 30rem; }
+  .popup-n .content #btns #btn03 {
+    margin-left: 3.6rem; }
+  .popup-n .content #btns-u #btn03 {
+    margin-left: 3.6rem; }
+  .popup-n .content #btns-u #btn04 {
+    margin-right: 3.8rem; }
+  .popup-n .content input[list] {
+    width: 30rem; }
+  .popup-n .content #name01 {
+    width: 30rem; }
+
+  .login-box {
+    height: 55%;
+    margin-top: 18rem;
+    background-size: 30rem 11rem;
+    background-position: 6rem 1rem; }
+
   .wrap {
     width: 96%; }
 

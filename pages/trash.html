@@ -71,10 +71,6 @@
 <div class="main_body">
 
         <section class="sidebars">
-
-            <!-- <div class="headings">
-                <h5>LITE Version</h5>
-            </div> -->
         
             <div id="sidebar">
                 <div id="dashboard">
@@ -136,23 +132,24 @@
             <img class="profile_pic" src="/images/MyPost.png">
         </div>
     </div>
-
-    <div class="icons-new2">
-        <input type="checkbox">
-        <h3 id="item-name-t">Item Name</h3>
-        <h3 id="shared-t">Created</h3>
-        <h3 id="upload-t">Deleted</h3>
-        <label>Action </label>
-            <select id="action-t">
-            <option value="delete-a">Delete All</option>
-            <option value="restore-a">Restore All</option>
-            <option value="delete-s">Delete Selected</option>
-            <option value="restore-s">Restore Selected</option>
-        </select>
-    </div>
     
     <div class="files">
         <table id="doc_list">
+            <tr id="icons">
+                <th id="icon01"><input type="checkbox"></th>
+                <th id="item-name">Item Name</th>
+                <th id="shared-t">Created</th> 
+                <th id="upload-sw">Deleted</th>
+                <th id="action-trash"><label>Action </label>
+                    <select id="action-t">
+                    <option value="delete-a">Delete All</option>
+                    <option value="restore-a">Restore All</option>
+                    <option value="delete-s">Delete Selected</option>
+                    <option value="restore-s">Restore Selected</option>
+                    </select> 
+                </th>           
+            </tr>
+
             <tr id="first_details">
                 <td class="file_icon"><input type="checkbox"></td> 
                 <td class="file_name-t">Sample1.pdf</td>

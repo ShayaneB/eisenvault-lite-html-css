@@ -2,63 +2,6 @@
     height: 110%;
 }
 
-.icons-new1{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 8%;
-    // background-color: #f2ebd9;
-    width: 90%;
-    height: 3rem;
-    border: 1px solid #073453;
-    border-radius: 1rem;
-    align-items: center;
-    color: #073453;
-
-    #item-name{
-        margin-left: 10rem;
-    }
-
-    #upload{
-        margin-left: 9rem;
-    }
-
-    & #upload-u{
-        margin-left: 10rem;
-    }
-
-    #shared{
-        margin-left: 8rem;
-    }
-}
-
-.icons-new2{
-    display: flex;
-    margin-top: 8%;
-    // background-color: #f2ebd9;
-    width: 90%;
-    height: 3rem;
-    border: 1px solid #073453;
-    border-radius: 1rem;
-    align-items: center;
-    color: #073453;
-
-    #item-name{
-        margin-left: 10rem;
-    }
-
-    #upload{
-        margin-left: 9rem;
-    }
-
-    & #upload-u{
-        margin-left: 10rem;
-    }
-
-    & #shared{
-        margin-left: 8rem;
-    }
-}
-
 .files{
     border: none;
     width: 98%;
@@ -68,18 +11,6 @@
         border-bottom-left-radius: 1rem;
         border-top-left-radius: 1rem;    
     }
-
-   & .file_name-u{
-    padding-left: 3rem;
-   }
-
-   & .name-s{
-    padding-left: 8.2rem;  
-   }
-
-   & .details-u{
-    padding-left: 9rem;
-   }
 
    & td.delete-u{
     border-bottom-right-radius: 1rem;
@@ -94,17 +25,12 @@
         }
 }
 
-   & .details-s{
-    padding-left: 8rem;
-   }
-
    & td.delete-s{
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem; 
 }
 
    & .delete-s{
-    padding: 0.5rem 1.5rem 0 5rem;
 
     & .tooltip {
         position: relative;
@@ -134,7 +60,6 @@
    }
 
    & .file_name-s{
-    padding-left: 3rem;
 
     & a{
         text-decoration: none;
@@ -148,8 +73,54 @@
 }
 
 @media (min-width:533px) and (max-width:1022px){
+
+    .files{
+        margin-top: 8rem;
+
+        & td.file_icon1{
+    
+            & input[type=checkbox] {
+                margin: 0.8rem 1rem 0.8rem 1.2rem;
+            }
+        }
+    }
+
+    th{
+        border-top: 1px solid #073453;
+        border-bottom: 1px solid #073453;
+        border-collapse: separate;  
+        text-align: left;  
+
+        & #action-t{
+            width: 1.2rem;
+        }
+
+        &#action-trash{        
+            padding-left: 1.5rem;
+        }
+    }
+
+    th#icon01{
+        border-left: 1px solid #073453;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    th#icon{
+        padding: 1.2rem 0;
+        border-left: 1px solid #073453;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    th#action{
+        border-right: 1px solid #073453;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
     .files{ 
-        width:105%;
+        width:106%;
 
         & td i {
             padding: 0.5rem ;
@@ -161,22 +132,6 @@
                 &.file_icon1{
                     border-bottom-left-radius: 1rem;
                     border-top-left-radius: 1rem; 
-
-                    input[type=checkbox] {
-                        margin: 0.8rem 0 0.8rem 1.7rem;
-                    }
-                }
-    
-                &.file_name-t{
-                    padding-left: 0rem;
-                }
-    
-                &.name-t{
-                    padding-left: 1rem; 
-                }
-    
-                &.details-t{
-                    padding-left: 1rem; 
                 }
     
                 &.delete-icon{
@@ -191,18 +146,6 @@
                     padding-left: 0.4rem;
                 }
             }
-
-        & .file_name-s{
-            padding-left: 0.8rem;
-        }
-    
-        & .name-s{
-            padding-left:1rem;  
-        }
-    
-        & .details-s{
-            padding-left: 0.2rem;  
-        }
     
         & .delete-s{
             padding: 0 0.5rem;
@@ -215,105 +158,8 @@
                 margin-left: -80px;
             } 
         }
-    
-        & .file_name-u{
-            padding: 0;
-        }
-    
-        & .details-u{
-            padding: 0 1rem 0 0;
-        }
-    
-        & .delete-u{
-            padding: 0 1.5rem 0 0;
-        }
     }
 
-    .icons-new1{
-        margin-top: 8.8rem;
-        width: 102%;
-
-        & #item-name{
-            margin-left: 1.4rem;
-        }
-    
-        & #upload{
-            margin-left: 1.6rem;
-        }
-    
-        & #action-t{
-            width: 1rem;
-        }
-
-        & label{
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-left: 2rem;
-            margin-right: 0;
-        }
-    }
-
-    .icons-new2{
-        margin-top: 9rem;
-        font-size:14px;
-        width: 102%;
-    
-            & #item-name{
-                margin-left: 3.5rem;
-            }
-    
-            & #upload-s{
-                margin-left: 3.2rem;
-            }
-        
-            & #shared{
-                margin-left: 2.2rem;
-            }
-    
-            & #action-s{
-                padding-left: 1rem;
-                padding-right: 0.8rem;
-            }
-    
-            & #action-sw{
-                padding-left: 1.2rem;
-                padding-right: 0.8rem;
-            }
-    
-            & #upload-sw{
-                padding-left: 3rem;
-            }
-
-        & #item-name-t{
-            margin-left: 0.6rem;
-        }  
-
-        & #shared-t{
-            margin-left: 1.8rem;
-        }
-
-        & #upload-t{
-            margin-left: 3.6rem;
-        }
-
-        & #action-t{
-            width: 1rem;
-            margin-right: 0.5rem;
-        }
-
-        & label{
-            font-weight: bold;
-            font-size: 1.1em;
-            margin-left: 3.4rem;
-            margin-right: 0.2rem;
-        }
-
-        input[type=checkbox]{
-            height: 1.4rem;
-            width: 1.4rem;
-            margin: 0.8rem 0 0.8rem 1.5rem;
-          }
-    }
 }
 
 @media (min-width:600px) and (max-width:767px){
@@ -370,111 +216,18 @@
                     padding-right: 1.4rem;
                 }
     }
-
-    .icons-new1{
-        margin-top: 8.8rem;
-        width: 100%;
-
-        & #item-name{
-            margin-left: 0.6rem;
-            margin-right: 1.5rem;
-        }
-    
-        & #upload{
-            margin-left: 1rem;
-        }
-    
-        & #action-t{
-            width: 1.2rem;
-            margin-right: 4rem;
-        }
-
-        & label{
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-left: 2rem;
-            margin-right: 0;
-        }
-
-        input[type=checkbox] {
-            height: 1.4rem;
-            width: 1.4rem;
-            margin: 0.8rem 1rem 0.8rem 1.4rem;
-        }
-    }
-
-    .files .delete-u{
-        padding: 0 3rem 0 0; 
-    }
 }
 
 
 @media (min-width:768px) and (max-width:1022px){
-    .icons-new2{
-
-        & #item-name-t{
-            margin-left: 1rem;
-        }  
-
-        & #shared-t{
-            margin-left: 5rem;
-        }
-
-        & #upload-t{
-            margin-left: 8.6rem;
-        }
-
-        & #action-t{
-            margin-right: 1.8rem;
-        }
-
-        & label{
-            font-weight: bold;
-            font-size: 1.1em;
-            margin-left: 8rem;
-            margin-right: 0.2rem;
-        }
-        
-        & #item-name{
-            margin-left: 7.5rem;
-        }
-        
-        & #upload-s{
-            margin-left: 9rem;
-        }
-            
-        & #shared{
-            margin-left: 5.6rem;
-        }
-        
-        & #action-s{
-            padding-left: 6rem;
-        }
-        
-        & #action-sw{
-            padding-left: 5rem;
-        }
-        
-        & #upload-sw{
-            padding-left: 6.6rem;
-        }
+    th#action-trash{        
+        padding-left: 2.5rem;
     }
 
     .files{ 
+        width: 105%;
             & td{
                 font-size: 16px;
-    
-                &.file_name-t{
-                    padding-left: 0rem;
-                }
-    
-                &.name-t{
-                    padding-left: 2rem; 
-                }
-    
-                &.details-t{
-                    padding-left: 3.2rem; 
-                }
     
                 &.delete-icon{
                     display: block;
@@ -488,131 +241,56 @@
                     padding-left: 1rem;
                 }
             }
+    }
+}
 
-        & .file_name-s{
-            padding-left: 0;
-        }
+@media (min-width:800px){
+    .files{
+        margin-top: 8rem;
+        width: 104%;
+
+        & td.file_icon1{
     
-        & .name-s{
-            padding-left: 0;  
-        }
-        
-        & .details-s{
-            padding-left: 0;  
-        }
-    
-        & .delete-s{
-            padding: 0;
-        }
-    
-        & .details-u{
-            padding-left: 4rem;
-        }
-    
-        & .delete-u{
-            padding: 0 2.5rem 0 0;
+            & input[type=checkbox] {
+                margin: 0.8rem 1rem 0.8rem 1.2rem;
+            }
         }
     }
 
-    .icons-new1{
-
-        & #item-name{
-            margin-left: 0rem;
-        }
-    
-        & #upload{
-            margin-left: 7rem;
-        }
+    th{
+        border-top: 1px solid #073453;
+        border-bottom: 1px solid #073453;
+        border-collapse: separate;  
+        text-align: left;  
 
         & #action-t{
             width: 1.2rem;
         }
 
-        & label{
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-left: 8rem;
-            margin-right: 0.5rem;
-        }
-
-        input[type=checkbox] {
-            height: 1.4rem;
-            width: 1.4rem;
-            margin: 0.8rem 1rem 0.8rem 0.6rem;
-        }
-    }
-}
-
-@media (min-width:800px){
-    .icons-new2{
-            width: 103%;
-
-        & #item-name-t{
-                margin-left: 1.4rem;
-            }  
-    
-        & #shared-t{
-                margin-left: 5.4rem;
-            }
-        
-        & #upload-t{
-            margin-left: 8.8rem;
-        }
-
-        & #action-t{
-            margin-right: 1rem;
-        }
-
-        & label{
-            margin-left: 8rem;
-            margin-right: 0.2rem;
-        }
-        
-        & #item-name{
-            margin-left: 7.6rem;
-        }
-        
-        & #upload-s{
-            margin-left: 9.4rem;
-        }
-            
-        & #shared{
-            margin-left: 6.4rem;
-        }
-        
-        & #action-s{
-            padding-left: 6.6rem;
-        }
-        
-        & #action-sw{
-            padding-left: 6rem;
-        }
-        
-        & #upload-sw{
-            padding-left: 7.5rem;
+        &#action-trash{        
+            padding-left: 2.5rem;
         }
     }
 
-    .icons-new1{
-
-        & #item-name{
-            margin-left: 0rem;
-        }
-    
-        & #upload{
-            margin-left: 8rem;
-        }
-
-        & label{
-            font-size: 1.2em;
-            margin-left: 8rem;
-            margin-right: 0rem;
-        }
-
-        input[type=checkbox] {
-            margin: 0.8rem 1rem 0.8rem 0rem;
-        }
+    th#icon01{
+        border-left: 1px solid #073453;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
     }
+
+    th#icon{
+        padding: 1.2rem 0;
+        border-left: 1px solid #073453;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    th#action{
+        border-right: 1px solid #073453;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+        
 }
 
 @media (min-width:1024px){
@@ -721,43 +399,12 @@
     }
 
     .files{
-    & .details-u{
-        padding-left: 6rem;
-    }
-
-    & .file_name-s{
-        padding-left: 0.3rem;
-    }
-
-    & .name-s{
-        padding-left: 3rem;  
-    }
-
-    & .details-s{
-        padding-left: 3rem;  
-    }
-
-    & .delete-u{
-        padding: 0 1rem 0 3rem;
-    }
-
-    & .delete-s{
-        padding: 0 1rem 0 2rem;
-    }
 
     & td{
     
     &.file_icon{
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
-    }
-
-    &.name-t{
-        padding-left: 4rem; 
-    }
-
-    &.details-t{
-        padding-left: 3.5rem; 
     }
 
     &.delete-icon{
@@ -1093,322 +740,16 @@
             margin-left: 10.5rem        
         }
     }
-
-    .files{
-    & .details-u{
-        padding-left: 8rem;
-    }
-
-    & .file_name-s{
-        padding-left: 1rem;  
-    }
-
-    & .name-s{
-        padding-left: 1rem;  
-    }
-
-    & .details-s{
-        padding-left: 1rem;  
-    }
-
-    & .delete-u{
-        padding: 0 1rem 0 5rem;
-    }
-
-    & .delete-s{
-        padding: 0 4rem 0 2rem;
-    }
-
-    & .file_name-u{
-        padding-left: 1rem;
-    }
-}
 }
 
 @media (min-width:1600px){
-    .icons-new1{
-
-        & #item-name{
-            margin-left: 10rem;
-        }
-
-        & #upload{
-            margin-left: 8rem;
-        }
-
-        & #action{
-            padding-left: 8rem;
-        }
-
-        & #action-t{
-            width: 1.2rem;
-        }
-
-        & label{
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-left: 11rem;
-            margin-right: 0.5rem;
-        }
-    }
-
-    .icons-new2{
-
-        & #item-name{
-            margin-left: 8rem;
-        }
-
-        & #upload-s{
-            margin-left: 6rem;
-        }
-    
-        & #shared{
-            margin-left: 5rem;
-        }
-
-        & #details-s{
-            padding-left: 5rem;
-        }
-
-        & #action-s{
-            padding-left: 8rem;
-        }
-
-        & #action-sw{
-            padding-left: 8rem;
-        }
-
-        & #upload-sw{
-            padding-left: 6.8rem;
-        }
-
-        & #item-name-t{
-            margin-left: 2.6rem;
-        }  
-
-        & #shared-t{
-            margin-left: 5rem;
-        }
-
-        & #upload-t{
-            margin-left: 9.2rem;
-        }
-
-        & #action-t{
-            width: 1.2rem;
-        }
-
-        & label{
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-left: 11rem;
-            margin-right: 0.5rem;
-        }
-    }
-
-    .files{
-    & .details-u{
-        padding-left: 6rem;
-    }
-
-    & .file_name-s{
-        padding-left: 1rem;  
-    }
-
-    & .name-s{
-        padding-left: 1rem;  
-    }
-
-    & .details-s{
-        padding-left: 1rem;  
-    }
-
-    & .delete-u{
-        padding: 0 1rem 0 5rem;
-    }
-
-    & .delete-s{
-        padding: 0 4rem 0 2rem;
-    }
-
-    & .file_name-u{
-        padding-left: 1rem;
-    }
-}
 
 }
 
 @media (min-width:1680px){
 
-    .icons-new1{
-
-        & #item-name{
-            margin-left: 9rem;
-        }
-
-        & #upload{
-            margin-left: 8rem;
-        }
-
-        & label{
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-left: 10rem;
-            margin-right: 0;
-        }
-    }
-
-    .icons-new2{
-
-        & #item-name{
-            margin-left: 8rem;
-        }
-
-        & #upload-s{
-            padding-left: 1.2rem;
-        }
-    
-        & #shared{
-            padding-left: 0;
-        }
-
-        & #action-s{
-            margin-left: 0rem;
-        }
-
-        & #action-sw{
-            margin-left: 0.1rem;
-        }
-
-        & #upload-sw{
-            margin-left: 0;
-        }
-
-        & #item-name-t{
-            margin-left: 2.4rem;
-        }  
-
-        & #shared-t{
-            margin-left: 5.4rem;
-        }
-
-        & #upload-t{
-            margin-left: 9rem;
-        }
-
-        & label{
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-left: 10.6rem;
-            margin-right: 0.5rem;
-        }
-}
 }
 
 @media (min-width:1920px){
-    
-    .files{
-    
-        & .file_icon{
-            padding: 0 4rem;
-        }
-    
-        & .file_name-u{
-            padding: 0 4rem;
-        }
-    
-        & .details-u{
-            padding: 0 6rem 0 2rem;
-        }
-    
-        & .delete-u{
-            padding: 0 6rem;
-        }
-    
-        & .delete-s{
-            padding: 0 4rem 0 1rem;
-           }
-        
-        & .file_name-s{
-            padding: 0 4rem 0 1rem;
-           }
-    
-        & .name-s{
-            padding: 0 2rem 0 1rem;
-        }
-    
-        & .details-s{
-            padding: 0 2rem 0 1rem;
-        }
-    }
 
-.icons-new1{
-    margin-top: 7%;
-
-        & #item-name{
-            margin-left: 8.8rem;
-        }
-
-        & #upload{
-            margin-left: 5.8rem;
-        }
-
-        input[type=checkbox] {
-            margin: 0.8rem 0 0.8rem 2rem;
-        }
-
-        & label{
-            margin-left: 12rem;
-            margin-right: 0rem;
-        }
-}
-
-.icons-new2{
-    margin-top: 7%;
- 
-    & #item-name{
-        margin-left: 6.5rem;
-    }
-
-    & #upload-s{
-        padding-left: 1.5rem;
-    }
-
-    & #shared{
-        padding-left: 3.6rem;
-    }
-
-    & #action-s{
-        padding-right: 4rem;
-        padding-left: 6rem;
-    }
-
-    & #action-sw{
-        padding-left: 6rem;
-    }
-
-    & #upload-sw{
-        padding-left: 9.7rem;
-    }
-
-    & #item-name-t{
-        margin-left: 7.4rem;
-    }  
-
-    & #shared-t{
-        margin-left: 4.2rem;
-    }
-
-    & #upload-t{
-        margin-left: 6.8rem;
-    }
-
-    & label{
-        margin-left: 9rem        
-    }
-
-    input[type=checkbox] {
-        margin: 0.8rem 0 0.8rem 7.5rem;
-    }
-}
 }
