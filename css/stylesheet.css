@@ -1426,6 +1426,18 @@ p.top-heaading {
     width: 45%;
     left: 42%; }
 
+  .login-box {
+    margin-top: 8rem;
+    width: 45%;
+    padding-top: 12rem;
+    height: 90%;
+    background-size: 27rem 10rem;
+    background-position: 4rem 1rem; }
+
+  .popup-new {
+    width: 36%;
+    margin: 11rem auto; }
+
   input[type=checkbox] {
     height: 1.8rem;
     width: 1.4rem;
@@ -1459,6 +1471,8 @@ p.top-heaading {
       font-size: 1.8rem; }
     .files td .fa-hdd {
       font-size: 1.8rem; }
+    .files td .fa-times-circle {
+      padding: 0; }
     .files td i {
       padding: 0.5rem 0 0.5rem 2.5rem; }
     .files td.file_name {
@@ -1474,6 +1488,33 @@ p.top-heaading {
 
   .pagination01 {
     margin: 2rem 0 0 18rem; }
+
+  #share-details-n {
+    margin: 10rem 0 0 8rem; }
+
+  .popup-n {
+    width: 60%; }
+    .popup-n .content-new #btns #btn05 {
+      margin-left: 14rem; }
+    .popup-n .content label {
+      margin-left: 2rem; }
+    .popup-n .content #btns #btn01 {
+      margin: 1rem 0 1rem 12rem; }
+    .popup-n .content #btns #btn02 {
+      margin: 1rem 0 1rem 8rem; }
+    .popup-n .content #btns #btn03 {
+      margin-left: 14rem; }
+    .popup-n .content #btns #btn07 {
+      margin: 2rem 0 2rem 15rem; }
+    .popup-n .content #btns #btn-d {
+      margin: 3rem 0 2rem 8.6rem; }
+    .popup-n .content #btns #btn08 {
+      margin: 2rem 0 2rem 8rem; }
+
+  .icons-s {
+    width: 94% !important; }
+    .icons-s .fas {
+      padding-left: 5.6rem; }
 
   #action-t {
     font-family: 'Open Sans', sans-serif;
@@ -1523,6 +1564,53 @@ p.top-heaading {
   .files td i {
     padding: 0.5rem 0 0.5rem 2rem; }
 
+  .login-box {
+    margin-top: 2rem;
+    width: 55%;
+    padding-top: 12rem;
+    height: 110%;
+    background-size: 27rem 10rem;
+    background-position: 4rem 1rem; }
+
+  .popup-new {
+    width: 45%;
+    margin: 11rem auto; }
+
+  .icons-s .fas {
+    padding-left: 3.8rem; }
+
+  .popup-n {
+    width: 80%;
+    margin: 3rem auto; }
+    .popup-n .content-new #sections p {
+      font-size: 18px; }
+    .popup-n .content-new #btns #btn05 {
+      margin-left: 12rem; }
+    .popup-n .content-new #btns #btn06 {
+      margin-left: 8rem; }
+    .popup-n .content label {
+      margin-left: 2rem; }
+    .popup-n .content input[list], .popup-n .content #name01 {
+      width: 32rem; }
+    .popup-n .content #btns-u #btn03 {
+      margin-left: 6rem; }
+    .popup-n .content #btns-u #btn04 {
+      margin-right: 5.8rem; }
+    .popup-n .content #btns #btn01 {
+      margin: 1.8rem 0 1rem 12rem; }
+    .popup-n .content #btns #btn03 {
+      margin-left: 14rem; }
+    .popup-n .content #btns #btn04 {
+      margin-left: 7rem; }
+    .popup-n .content #btns #btn07 {
+      margin-left: 14rem; }
+    .popup-n .content #btns #btn08 {
+      margin: 3rem 0 2rem 10rem; }
+    .popup-n .content #btns #btn-d {
+      margin-left: 11rem; }
+    .popup-n .content #btns #btn02 {
+      margin: 1.8rem 0 1rem 10rem; }
+
   #search_tab h2 {
     color: #073453;
     margin-left: 1rem;
@@ -1530,6 +1618,9 @@ p.top-heaading {
     float: left; }
     #search_tab h2#first {
       margin-left: 2.5rem; }
+
+  .sidebars {
+    background-size: 11rem 5rem; }
 
   .wrap {
     width: 40%;
@@ -1545,12 +1636,15 @@ p.top-heaading {
   .files-i {
     width: 100%; }
 
+  #share-details-n {
+    margin: 8rem 0 0 4rem; }
+
   .files {
     width: 100%;
     height: 48rem;
     margin-top: 1.5rem; }
     .files #doc_list {
-      width: 95%; }
+      width: 92%; }
     .files td.file_name {
       padding: 0.5rem 0 0.5rem 1rem; }
     .files td.details_01 {
