@@ -1579,6 +1579,11 @@ p.top-heaading {
     height: 1024px;
     padding-top: 10rem; } }
 @media (min-width: 1366px) {
+  .login-box {
+    height: 88%; }
+    .login-box #btn02 {
+      margin-bottom: 2rem; }
+
   .btn01 {
     width: 16rem; }
 
