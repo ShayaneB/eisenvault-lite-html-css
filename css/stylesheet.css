@@ -16,6 +16,28 @@ body {
   font-size: 40px;
   color: grey; }
 
+.btn-cancel {
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  margin: 5rem 0 0 1rem;
+  padding: 1rem;
+  width: 12rem;
+  background-color: #E07050;
+  color: white;
+  font-size: 16px;
+  border-radius: 1rem; }
+
+.btn-share {
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  margin: 5rem 0 0 5rem;
+  padding: 1rem;
+  width: 12rem;
+  background-color: #E07050;
+  color: white;
+  font-size: 16px;
+  border-radius: 1rem; }
+
 a {
   text-decoration: none; }
 
@@ -937,6 +959,22 @@ p.top-heaading {
   .sidebars {
     height: 110%; } }
 @media (min-width: 533px) and (max-width: 1023px) {
+  #share-details {
+    grid-template-columns: 35% 60%;
+    margin: 1rem 0 0 1rem; }
+    #share-details p {
+      margin-top: 1.8rem; }
+    #share-details input {
+      margin-left: 0rem;
+      width: 18rem; }
+    #share-details .btn-share {
+      margin-left: 0; }
+    #share-details .btn-cancel {
+      margin-left: 6rem; }
+
+  #file-info {
+    margin-left: 1rem; }
+
   .popup-new {
     margin: 16rem auto;
     width: 85%; }
@@ -1307,6 +1345,22 @@ p.top-heaading {
   #menu {
     height: 1280px !important; } }
 @media (min-width: 768px) and (max-width: 1022px) {
+  #file-info {
+    margin-left: 2rem; }
+
+  #share-details {
+    grid-template-columns: 48% 60%;
+    margin: 1rem 0 0 2rem; }
+    #share-details p {
+      margin-top: 3rem; }
+    #share-details input {
+      margin-left: 2rem;
+      width: 20rem; }
+    #share-details .btn-share {
+      margin-left: 2rem; }
+    #share-details .btn-cancel {
+      margin-left: 4rem; }
+
   .files {
     height: 40rem; }
     .files td.details_depts {
@@ -1544,6 +1598,12 @@ p.top-heaading {
     .popup-new .content #name {
       width: 30rem; } }
 @media (min-width: 1440px) {
+  .btn-cancel {
+    margin-left: 6rem; }
+
+  .btn-share {
+    margin-left: 6rem; }
+
   .popup-n {
     width: 55%; }
 
@@ -1609,6 +1669,15 @@ p.top-heaading {
   .pagination {
     margin: 1.5rem 0 2rem 15rem; } }
 @media (min-width: 1024px) and (max-width: 1279px) {
+  #file-info {
+    margin-top: 10rem; }
+
+  .btn-cancel {
+    margin-left: 6rem; }
+
+  .btn-share {
+    margin-left: 2rem; }
+
   .main_body {
     display: grid;
     grid-template-columns: 20% 82%; }
