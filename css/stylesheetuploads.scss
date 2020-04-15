@@ -415,106 +415,25 @@
 
 @media (min-width:1366px){
 
-    .icons-new1{
-        margin-left: 2rem;        
-        margin-top: 7%;
-
-        & #item-name{
-            margin-left: 9rem;
-        }
-
-        & #upload{
-            margin-left: 9rem;
-        }
-
-        & #action-t{
-            width: 1.2rem;
-        }
-
-        & label{
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-left: 11rem;
-            margin-right: 0.5rem;
-        }
-
-        input[type=checkbox] {
-            margin: 0.8rem 1rem 0.8rem 3rem;
-        }
-    }
-    
-    .icons-new2{
-        margin-top: 4.5rem;
-        margin-left: 2rem;
-        width: 90%;
-
-        & #item-name{
-            margin-left: 6.8rem;
-        }
-
-        & #upload-s{
-            margin-left: 9rem;
-        }
-    
-        & #shared{
-            margin-left: 5.8rem;
-        }
-
-        & #action-s{
-            padding-left: 8rem;
-        }
-
-        & #action-sw{
-            padding-left: 7.8rem;
-        }
-
-        & #upload-sw{
-            padding-left: 8.8rem;
-        }
-
-        & #item-name-t{
-            margin-left: 3rem;
-        }  
-
-        & #shared-t{
-            margin-left: 5rem;
-        }
-
-        & #upload-t{
-            margin-left: 9rem;
-        }
-
-        & #action-t{
-            width: 1.2rem;
-        }
-
-        & label{
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-left: 11rem;
-            margin-right: 0.5rem;
-        }
-    }
-
     .files{
     & .details-u{
-        padding-left: 8rem;
+        padding-left: 0;
     }
 
     & .name-s{
-        padding-left: 3rem;  
+        padding-left: 0;  
     }
 
     & .details-s{
-        padding-left: 4rem;  
+        padding-left: 0;  
     }
 
     & .delete-u{
-        padding: 0 1rem 0 5rem;
+        padding: 0;
     }
 
     & .delete-s{
-        padding: 0 4rem 0 2rem;
+        padding: 0;
     }
 
     & .file_name-u{
@@ -524,85 +443,6 @@
 }
 }
 
-@media (min-width:1440px){
-
-    .icons-new1{
-        margin-left: 2rem;
-    
-        & #item-name{
-            margin-left: 10rem;
-        }
-
-        & #upload{
-            margin-left: 10rem;
-        }
-
-        & #action-t{
-            width: 1.2rem;
-        }
-
-        & label{
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-left: 11rem;
-            margin-right: 0.5rem;
-        }
-    }
-    
-    .icons-new2{
-        margin-left: 2rem;
-        width: 90%;
-
-        & #item-name{
-            margin-left: 8rem;
-        }
-
-        & #upload-s{
-            margin-left: 7.4rem;
-        }
-    
-        & #shared{
-            margin-left: 4.8rem;
-        }
-
-        & #action-s{
-            padding-left: 8rem;
-        }
-
-        & #action-sw{
-            padding-left: 8rem;
-        }
-
-        & #upload-sw{
-            padding-left: 7rem;
-        }
-
-        & #item-name-t{
-            margin-left: 2.5rem;
-        }  
-
-        & #shared-t{
-            margin-left: 5.5rem;
-        }
-
-        & #upload-t{
-            margin-left: 9rem;
-        }
-
-        & label{
-            margin-left: 10.5rem        
-        }
-    }
-}
-
-@media (min-width:1600px){
-
-}
-
-@media (min-width:1680px){
-
-}
-
-@media (min-width:1920px){
-
-}
+// @media (min-width:1920px){
+   
+// }

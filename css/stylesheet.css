@@ -1430,7 +1430,7 @@ p.top-heaading {
     margin-top: 8rem;
     width: 45%;
     padding-top: 12rem;
-    height: 90%;
+    height: 85%;
     background-size: 27rem 10rem;
     background-position: 4rem 1rem; }
 
@@ -1524,7 +1524,35 @@ p.top-heaading {
   #menu {
     height: 1024px;
     padding-top: 10rem; } }
+@media (min-width: 1366px) {
+  .btn01 {
+    width: 16rem; }
+
+  .btn02 {
+    width: 16rem;
+    margin-left: 6rem; }
+
+  .popup-n .content #btn-u {
+    width: 41rem; }
+  .popup-n .content #name, .popup-n .content #url, .popup-n .content #desc, .popup-n .content #name-n {
+    width: 34rem; }
+
+  .popup-new {
+    width: 40%; }
+    .popup-new .content #btns #btn03 {
+      margin-left: 6rem; }
+    .popup-new .content #name {
+      width: 30rem; } }
 @media (min-width: 1440px) {
+  .popup-n {
+    width: 55%; }
+
+  .login-box {
+    height: 80%; }
+
+  .popup-new {
+    width: 39%; }
+
   #search_tab h2 {
     color: #073453;
     margin-left: 0.2rem;
@@ -1537,12 +1565,36 @@ p.top-heaading {
     width: 38%;
     left: 42%; } }
 @media (min-width: 1600px) {
+  .login-box {
+    height: 75%; }
+
+  .popup-new {
+    width: 35%; }
+
+  .popup-n {
+    width: 50%; }
+    .popup-n .content input[list] {
+      width: 34rem;
+      margin-left: 0; }
+    .popup-n .content #name01 {
+      width: 34rem;
+      margin-left: 3.5rem; }
+
   .files td i {
     padding: 0.5rem 0.5rem 0.5rem 2rem; }
 
   .pagination {
     margin: 2rem 0 0 28rem; } }
 @media (min-width: 1680px) {
+  .popup-new {
+    width: 33%; }
+
+  .login-box {
+    height: 62%; }
+
+  .popup-n .content #btns #btn-d {
+    margin-left: 12rem; }
+
   #search_tab h2 {
     color: #073453;
     margin-left: 0.4rem;
@@ -1565,10 +1617,10 @@ p.top-heaading {
     padding: 0.5rem 0 0.5rem 2rem; }
 
   .login-box {
-    margin-top: 2rem;
+    margin-top: 10rem;
     width: 55%;
     padding-top: 12rem;
-    height: 110%;
+    height: 84%;
     background-size: 27rem 10rem;
     background-position: 4rem 1rem; }
 
@@ -1682,6 +1734,12 @@ p.top-heaading {
   .pagination01 {
     margin: 0 0 1rem 13rem; } }
 @media (min-width: 1920px) {
+  .popup-new {
+    width: 29%; }
+
+  .popup-n {
+    width: 42%; }
+
   .wrap {
     width: 30%;
     left: 45%; }

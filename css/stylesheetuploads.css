@@ -239,102 +239,17 @@
     .files input[type=checkbox] {
       margin: 0.8rem 1rem 0.8rem 1.2rem; } }
 @media (min-width: 1366px) {
-  .icons-new1 {
-    margin-left: 2rem;
-    margin-top: 7%; }
-    .icons-new1 #item-name {
-      margin-left: 9rem; }
-    .icons-new1 #upload {
-      margin-left: 9rem; }
-    .icons-new1 #action-t {
-      width: 1.2rem; }
-    .icons-new1 label {
-      font-weight: bold;
-      font-size: 1.2em;
-      margin-left: 11rem;
-      margin-right: 0.5rem; }
-    .icons-new1 input[type=checkbox] {
-      margin: 0.8rem 1rem 0.8rem 3rem; }
-
-  .icons-new2 {
-    margin-top: 4.5rem;
-    margin-left: 2rem;
-    width: 90%; }
-    .icons-new2 #item-name {
-      margin-left: 6.8rem; }
-    .icons-new2 #upload-s {
-      margin-left: 9rem; }
-    .icons-new2 #shared {
-      margin-left: 5.8rem; }
-    .icons-new2 #action-s {
-      padding-left: 8rem; }
-    .icons-new2 #action-sw {
-      padding-left: 7.8rem; }
-    .icons-new2 #upload-sw {
-      padding-left: 8.8rem; }
-    .icons-new2 #item-name-t {
-      margin-left: 3rem; }
-    .icons-new2 #shared-t {
-      margin-left: 5rem; }
-    .icons-new2 #upload-t {
-      margin-left: 9rem; }
-    .icons-new2 #action-t {
-      width: 1.2rem; }
-    .icons-new2 label {
-      font-weight: bold;
-      font-size: 1.2em;
-      margin-left: 11rem;
-      margin-right: 0.5rem; }
-
   .files .details-u {
-    padding-left: 8rem; }
+    padding-left: 0; }
   .files .name-s {
-    padding-left: 3rem; }
+    padding-left: 0; }
   .files .details-s {
-    padding-left: 4rem; }
+    padding-left: 0; }
   .files .delete-u {
-    padding: 0 1rem 0 5rem; }
+    padding: 0; }
   .files .delete-s {
-    padding: 0 4rem 0 2rem; }
+    padding: 0; }
   .files .file_name-u {
     padding-left: 0; } }
-@media (min-width: 1440px) {
-  .icons-new1 {
-    margin-left: 2rem; }
-    .icons-new1 #item-name {
-      margin-left: 10rem; }
-    .icons-new1 #upload {
-      margin-left: 10rem; }
-    .icons-new1 #action-t {
-      width: 1.2rem; }
-    .icons-new1 label {
-      font-weight: bold;
-      font-size: 1.2em;
-      margin-left: 11rem;
-      margin-right: 0.5rem; }
-
-  .icons-new2 {
-    margin-left: 2rem;
-    width: 90%; }
-    .icons-new2 #item-name {
-      margin-left: 8rem; }
-    .icons-new2 #upload-s {
-      margin-left: 7.4rem; }
-    .icons-new2 #shared {
-      margin-left: 4.8rem; }
-    .icons-new2 #action-s {
-      padding-left: 8rem; }
-    .icons-new2 #action-sw {
-      padding-left: 8rem; }
-    .icons-new2 #upload-sw {
-      padding-left: 7rem; }
-    .icons-new2 #item-name-t {
-      margin-left: 2.5rem; }
-    .icons-new2 #shared-t {
-      margin-left: 5.5rem; }
-    .icons-new2 #upload-t {
-      margin-left: 9rem; }
-    .icons-new2 label {
-      margin-left: 10.5rem; } }
 
 /*# sourceMappingURL=stylesheetuploads.css.map */
