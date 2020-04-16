@@ -106,6 +106,10 @@ a{
     }
 }
 
+.login-box{
+    height: auto;
+}
+
 .pdf_details{
     background-color: $bg-color;
     border-radius: 1rem;
@@ -715,7 +719,7 @@ a{
 
 .login-box{
     margin: 8rem auto 1rem auto;
-    height: 85%;
+    height: auto;
     width: 45%;
     text-align: center;
     padding-top: 15rem;
@@ -742,6 +746,10 @@ a{
 
     & #btn01{
         margin-bottom: 1rem;
+    }
+
+    & #btn02{
+        margin-bottom: 2rem;
     }
 }
 
@@ -1398,7 +1406,7 @@ a{
 
     .login-box {
         margin: 10rem auto 1rem auto;
-        height: 74%;
+        // height: 74%;
         width: 85%;
         padding-top: 13rem;
         background-size: 22rem 10rem;
@@ -2090,7 +2098,7 @@ ul .fas{
 }
 
     .login-box{
-        height: 70%;
+        // height: 70%;
         background-size: 30rem 10rem;
         background-position: 5rem 1rem;
 
@@ -2183,7 +2191,7 @@ ul .fas{
 }
 
     .login-box{
-        height: 55%;
+        // height: 55%;
         margin-top: 18rem;
         background-size: 30rem 11rem;
         background-position: 6rem 1rem;
@@ -2225,7 +2233,7 @@ ul .fas{
         margin-top: 8rem;
         width: 45%;
         padding-top: 12rem;
-        height: 85%;
+        // height: 85%;
         background-size: 27rem 10rem;
         background-position: 4rem 1rem;
     }
@@ -2396,7 +2404,7 @@ ul .fas{
 @media(min-width:1366px){
 
     .login-box{
-        height: 88%;
+        // height: 88%;
 
         & #btn02{
             margin-bottom: 2rem;
@@ -2455,9 +2463,9 @@ ul .fas{
         width: 55%;
     }
 
-    .login-box{
-        height: 80%;
-    }
+    // .login-box{
+    //     height: auto;
+    // }
 
     .popup-new {
         width: 39%;
@@ -2484,9 +2492,9 @@ ul .fas{
 
 @media(min-width:1600px){
 
-    .login-box {
-        height: 75%;
-    }
+    // .login-box {
+    //     height: 75%;
+    // }
 
     .popup-new {
         width: 35%;
@@ -2522,9 +2530,9 @@ ul .fas{
         width: 33%;
     }
 
-    .login-box {
-        height: 62%;
-    }
+    // .login-box {
+    //     height: 62%;
+    // }
     
     .popup-n{
         & .content{
@@ -2584,10 +2592,10 @@ ul .fas{
     }
 
     .login-box {
-        margin-top: 10rem;
+        margin-top: 4rem;
         width: 55%;
         padding-top: 12rem;
-        height: 84%;
+        // height: 84%;
         background-size: 27rem 10rem;
         background-position: 4rem 1rem;
     }
@@ -2795,8 +2803,8 @@ ul .fas{
     }
 
 .wrap{
-    width: 30%;
-    left: 45%;
+    width: 25%;
+    left: 48%;
   } 
 
   #search_tab{

@@ -83,6 +83,9 @@ a {
     width: 100%;
     height: 100%; }
 
+.login-box {
+  height: auto; }
+
 .pdf_details {
   background-color: white;
   border-radius: 1rem;
@@ -512,7 +515,7 @@ p.top-heaading {
 
 .login-box {
   margin: 8rem auto 1rem auto;
-  height: 85%;
+  height: auto;
   width: 45%;
   text-align: center;
   padding-top: 15rem;
@@ -534,6 +537,8 @@ p.top-heaading {
     color: white; }
   .login-box #btn01 {
     margin-bottom: 1rem; }
+  .login-box #btn02 {
+    margin-bottom: 2rem; }
 
 .popup-new {
   margin: 10rem auto;
@@ -981,7 +986,6 @@ p.top-heaading {
 
   .login-box {
     margin: 10rem auto 1rem auto;
-    height: 74%;
     width: 85%;
     padding-top: 13rem;
     background-size: 22rem 10rem; }
@@ -1407,7 +1411,6 @@ p.top-heaading {
     width: 60%; }
 
   .login-box {
-    height: 70%;
     background-size: 30rem 10rem;
     background-position: 5rem 1rem; }
     .login-box #btn01 {
@@ -1457,7 +1460,6 @@ p.top-heaading {
     width: 30rem; }
 
   .login-box {
-    height: 55%;
     margin-top: 18rem;
     background-size: 30rem 11rem;
     background-position: 6rem 1rem; }
@@ -1484,7 +1486,6 @@ p.top-heaading {
     margin-top: 8rem;
     width: 45%;
     padding-top: 12rem;
-    height: 85%;
     background-size: 27rem 10rem;
     background-position: 4rem 1rem; }
 
@@ -1579,10 +1580,8 @@ p.top-heaading {
     height: 1024px;
     padding-top: 10rem; } }
 @media (min-width: 1366px) {
-  .login-box {
-    height: 88%; }
-    .login-box #btn02 {
-      margin-bottom: 2rem; }
+  .login-box #btn02 {
+    margin-bottom: 2rem; }
 
   .btn01 {
     width: 16rem; }
@@ -1612,9 +1611,6 @@ p.top-heaading {
   .popup-n {
     width: 55%; }
 
-  .login-box {
-    height: 80%; }
-
   .popup-new {
     width: 39%; }
 
@@ -1630,9 +1626,6 @@ p.top-heaading {
     width: 38%;
     left: 42%; } }
 @media (min-width: 1600px) {
-  .login-box {
-    height: 75%; }
-
   .popup-new {
     width: 35%; }
 
@@ -1653,9 +1646,6 @@ p.top-heaading {
 @media (min-width: 1680px) {
   .popup-new {
     width: 33%; }
-
-  .login-box {
-    height: 62%; }
 
   .popup-n .content #btns #btn-d {
     margin-left: 12rem; }
@@ -1691,10 +1681,9 @@ p.top-heaading {
     padding: 0.5rem 0 0.5rem 2rem; }
 
   .login-box {
-    margin-top: 10rem;
+    margin-top: 4rem;
     width: 55%;
     padding-top: 12rem;
-    height: 84%;
     background-size: 27rem 10rem;
     background-position: 4rem 1rem; }
 
@@ -1815,8 +1804,8 @@ p.top-heaading {
     width: 42%; }
 
   .wrap {
-    width: 30%;
-    left: 45%; }
+    width: 25%;
+    left: 48%; }
 
   #search_tab h2 {
     color: #073453;
